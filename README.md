@@ -1,20 +1,28 @@
-# loclocloc
+# 📍 loclocloc
 
-**[Open the app →](https://loclocloc.netlify.app)** · **[Source on GitHub](https://github.com/12ian34/loclocloc)**
+## Live app
+
+https://loclocloc.netlify.app
 
 <p align="center">
   <img src="docs/screenshot.png" alt="loclocloc — London map with sidebar layer toggles (Tube &amp; Rail, amenities, area data)" width="920" />
 </p>
+
+## What is this
 
 **Find your spot in London** — an interactive map to explore amenities, public transport, and neighbourhood context side by side. Pin postcodes, toggle layers, and see how areas compare at a glance.
 
 ## What you can do
 
 - **Search postcodes** — jump to an area and keep a shortlist of places you care about.
-- **Point layers** — tube and rail, groceries, coffee, **libraries**, pubs, parks, gyms, cinemas, bike parking, and more. Each layer can be switched on or off.
-- **Area layers** — choropleths for crime, air quality (NO₂), and Index of Multiple Deprivation dimensions, so you can read “how this patch of the city feels” next to the map.
-- **Scorecards** — blended scores for each pinned postcode (proximity + area signals), with short explanations on what each metric means.
-- **Optional travel-time rings** — public-transit reach from pinned postcodes when the app is configured for it.
+- **Point layers** — tube and rail, groceries, coffee, libraries, pubs, parks, gyms, cinemas, bike parking, and more. Each layer can be switched on or off. POIs show as emoji markers on the map.
+- **Area layers** — choropleths for crime, air quality (NO₂), estimated rent, and Index of Multiple Deprivation dimensions, so you can read "how this patch of the city feels" next to the map.
+- **Scorecards** — blended scores for each pinned postcode (proximity + area signals), with short explanations on what each metric means. Disable dimensions you don't care about.
+- **Filters** — set thresholds on crime, air quality, rent, and deprivation to grey out areas that don't pass.
+- **Compare** — pin multiple postcodes and see a side-by-side comparison across all dimensions.
+- **Walking rings** — concentric distance rings around pinned postcodes (5/10/15/20 min walk).
+- **Optional transit isochrones** — public-transit reach from pinned postcodes when the app has a TfL API key configured.
+- **Shareable URLs** — all app state (postcodes, layers, filters, disabled score dims) is encoded in the URL hash.
 
 Data is bundled as static GeoJSON in the repo, so the map works offline once built — no database required.
 
@@ -100,7 +108,7 @@ Bundled layers are static GeoJSON under `public/data/`, produced or refreshed by
 
 | What | Source |
 |------|--------|
-| Basemap | [CARTO](https://carto.com/) “Positron” style tiles; map data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors |
+| Basemap | [CARTO](https://carto.com/) "Positron" style tiles; map data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors |
 
 ### Point layers (POIs)
 

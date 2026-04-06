@@ -1,6 +1,5 @@
 import { useState, useEffect, useMemo, useRef, useCallback } from "react";
 import {
-  CircleMarker,
   Circle,
   Polygon,
   Popup,
@@ -12,6 +11,15 @@ import L from "leaflet";
 import { WALK_RINGS, TRANSIT_RINGS, TRANSIT_COLORS } from "../config.js";
 import { computeCentroids } from "../utils/geo.js";
 
+// Compute emoji size from zoom level — small dots at low zoom, readable emoji at high zoom
+function emojiSize(zoom) {
+  if (zoom <= 10) return 10;
+  if (zoom <= 12) return 14;
+  if (zoom <= 14) return 18;
+  if (zoom <= 16) return 22;
+  return 26;
+}
+
 export function PointMarkers({ layers, activeLayers, layerData }) {
   const map = useMap();
   const [zoom, setZoom] = useState(map.getZoom());
@@ -22,26 +30,37 @@ export function PointMarkers({ layers, activeLayers, layerData }) {
     return () => map.off("zoomend", onZoom);
   }, [map]);
 
-  const radius = Math.max(1, (zoom - 8) * 1.5);
-  const weight = zoom < 13 ? 0 : 1;
-  const opacity = zoom < 10 ? 0.5 : 0.8;
+  const size = emojiSize(zoom);
+
+  // Cache divIcon instances per layer+zoom so we don't recreate thousands every render
+  const iconCache = useMemo(() => {
+    const cache = {};
+    for (const layer of layers) {
+      cache[layer.id] = L.divIcon({
+        className: "poi-emoji-icon",
+        html: `<span style="font-size:${size}px;line-height:1">${layer.emoji}</span>`,
+        iconSize: [size + 4, size + 4],
+        iconAnchor: [(size + 4) / 2, (size + 4) / 2],
+      });
+    }
+    return cache;
+  }, [layers, size]);
 
   return layers.map(
     (layer) =>
       activeLayers.has(layer.id) &&
       layerData[layer.id]?.features.map((feature, i) => (
-        <CircleMarker
+        <Marker
           key={`${layer.id}-${i}`}
-          center={[feature.geometry.coordinates[1], feature.geometry.coordinates[0]]}
-          radius={radius}
-          pathOptions={{ color: layer.color, fillColor: layer.color, fillOpacity: opacity, weight }}
+          position={[feature.geometry.coordinates[1], feature.geometry.coordinates[0]]}
+          icon={iconCache[layer.id]}
         >
           <Popup>
             <strong>{feature.properties.name}</strong>
             {feature.properties.address && <><br />{feature.properties.address}</>}
             {feature.properties.postcode && <><br />{feature.properties.postcode}</>}
           </Popup>
-        </CircleMarker>
+        </Marker>
       ))
   );
 }

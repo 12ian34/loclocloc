@@ -393,6 +393,7 @@ function App() {
       <div className={`sidebar ${showComparison && pinnedPostcodes.length >= 2 ? "sidebar-wide" : ""}`}>
         <h1 className="logo">loclocloc</h1>
         <p className="subtitle">find your spot in London</p>
+        <p className="info-hint">Pin postcodes to score and compare. Toggle layers to explore.</p>
 
         <PostcodeSearch onResult={handlePostcodeResult} />
 
@@ -475,7 +476,6 @@ function App() {
         )}
 
         <div className="layers">
-          {/* #3: accessible collapsible header */}
           <h2
             className="filter-toggle-header"
             onClick={() => setShowPoiSection(!showPoiSection)}
@@ -485,7 +485,7 @@ function App() {
             aria-expanded={showPoiSection}
           >
             Points of Interest
-            <span className="filter-chevron">{showPoiSection ? "\u25be" : "\u25b8"}</span>
+            <span className={`filter-chevron ${showPoiSection ? "filter-chevron-open" : ""}`}>&#9656;</span>
           </h2>
           {showPoiSection &&
             POINT_LAYERS.map((layer) => (
@@ -509,28 +509,23 @@ function App() {
             aria-expanded={showAreaSection}
           >
             Area Data (LSOA)
-            <span className="filter-chevron">{showAreaSection ? "\u25be" : "\u25b8"}</span>
+            <span className={`filter-chevron ${showAreaSection ? "filter-chevron-open" : ""}`}>&#9656;</span>
           </h2>
           {showAreaSection && (
             <>
               {CHOROPLETH_LAYERS.map((layer) => (
-                <label
+                <div
                   key={layer.id}
                   className={`layer-toggle ${activeChoropleth === layer.id ? "active" : ""}`}
-                  // #7: only run deselect handler on the active choropleth
-                  onMouseDown={activeChoropleth === layer.id ? (e) => {
-                    e.preventDefault();
-                    setActiveChoropleth(null);
-                  } : undefined}
+                  onClick={() => toggleChoropleth(layer.id)}
+                  onKeyDown={onKeyActivate(() => toggleChoropleth(layer.id))}
+                  tabIndex={0}
+                  role="radio"
+                  aria-checked={activeChoropleth === layer.id}
                 >
-                  <input
-                    type="radio"
-                    name="choropleth"
-                    checked={activeChoropleth === layer.id}
-                    onChange={() => toggleChoropleth(layer.id)}
-                  />
+                  <span className={`layer-radio ${activeChoropleth === layer.id ? "layer-radio-on" : ""}`} />
                   <span className="layer-name">{layer.emoji} {layer.name}</span>
-                </label>
+                </div>
               ))}
               {activeChoropleth && (
                 <button className="clear-choropleth" onClick={() => setActiveChoropleth(null)}>
@@ -585,8 +580,8 @@ function App() {
             role="button"
             aria-expanded={showFilters}
           >
-            Filter Areas {filterMatchCount != null && `(${filterMatchCount} match)`}
-            <span className="filter-chevron">{showFilters ? "\u25be" : "\u25b8"}</span>
+            Filter Areas {filterMatchCount != null && <span className="section-count">({filterMatchCount})</span>}
+            <span className={`filter-chevron ${showFilters ? "filter-chevron-open" : ""}`}>&#9656;</span>
           </h2>
           {showFilters && (
             <FilterPanel filters={filters} setFilters={setFilters} />
@@ -600,9 +595,6 @@ function App() {
           githubUrl={GITHUB_REPO_URL}
         />
 
-        <div className="info">
-          <p>Pin postcodes to score and compare. Toggle layers to explore London.</p>
-        </div>
       </div>
 
       {showDataModal && <DataAboutModal onClose={() => setShowDataModal(false)} />}
