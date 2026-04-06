@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BUILD_DATE, DATA_INTRO, DATA_ROWS } from "../dataSources.js";
-import { SCORE_AREA_DIMS, SCORE_PROX_DIMS, CHOROPLETH_LAYERS } from "../config.js";
+import { SCORE_AREA_DIMS, SCORE_PROX_DIMS, CHOROPLETH_LAYERS, FILTER_CHOROPLETH_DIMS } from "../config.js";
 
 // #3: keyboard handler for accessible interactive elements
 function onKeyActivate(callback) {
@@ -266,35 +266,45 @@ export function DataAboutModal({ onClose }) {
 }
 
 export function FilterPanel({ filters, setFilters }) {
-  const FILTER_DIMS = [
-    { id: "crime-current", label: "Max Crime Score", property: "value", max: 200 },
-    { id: "air", label: "Max NO\u2082 (\u00b5g/m\u00b3)", property: "value", max: 80 },
-    { id: "rent-est", label: "Max est. rent (\u00a3/mo)", property: "value", max: 3500 },
-    { id: "imd", label: "Max Deprivation", property: "imd", max: 60 },
-  ];
-
   return (
     <div className="filter-panel">
-      {FILTER_DIMS.map((dim) => (
+      {FILTER_CHOROPLETH_DIMS.map((dim) => (
         <div key={dim.id} className="filter-row">
           <label className="filter-label">
             {dim.label}
             <span className="filter-value">
-              {filters[dim.id] != null ? `< ${filters[dim.id]}` : "off"}
+              {filters[dim.id] != null
+                ? dim.mode === "min"
+                  ? `\u2265 ${filters[dim.id]}`
+                  : `< ${filters[dim.id]}`
+                : "off"}
             </span>
           </label>
           <input
             type="range"
-            min={0}
+            min={dim.min}
             max={dim.max}
-            step={1}
-            value={filters[dim.id] ?? dim.max}
+            step={dim.step ?? 1}
+            value={
+              filters[dim.id] != null
+                ? filters[dim.id]
+                : dim.mode === "min"
+                  ? dim.min
+                  : dim.max
+            }
             onChange={(e) => {
-              const val = parseInt(e.target.value);
+              const val = dim.step != null && dim.step < 1
+                ? parseFloat(e.target.value)
+                : parseInt(e.target.value, 10);
               setFilters((prev) => {
                 const next = { ...prev };
-                if (val >= dim.max) delete next[dim.id];
-                else next[dim.id] = val;
+                if (dim.mode === "min") {
+                  if (val <= dim.min) delete next[dim.id];
+                  else next[dim.id] = val;
+                } else {
+                  if (val >= dim.max) delete next[dim.id];
+                  else next[dim.id] = val;
+                }
                 return next;
               });
             }}

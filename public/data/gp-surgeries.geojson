@@ -1,0 +1,8590 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.345581,
+          51.5376755
+        ]
+      },
+      "properties": {
+        "name": "Greenford Road Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "+44 20 8575 8347",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3726437,
+          51.5617106
+        ]
+      },
+      "properties": {
+        "name": "Simpson House Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3166269,
+          51.5399944
+        ]
+      },
+      "properties": {
+        "name": "Hillview Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3028624,
+          51.5293025
+        ]
+      },
+      "properties": {
+        "name": "St Mark's Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "+44 20 8810 5545",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1513333,
+          51.4316018
+        ]
+      },
+      "properties": {
+        "name": "Macmillan Way Medical Centre",
+        "address": "Macmillan Way 103",
+        "postcode": "SW17 6AT",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0642499,
+          51.5269619
+        ]
+      },
+      "properties": {
+        "name": "Bethnal Green Health Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0572096,
+          51.5199458
+        ]
+      },
+      "properties": {
+        "name": "Albion Health Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1287623,
+          51.3569878
+        ]
+      },
+      "properties": {
+        "name": "Wallington Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1336673,
+          51.3533719
+        ]
+      },
+      "properties": {
+        "name": "Manor Practice",
+        "address": "Mollison Square 6",
+        "postcode": "SM6 9DW",
+        "phone": "+44 20 8647 1818",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1360928,
+          51.4654256
+        ]
+      },
+      "properties": {
+        "name": "Manor Health Centre",
+        "address": "Clapham Manor Street 86",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0109791,
+          51.635404
+        ]
+      },
+      "properties": {
+        "name": "Kingshead Medical Practice",
+        "address": "Kings Head Hill 178",
+        "postcode": "E4 7NX",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1508145,
+          51.3572418
+        ]
+      },
+      "properties": {
+        "name": "Jubilee Health Centre",
+        "address": "Shotfield",
+        "postcode": "SM6 0HY",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1721382,
+          51.4986558
+        ]
+      },
+      "properties": {
+        "name": "Imperial College Health Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3559498,
+          51.5652088
+        ]
+      },
+      "properties": {
+        "name": "GP Direct",
+        "address": "Eastcote Lane 32A",
+        "postcode": "",
+        "phone": "",
+        "operator": "GP Direct"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0373545,
+          51.5611337
+        ]
+      },
+      "properties": {
+        "name": "Aldersbrook Medical Centre",
+        "address": "Aldersbrook Road 65",
+        "postcode": "E12 5DL",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0021076,
+          51.5554417
+        ]
+      },
+      "properties": {
+        "name": "Langthorne Health Centre",
+        "address": "Langthorne Road 13",
+        "postcode": "E11 4HX",
+        "phone": "",
+        "operator": "Dr Tahir Kiyani"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1210286,
+          51.4439837
+        ]
+      },
+      "properties": {
+        "name": "Palace Road Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "+44 20 8674 2083",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0422116,
+          51.4277293
+        ]
+      },
+      "properties": {
+        "name": "Doctor's Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1472902,
+          51.4547222
+        ]
+      },
+      "properties": {
+        "name": "The Albion Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3045395,
+          51.5503707
+        ]
+      },
+      "properties": {
+        "name": "Wembley G.P Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0964775,
+          51.53662
+        ]
+      },
+      "properties": {
+        "name": "Prebend Street Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "+44 20 7226 9090",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0051538,
+          51.5549725
+        ]
+      },
+      "properties": {
+        "name": "Lime Tree Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "+44 20 8519 9914",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0295826,
+          51.5452722
+        ]
+      },
+      "properties": {
+        "name": "Trowbridge Surgery",
+        "address": "Merriam Avenue 18",
+        "postcode": "E9 5NE",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0932482,
+          51.4742407
+        ]
+      },
+      "properties": {
+        "name": "Camberwell Green Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0197145,
+          51.5319915
+        ]
+      },
+      "properties": {
+        "name": "The Project Surgery",
+        "address": "Lettsom Walk 10",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1056154,
+          51.544499
+        ]
+      },
+      "properties": {
+        "name": "Islington Central Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.038768,
+          51.5299247
+        ]
+      },
+      "properties": {
+        "name": "Grove Road Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0310944,
+          51.5322104
+        ]
+      },
+      "properties": {
+        "name": "St. Stephen's Health Centre",
+        "address": "William Place 12",
+        "postcode": "E3 5ED",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1078253,
+          51.5347178
+        ]
+      },
+      "properties": {
+        "name": "Ritchie Street Group Practice",
+        "address": "Ritchie Street",
+        "postcode": "N1 0DG",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1082797,
+          51.5498192
+        ]
+      },
+      "properties": {
+        "name": "The Holloway Medical Clinic",
+        "address": "",
+        "postcode": "",
+        "phone": "+44 20 7607 2323",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3376524,
+          51.5873514
+        ]
+      },
+      "properties": {
+        "name": "Civic Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1174653,
+          51.5421778
+        ]
+      },
+      "properties": {
+        "name": "Caledonian Road Medical Practic",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3391808,
+          51.4444013
+        ]
+      },
+      "properties": {
+        "name": "The Green Surgery",
+        "address": "The Green 1B",
+        "postcode": "TW2 5TU",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1320631,
+          51.5146661
+        ]
+      },
+      "properties": {
+        "name": "Great Chapel Street Medical Centre",
+        "address": "Frith Street 1",
+        "postcode": "W1D 3HZ",
+        "phone": "+44 20 7437 9360",
+        "operator": "Central London Clinical Commissioning Group (NHS)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1135738,
+          51.5540055
+        ]
+      },
+      "properties": {
+        "name": "Sobell Medical Centre",
+        "address": "Holloway Road 272",
+        "postcode": "",
+        "phone": "+44 20 7609 3050",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3540587,
+          51.5717975
+        ]
+      },
+      "properties": {
+        "name": "Shaftesbury Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0861943,
+          51.3805633
+        ]
+      },
+      "properties": {
+        "name": "Dr Shah and Partners",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0657762,
+          51.4741027
+        ]
+      },
+      "properties": {
+        "name": "Acorn & Gaumont House Surgery",
+        "address": "Peckham High Street 153",
+        "postcode": "SE15 5SL",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0413247,
+          51.3992865
+        ]
+      },
+      "properties": {
+        "name": "Eden Park Surgery",
+        "address": "Croydon Road 194",
+        "postcode": "BR3 4DQ",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0107065,
+          51.5198249
+        ]
+      },
+      "properties": {
+        "name": "Star Lane Medical Centre",
+        "address": "Star Lane 121",
+        "postcode": "E16 4QH",
+        "phone": "+44 20 7476 4862",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0892898,
+          51.5571541
+        ]
+      },
+      "properties": {
+        "name": "Statham Grove Surgery",
+        "address": "Statham Grove",
+        "postcode": "N16 9DP",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1365155,
+          51.4173809
+        ]
+      },
+      "properties": {
+        "name": "The Vale Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "+44 2086 797536",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0867676,
+          51.5334946
+        ]
+      },
+      "properties": {
+        "name": "The Hoxton Surgery",
+        "address": "Rushton Street 12",
+        "postcode": "N1 5DR",
+        "phone": "+44 20 3487 0200",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1236789,
+          51.545868
+        ]
+      },
+      "properties": {
+        "name": "Porters Avenue Health Centre",
+        "address": "Porters Avenue 234",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1009449,
+          51.5356955
+        ]
+      },
+      "properties": {
+        "name": "St Peters Street Medical Practice",
+        "address": "St Peter's Street 16",
+        "postcode": "N1 8JG",
+        "phone": "+44 844 477 8717",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0967107,
+          51.4891988
+        ]
+      },
+      "properties": {
+        "name": "Manor Place Surgery",
+        "address": "Manor Place 1",
+        "postcode": "SE17 3BD",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0683364,
+          51.6045778
+        ]
+      },
+      "properties": {
+        "name": "Tottenham Health Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0690366,
+          51.5961892
+        ]
+      },
+      "properties": {
+        "name": "Charlton House Medical Centre",
+        "address": "High Road 581",
+        "postcode": "N17 6SB",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3588965,
+          51.5752911
+        ]
+      },
+      "properties": {
+        "name": "GP Direct",
+        "address": "Welbeck Road 5",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0125516,
+          51.425917
+        ]
+      },
+      "properties": {
+        "name": "Ashdown Medical Group",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0116534,
+          51.4579469
+        ]
+      },
+      "properties": {
+        "name": "Triangle Group Practice",
+        "address": "Morley Road 2",
+        "postcode": "SE13 6DQ",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2716415,
+          51.4908311
+        ]
+      },
+      "properties": {
+        "name": "Chiswick Medical Practice (Wellesley Road Site)",
+        "address": "",
+        "postcode": "",
+        "phone": "+44 20 8747 1549",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0779953,
+          51.4890989
+        ]
+      },
+      "properties": {
+        "name": "The Dun Cow Surgery",
+        "address": "Old Kent Road 279",
+        "postcode": "SE1 5LU",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0759764,
+          51.5116888
+        ]
+      },
+      "properties": {
+        "name": "City Of London Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0739782,
+          51.5133533
+        ]
+      },
+      "properties": {
+        "name": "Portsoken Health Centre",
+        "address": "Little Somerset Street 14",
+        "postcode": "",
+        "phone": "",
+        "operator": "Tower Hamlets NHS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1737814,
+          51.3959324
+        ]
+      },
+      "properties": {
+        "name": "The Cedars Surgery",
+        "address": "London Road",
+        "postcode": "BR8 7AH",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1828849,
+          51.4090698
+        ]
+      },
+      "properties": {
+        "name": "Hextable Surgery",
+        "address": "Main Road 31A",
+        "postcode": "BR8 7RB",
+        "phone": "",
+        "operator": "Branch of Cedars Surgery, Swanley"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2009828,
+          51.5140691
+        ]
+      },
+      "properties": {
+        "name": "Westbourne Grove Medical Centre",
+        "address": "Westbourne Grove 241",
+        "postcode": "",
+        "phone": "+44 20 7229 5800",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0748591,
+          51.4940173
+        ]
+      },
+      "properties": {
+        "name": "Artesian Health Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1621514,
+          51.588168
+        ]
+      },
+      "properties": {
+        "name": "East Finchley Medical Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1930439,
+          51.4806019
+        ]
+      },
+      "properties": {
+        "name": "The Fulham Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1023189,
+          51.4956686
+        ]
+      },
+      "properties": {
+        "name": "Princess Street Group Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2001346,
+          51.4826314
+        ]
+      },
+      "properties": {
+        "name": "Dr China",
+        "address": "North End Road 415",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0823848,
+          51.4903875
+        ]
+      },
+      "properties": {
+        "name": "East Street Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1229302,
+          51.5256284
+        ]
+      },
+      "properties": {
+        "name": "Bloomsbury Surgery",
+        "address": "Handel Street 1",
+        "postcode": "WC1N 1PD",
+        "phone": "+44 20 7837 8559",
+        "operator": "Camden Primary Care Trust"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2048047,
+          51.5763455
+        ]
+      },
+      "properties": {
+        "name": "The Practice @ 188",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0831484,
+          51.4974045
+        ]
+      },
+      "properties": {
+        "name": "Bermondsey & Landowne Medical Mission",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1953564,
+          51.5521635
+        ]
+      },
+      "properties": {
+        "name": "Chomley Gardens Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": "Dr E Ansell"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0979964,
+          51.3507007
+        ]
+      },
+      "properties": {
+        "name": "Parkside Group Practice",
+        "address": "Wyche Grove 27",
+        "postcode": "CR2 6EX",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1742032,
+          51.4660161
+        ]
+      },
+      "properties": {
+        "name": "Clapham Junction Medical Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1558644,
+          51.3781084
+        ]
+      },
+      "properties": {
+        "name": "Hackbridge Medical Centre",
+        "address": "Spinning Wheel Way",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1621082,
+          51.4102296
+        ]
+      },
+      "properties": {
+        "name": "Figges Marsh Surgery",
+        "address": "London Road 182",
+        "postcode": "CR4 3LD",
+        "phone": "+44 20 8640 4445",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0247817,
+          51.5784325
+        ]
+      },
+      "properties": {
+        "name": "Wanstead Place",
+        "address": "Wanstead Place 45",
+        "postcode": "E11 2SW",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1509251,
+          51.3634531
+        ]
+      },
+      "properties": {
+        "name": "Park Road Medical Centre",
+        "address": "Park Road 1a",
+        "postcode": "SM6 8AW",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1713025,
+          51.3719715
+        ]
+      },
+      "properties": {
+        "name": "The Wrythe Green Surgery",
+        "address": "Wrythe Lane",
+        "postcode": "SM5 2RE",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1724588,
+          51.542767
+        ]
+      },
+      "properties": {
+        "name": "Swiss Cottage Surgery",
+        "address": "Winchester Mews 2",
+        "postcode": "NW3 3NP",
+        "phone": "+44 20 7722 2772",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.268801,
+          51.5146208
+        ]
+      },
+      "properties": {
+        "name": "Horn Lane Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1745254,
+          51.5328574
+        ]
+      },
+      "properties": {
+        "name": "St John's Wood Medical Practice",
+        "address": "Grove End Road 60",
+        "postcode": "NW8 9NH",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1717992,
+          51.4867745
+        ]
+      },
+      "properties": {
+        "name": "Chelsea Outpatient Centre",
+        "address": "King's Road 280",
+        "postcode": "",
+        "phone": "+44 20 7881 4114",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.197129,
+          51.4962877
+        ]
+      },
+      "properties": {
+        "name": "The Abingdon Medical Practice",
+        "address": "Earl's Court Road 88-92",
+        "postcode": "W8 6EG",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2153174,
+          51.5576309
+        ]
+      },
+      "properties": {
+        "name": "Cricklewood Health Centre",
+        "address": "Cricklewood Lane 2",
+        "postcode": "NW2 1DZ",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1586714,
+          51.4611785
+        ]
+      },
+      "properties": {
+        "name": "Lyndhurst Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2168887,
+          51.5537317
+        ]
+      },
+      "properties": {
+        "name": "Willesden Green Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2130438,
+          51.4816044
+        ]
+      },
+      "properties": {
+        "name": "Dr Jefferies & Partners",
+        "address": "Munster Road 292",
+        "postcode": "SW6 6BQ",
+        "phone": "+44 20 7385 5728",
+        "operator": "NHS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3943836,
+          51.4766332
+        ]
+      },
+      "properties": {
+        "name": "Dr TURNER & partner",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1307643,
+          51.5300647
+        ]
+      },
+      "properties": {
+        "name": "Sommers Town Medical Centre",
+        "address": "Chalton Street 77-83",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1118079,
+          51.6185336
+        ]
+      },
+      "properties": {
+        "name": "North London Health Centre",
+        "address": "Broomfield Avenue",
+        "postcode": "N13 4JJ",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0249929,
+          51.4570722
+        ]
+      },
+      "properties": {
+        "name": "Hilly Fields Group Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2038072,
+          51.4875476
+        ]
+      },
+      "properties": {
+        "name": "North End Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1198739,
+          51.5172096
+        ]
+      },
+      "properties": {
+        "name": "Weight Medics",
+        "address": "Kingsway 88",
+        "postcode": "WC2B 6AA",
+        "phone": "",
+        "operator": "Advanced Weight Solutions Ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2076989,
+          51.4966863
+        ]
+      },
+      "properties": {
+        "name": "Kensington Park Medical Centre",
+        "address": "Russell Road 75",
+        "postcode": "",
+        "phone": "",
+        "operator": "Kensington and Chelsea Primary Care Trust"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0990957,
+          51.5773526
+        ]
+      },
+      "properties": {
+        "name": "Bridge House Medical Practice",
+        "address": "Umfreville Road 96",
+        "postcode": "N4 1TL",
+        "phone": "+44 20 8482 9697",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1759134,
+          51.3633059
+        ]
+      },
+      "properties": {
+        "name": "Sutton Medical Centre",
+        "address": "Carshalton Road 181",
+        "postcode": "SM1 4NG",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0508779,
+          51.4493529
+        ]
+      },
+      "properties": {
+        "name": "Court Yard Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1225666,
+          51.4965805
+        ]
+      },
+      "properties": {
+        "name": "Lakeside Medical Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0253718,
+          51.5933211
+        ]
+      },
+      "properties": {
+        "name": "ESS Clinic",
+        "address": "George Lane 142",
+        "postcode": "",
+        "phone": "+44 20 8989 2004",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.087879,
+          51.5292339
+        ]
+      },
+      "properties": {
+        "name": "Regency Clinic",
+        "address": "Nile Street 72",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0257123,
+          51.5937334
+        ]
+      },
+      "properties": {
+        "name": "Southdene Surgery",
+        "address": "The Shrubberies",
+        "postcode": "",
+        "phone": "+44 20 8530 3731",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0243498,
+          51.5947649
+        ]
+      },
+      "properties": {
+        "name": "The Shrubberies Medical Centre",
+        "address": "The Shrubberies 12",
+        "postcode": "E18 1BD",
+        "phone": "+44 20 8530 4108",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0244517,
+          51.5946666
+        ]
+      },
+      "properties": {
+        "name": "Lily House Consulting Rooms",
+        "address": "The Shrubberies 11",
+        "postcode": "E18 1BD",
+        "phone": "+44 20 8530 8888",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1985547,
+          51.5248028
+        ]
+      },
+      "properties": {
+        "name": "The Elgin Clinic",
+        "address": "Elgin Avenue 40",
+        "postcode": "W9 3QT",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0046991,
+          51.5123779
+        ]
+      },
+      "properties": {
+        "name": "The Aberfeldy Practice",
+        "address": "Aberfeldy Square 19",
+        "postcode": "E14 0XA",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0489391,
+          51.5114007
+        ]
+      },
+      "properties": {
+        "name": "Cable Street Surgery",
+        "address": "Cable Street 445",
+        "postcode": "E1W 3DE",
+        "phone": "+44 20 7423 9022",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1748915,
+          51.6170585
+        ]
+      },
+      "properties": {
+        "name": "The Torrington Park Group Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1751008,
+          51.6170811
+        ]
+      },
+      "properties": {
+        "name": "The Torrington Speedwell Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0987279,
+          51.3705795
+        ]
+      },
+      "properties": {
+        "name": "Edridge Road Community Health Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1398881,
+          51.46473
+        ]
+      },
+      "properties": {
+        "name": "Grafton Square Surgery",
+        "address": "Grafton Square 8B",
+        "postcode": "",
+        "phone": "+44 20 7622 5642",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0072788,
+          51.5838417
+        ]
+      },
+      "properties": {
+        "name": "The Bailey Practice",
+        "address": "Shernhall Street 107",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3504736,
+          51.5768831
+        ]
+      },
+      "properties": {
+        "name": "Saint Peter's Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0133479,
+          51.5597725
+        ]
+      },
+      "properties": {
+        "name": "Leyton Healthcare",
+        "address": "Oliver Road 75",
+        "postcode": "E10 5LG",
+        "phone": "+4420 8430 8282",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3319425,
+          51.5535621
+        ]
+      },
+      "properties": {
+        "name": "Poland Medical",
+        "address": "Whitton Avenue East 364A",
+        "postcode": "UB6 0JP",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3589077,
+          51.5256916
+        ]
+      },
+      "properties": {
+        "name": "Mansell Road Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0996612,
+          51.583278
+        ]
+      },
+      "properties": {
+        "name": "The Old Surgery",
+        "address": "Green Lanes 572",
+        "postcode": "N8 0RP",
+        "phone": "+44 330 053 9499",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3327406,
+          51.5614591
+        ]
+      },
+      "properties": {
+        "name": "Lanfranc Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0031967,
+          51.5373244
+        ]
+      },
+      "properties": {
+        "name": "Carpenters Practice",
+        "address": "High Street 236-252",
+        "postcode": "E15 2JA",
+        "phone": "+44 20 8534 8057",
+        "operator": "Lantern Health"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1120395,
+          51.5989934
+        ]
+      },
+      "properties": {
+        "name": "Staunton Group Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0505401,
+          51.4573639
+        ]
+      },
+      "properties": {
+        "name": "Eltham Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1140612,
+          51.5700145
+        ]
+      },
+      "properties": {
+        "name": "The 157 Medical Practice",
+        "address": "Stroud Green Road 157",
+        "postcode": "N4 3PZ",
+        "phone": "+44 20 7272 8823",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1906019,
+          51.5528765
+        ]
+      },
+      "properties": {
+        "name": "Maylands Healthcare",
+        "address": "Upper Rainham Road 300",
+        "postcode": "RM12 4EQ",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1252315,
+          51.5184356
+        ]
+      },
+      "properties": {
+        "name": "The Museum Practice",
+        "address": "Great Russell Street 58",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0252967,
+          51.5925389
+        ]
+      },
+      "properties": {
+        "name": "Glebelands Practice",
+        "address": "Glebelands Avenue 2",
+        "postcode": "E18 2AB",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.143462,
+          51.5281189
+        ]
+      },
+      "properties": {
+        "name": "Hoil Dental",
+        "address": "43",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0787291,
+          51.5384221
+        ]
+      },
+      "properties": {
+        "name": "De Beauvoir Surgery",
+        "address": "Hertford Road 22",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0648543,
+          51.5237677
+        ]
+      },
+      "properties": {
+        "name": "The Blithehale Health Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2882507,
+          51.4134261
+        ]
+      },
+      "properties": {
+        "name": "Churchill Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3123063,
+          51.4553327
+        ]
+      },
+      "properties": {
+        "name": "Twickenham Park Surgery",
+        "address": "Rosslyn Road 17",
+        "postcode": "TW1 2AR",
+        "phone": "+44 20 8892 1991",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1948378,
+          51.6494796
+        ]
+      },
+      "properties": {
+        "name": "Vale Drive Medical Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2662996,
+          51.5212293
+        ]
+      },
+      "properties": {
+        "name": "Cloister Road Surgery",
+        "address": "Cloister Road 41-43",
+        "postcode": "W3 0DF",
+        "phone": "+44 20 8992 4331",
+        "operator": "National Health Service"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1151372,
+          51.51371
+        ]
+      },
+      "properties": {
+        "name": "St Philips Medical Centre",
+        "address": "Clement's Inn",
+        "postcode": "WC2A 2AZ",
+        "phone": "+44 20 7611 5131",
+        "operator": "London School of Economics and Political Science (LSE);NHS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0148611,
+          51.523898
+        ]
+      },
+      "properties": {
+        "name": "St Andrews Health Centre",
+        "address": "Hannaford Walk 2",
+        "postcode": "E3 3FF",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.126948,
+          51.6069109
+        ]
+      },
+      "properties": {
+        "name": "Bounds Green Group Practice",
+        "address": "Gordon Road",
+        "postcode": "N11 2PF",
+        "phone": "+44 20 8888 1736",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3734866,
+          51.5329923
+        ]
+      },
+      "properties": {
+        "name": "Northolt Family Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1244976,
+          51.4845733
+        ]
+      },
+      "properties": {
+        "name": "Rebas Medical Clinic",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1902786,
+          51.3666331
+        ]
+      },
+      "properties": {
+        "name": "Benhill & Belmont GP Centre",
+        "address": "Benhill Avenue 54",
+        "postcode": "SM1 4EB",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.361827,
+          51.5558602
+        ]
+      },
+      "properties": {
+        "name": "The Grove Medical Practice",
+        "address": "Danemead Grove 81",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3797495,
+          51.4986694
+        ]
+      },
+      "properties": {
+        "name": "Southall Medical Centre",
+        "address": "Norwood Road 70",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3636979,
+          51.5022201
+        ]
+      },
+      "properties": {
+        "name": "Waterside Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.170733,
+          51.4686225
+        ]
+      },
+      "properties": {
+        "name": "Falcon Road Medical Centre",
+        "address": "Falcon Road 47",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1491641,
+          51.4757152
+        ]
+      },
+      "properties": {
+        "name": "Battersea Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1679061,
+          51.4716089
+        ]
+      },
+      "properties": {
+        "name": "Body Logic Health",
+        "address": "Battersea Park Road 292",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1534815,
+          51.5125428
+        ]
+      },
+      "properties": {
+        "name": "Gould Pharmacy",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.277281,
+          51.548208
+        ]
+      },
+      "properties": {
+        "name": "The Law Medical Group Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2011205,
+          51.4764171
+        ]
+      },
+      "properties": {
+        "name": "Ashville Surgery",
+        "address": "Parsons Green Lane",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1458801,
+          51.4961332
+        ]
+      },
+      "properties": {
+        "name": "The Belgravia Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0615649,
+          51.5367382
+        ]
+      },
+      "properties": {
+        "name": "London Fields Medical Centre",
+        "address": "Broadway Market 38-44",
+        "postcode": "E8 4QJ",
+        "phone": "+44 20 7923 8100",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1258731,
+          51.5814039
+        ]
+      },
+      "properties": {
+        "name": "Vale Practice",
+        "address": "Park Road 50",
+        "postcode": "N8 8SU",
+        "phone": "+44 20 8347 3330",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3185691,
+          51.5045792
+        ]
+      },
+      "properties": {
+        "name": "Northfields Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0853788,
+          51.50571
+        ]
+      },
+      "properties": {
+        "name": "Walk in GP Centre",
+        "address": "Tooley Street 35",
+        "postcode": "SE1 2QJ",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2331352,
+          51.5065548
+        ]
+      },
+      "properties": {
+        "name": "Shepherds Bush Medical Centre",
+        "address": "Uxbridge Road 336",
+        "postcode": "W12 8NL",
+        "phone": "+44 20 8743 5153",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0992508,
+          51.4556097
+        ]
+      },
+      "properties": {
+        "name": "Herne Hill Group Practice",
+        "address": "Herne Hill 74",
+        "postcode": "SE24 9QP",
+        "phone": "+44 20 7274 3314",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2521384,
+          51.351991
+        ]
+      },
+      "properties": {
+        "name": "Fitznells Manor Surgery",
+        "address": "Chessington Road 2",
+        "postcode": "KT17 1TF",
+        "phone": "+44 1372 724434",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1983169,
+          51.4567613
+        ]
+      },
+      "properties": {
+        "name": "Triangle Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0472939,
+          51.6392287
+        ]
+      },
+      "properties": {
+        "name": "Nightingale Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0791663,
+          51.5412987
+        ]
+      },
+      "properties": {
+        "name": "Abbey Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.079361,
+          51.5356198
+        ]
+      },
+      "properties": {
+        "name": "The Child & Family Centre",
+        "address": "Axe Street 79",
+        "postcode": "IG11 7LZ",
+        "phone": "",
+        "operator": "Concordia Health"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3547749,
+          51.4277467
+        ]
+      },
+      "properties": {
+        "name": "Hampton Hill Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0682198,
+          51.5071804
+        ]
+      },
+      "properties": {
+        "name": "St. Katharine Docks Practice",
+        "address": "Thomas More Street 50",
+        "postcode": "E1W 1UA",
+        "phone": "+44 20 7488 3653",
+        "operator": "Dr Sarit Patel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2134385,
+          51.3843765
+        ]
+      },
+      "properties": {
+        "name": "The James O'Riordan Medical Centre",
+        "address": "Stonecot Hill 70",
+        "postcode": "SM3 9HE",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0987973,
+          51.5388874
+        ]
+      },
+      "properties": {
+        "name": "Highgrove Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2036677,
+          51.5291616
+        ]
+      },
+      "properties": {
+        "name": "Shirland Road Medical Centre",
+        "address": "Shirland Road 321",
+        "postcode": "W9 3JJ",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3059346,
+          51.4585864
+        ]
+      },
+      "properties": {
+        "name": "Sisu",
+        "address": "Hill Street",
+        "postcode": "TW9 1SX",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1005321,
+          51.5853342
+        ]
+      },
+      "properties": {
+        "name": "The Skin Laser & Cosmetic Surgery Clinic",
+        "address": "Green Lanes 625",
+        "postcode": "N8 0RE",
+        "phone": "+44 20 8340 8191",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1675791,
+          51.4112206
+        ]
+      },
+      "properties": {
+        "name": "Mitcham Family Practice",
+        "address": "Mortimer Road 55",
+        "postcode": "CR4 3HS",
+        "phone": "+44 20 8648 2432",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1096031,
+          51.5508043
+        ]
+      },
+      "properties": {
+        "name": "The Medical Clinic",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2418993,
+          51.5960961
+        ]
+      },
+      "properties": {
+        "name": "GP Private",
+        "address": "",
+        "postcode": "",
+        "phone": "+44 20 8200 8222",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0934014,
+          51.5980098
+        ]
+      },
+      "properties": {
+        "name": "Westbury Medical Centre",
+        "address": "Westbury Avenue 205",
+        "postcode": "N22 6RX",
+        "phone": "+44 20 8888 3021",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0453366,
+          51.4728584
+        ]
+      },
+      "properties": {
+        "name": "Rose Valley Medical Centre",
+        "address": "Shooters Hill Road 374",
+        "postcode": "SE18 4LS",
+        "phone": "+44 20 3875 3519",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0696236,
+          51.5173977
+        ]
+      },
+      "properties": {
+        "name": "The Spitalfields Practice",
+        "address": "Old Montague Street 20",
+        "postcode": "E1 5PB",
+        "phone": "+44 20 7247 7070",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3773827,
+          51.6060242
+        ]
+      },
+      "properties": {
+        "name": "Hatch End Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0869858,
+          51.5334317
+        ]
+      },
+      "properties": {
+        "name": "Shoreditch Park Surgery",
+        "address": "Rushton Street 10",
+        "postcode": "N1 5DR",
+        "phone": "+44 20 7739 8525",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2603917,
+          51.4928205
+        ]
+      },
+      "properties": {
+        "name": "Holly Road Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2088107,
+          51.4106975
+        ]
+      },
+      "properties": {
+        "name": "The Nelson Medical Practice",
+        "address": "Kingston Road 220",
+        "postcode": "SW20 8DA",
+        "phone": "+44 20 3668 3400",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2353006,
+          51.5112128
+        ]
+      },
+      "properties": {
+        "name": "Parkview Centre for Health and Wellbeing",
+        "address": "Bloemfontein Road 56",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0490709,
+          51.5430475
+        ]
+      },
+      "properties": {
+        "name": "Elsdale Street Surgery",
+        "address": "Elsdale Street 28",
+        "postcode": "E9 6QY",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1647861,
+          51.3844949
+        ]
+      },
+      "properties": {
+        "name": "Wandle Valley Health Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1929383,
+          51.3654754
+        ]
+      },
+      "properties": {
+        "name": "The Old Courthouse Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1063255,
+          51.4383349
+        ]
+      },
+      "properties": {
+        "name": "Deerbrook Surgery",
+        "address": "Norwood Road 216",
+        "postcode": "SE27 9AW",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1041247,
+          51.4358929
+        ]
+      },
+      "properties": {
+        "name": "The Norwood Surgery",
+        "address": "Norwood Road 483",
+        "postcode": "SE27 9DJ",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.145242,
+          51.4981616
+        ]
+      },
+      "properties": {
+        "name": "Westminster Physiotherapy Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1485854,
+          51.4949786
+        ]
+      },
+      "properties": {
+        "name": "The Belgravia Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.096533,
+          51.4892079
+        ]
+      },
+      "properties": {
+        "name": "Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0189145,
+          51.4995321
+        ]
+      },
+      "properties": {
+        "name": "SameDayDoctor",
+        "address": "Dockyard Lane 56",
+        "postcode": "E14 9YX",
+        "phone": "",
+        "operator": "Sameday Doctor Holdings LLP"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1247294,
+          51.5150982
+        ]
+      },
+      "properties": {
+        "name": "Covent Garden Medical Centre",
+        "address": "Short's Gardens 47",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1793443,
+          51.4598896
+        ]
+      },
+      "properties": {
+        "name": "St John's Hill Surgery - Begg Practice",
+        "address": "Saint John's Hill 162",
+        "postcode": "SW11 1SW",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1207668,
+          51.3880411
+        ]
+      },
+      "properties": {
+        "name": "Thornton Road & Valley Park Surgery",
+        "address": "Thornton Road 299",
+        "postcode": "CR0 3EW",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0975309,
+          51.3563021
+        ]
+      },
+      "properties": {
+        "name": "Bluebird care",
+        "address": "Brighton Road 183",
+        "postcode": "CR2 6EG",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0427222,
+          51.5244487
+        ]
+      },
+      "properties": {
+        "name": "XX Place Health Centre",
+        "address": "Bancroft Road",
+        "postcode": "E1 4DG",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0049843,
+          51.5538908
+        ]
+      },
+      "properties": {
+        "name": "High Road Surgery",
+        "address": "High Road Leytonstone 287",
+        "postcode": "E11 4HH",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0930579,
+          51.3819385
+        ]
+      },
+      "properties": {
+        "name": "St. James Medical Centre",
+        "address": "St James's Road 189a",
+        "postcode": "CR0 2BZ",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2436382,
+          51.4553815
+        ]
+      },
+      "properties": {
+        "name": "Student Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0963938,
+          51.4041393
+        ]
+      },
+      "properties": {
+        "name": "Mersham Medical Centre",
+        "address": "Norbury Road 30",
+        "postcode": "CR7 8JN",
+        "phone": "+44 20 8653 1869",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2263183,
+          51.4573552
+        ]
+      },
+      "properties": {
+        "name": "Chartfield Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1962853,
+          51.358341
+        ]
+      },
+      "properties": {
+        "name": "Mulgrave Road Surgery",
+        "address": "Mulgrave Road 48",
+        "postcode": "SM2 6LX",
+        "phone": "+44 20 8407 3600",
+        "operator": "NHS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0603943,
+          51.3764716
+        ]
+      },
+      "properties": {
+        "name": "Addiscombe Road Surgery",
+        "address": "Addiscombe Road 395a",
+        "postcode": "CR0 7LJ",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0437019,
+          51.3754083
+        ]
+      },
+      "properties": {
+        "name": "Shirley Medical Centre",
+        "address": "Wickham Road 334",
+        "postcode": "CR0 8BH",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.265583,
+          51.5896925
+        ]
+      },
+      "properties": {
+        "name": "Willow Tree Family Doctors",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.094977,
+          51.3711916
+        ]
+      },
+      "properties": {
+        "name": "Friends' Road Medical",
+        "address": "Friends' Road 49",
+        "postcode": "CR0 1ED",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0373885,
+          51.5473165
+        ]
+      },
+      "properties": {
+        "name": "Wick Health Centre",
+        "address": "Kenworthy Road 10",
+        "postcode": "E9 5TD",
+        "phone": "+44 20 8986 6341",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0350229,
+          51.5452333
+        ]
+      },
+      "properties": {
+        "name": "Hackney Podiatry",
+        "address": "Wick Road 265",
+        "postcode": "E9 5DG",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1444272,
+          51.5234875
+        ]
+      },
+      "properties": {
+        "name": "Portland Outpatient Consulting Suites",
+        "address": "Great Portland Street 215-217",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1441321,
+          51.5228275
+        ]
+      },
+      "properties": {
+        "name": "Urgent Care Centre for Children",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1334645,
+          51.4631719
+        ]
+      },
+      "properties": {
+        "name": "Clapham Family Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0017528,
+          51.5659176
+        ]
+      },
+      "properties": {
+        "name": "Hampton Surgery",
+        "address": "Pretoria Road 1",
+        "postcode": "",
+        "phone": "",
+        "operator": "Dr A Sudderuddin & Dr S Patel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0940168,
+          51.6330775
+        ]
+      },
+      "properties": {
+        "name": "Green Lanes Surgery & Pharmacy",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1058105,
+          51.6220216
+        ]
+      },
+      "properties": {
+        "name": "Gillian House Surgery",
+        "address": "Greens Lane 457",
+        "postcode": "N13 4BS",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1873741,
+          51.4386629
+        ]
+      },
+      "properties": {
+        "name": "Earlsfield Practice",
+        "address": "Steerforth Street 2;4",
+        "postcode": "SW18 4HH",
+        "phone": "+44 20 8946 5681",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0632611,
+          51.4131323
+        ]
+      },
+      "properties": {
+        "name": "Park Practice @ Oaks Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1235916,
+          51.4726026
+        ]
+      },
+      "properties": {
+        "name": "Binfield Road General Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1067888,
+          51.4906951
+        ]
+      },
+      "properties": {
+        "name": "Hurley Clinic Kennington GP Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.326262,
+          51.5037643
+        ]
+      },
+      "properties": {
+        "name": "Elthorne Park Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.19448,
+          51.4751028
+        ]
+      },
+      "properties": {
+        "name": "Coyne Medical",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1011988,
+          51.3757246
+        ]
+      },
+      "properties": {
+        "name": "Knoll Medical Practice",
+        "address": "Homefield Rise 19",
+        "postcode": "BR6 0FE",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2055147,
+          51.5263247
+        ]
+      },
+      "properties": {
+        "name": "Health Centre",
+        "address": "Harrow Road 574",
+        "postcode": "W10 4NJ",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2062283,
+          51.5262206
+        ]
+      },
+      "properties": {
+        "name": "Half Penny Steps Health Centre",
+        "address": "Harrow Road 427-429",
+        "postcode": "",
+        "phone": "+44 20 8962 8700",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.190928,
+          51.5204926
+        ]
+      },
+      "properties": {
+        "name": "Health At The Stowe",
+        "address": "Harrow Road 260",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0196149,
+          51.5026304
+        ]
+      },
+      "properties": {
+        "name": "HCA UK at Docklands",
+        "address": "Bank Street 40",
+        "postcode": "E14 5EE",
+        "phone": "+44 20 7516 1999",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0501296,
+          51.5325668
+        ]
+      },
+      "properties": {
+        "name": "Aspire Medical Centre",
+        "address": "Barking Road 269",
+        "postcode": "E6 1FL",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1795448,
+          51.5135553
+        ]
+      },
+      "properties": {
+        "name": "Bayswater Medical Centre",
+        "address": "Craven Road 46",
+        "postcode": "",
+        "phone": "+44 20 3441 3002",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0938349,
+          51.5242198
+        ]
+      },
+      "properties": {
+        "name": "London Professional Aesthetics",
+        "address": "Whitecross Street 193",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1682985,
+          51.4933932
+        ]
+      },
+      "properties": {
+        "name": "Eudelo Skin Experience Centre",
+        "address": "Sloane Avenue 86",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1919002,
+          51.4994073
+        ]
+      },
+      "properties": {
+        "name": "Scarsdale Medical Centre",
+        "address": "Scarsdale Place 2",
+        "postcode": "W8 5SX",
+        "phone": "+44 20 7938 1887",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.278731,
+          51.4795157
+        ]
+      },
+      "properties": {
+        "name": "Richmond Medical Group",
+        "address": "Levett Square",
+        "postcode": "TW9 4FF",
+        "phone": "+44 20 8876 4442",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2103548,
+          51.5202866
+        ]
+      },
+      "properties": {
+        "name": "Chiropractic Alchemy",
+        "address": "Saint Lawrence Terrace 32a",
+        "postcode": "",
+        "phone": "+44 20 8960 5485",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2024236,
+          51.5221919
+        ]
+      },
+      "properties": {
+        "name": "Meanwhile Garden Medical Centre",
+        "address": "Elkstone Road 1/31",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2066006,
+          51.5240112
+        ]
+      },
+      "properties": {
+        "name": "The Golborne Medical Centre",
+        "address": "Golborne Road 12-16",
+        "postcode": "",
+        "phone": "+44 20 8964 4801",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0606243,
+          51.4090535
+        ]
+      },
+      "properties": {
+        "name": "Anerley Surgery",
+        "address": "Anerley Road 224",
+        "postcode": "",
+        "phone": "+44 20 8659 9343",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3205834,
+          51.601061
+        ]
+      },
+      "properties": {
+        "name": "Belmont Health Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3406969,
+          51.6026877
+        ]
+      },
+      "properties": {
+        "name": "Enderley Road Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3345803,
+          51.5101417
+        ]
+      },
+      "properties": {
+        "name": "Cuckoo Lane Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1921146,
+          51.5036922
+        ]
+      },
+      "properties": {
+        "name": "Kensington Eye centre",
+        "address": "Kensington Church Street 37",
+        "postcode": "W8 4LL",
+        "phone": "+44 20 7937 8282",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0668686,
+          51.5481176
+        ]
+      },
+      "properties": {
+        "name": "The Sandringham Practice",
+        "address": "Madinah Road 1A",
+        "postcode": "E8 1PG",
+        "phone": "+44 20 7275 0022",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0668575,
+          51.5480376
+        ]
+      },
+      "properties": {
+        "name": "Dalston Practice",
+        "address": "Madinah Road 1B",
+        "postcode": "E8 1PG",
+        "phone": "+44 20 7275 0077",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1186012,
+          51.5222434
+        ]
+      },
+      "properties": {
+        "name": "Holborn Medical Centre",
+        "address": "Lamb's Conduit Street 64-66",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0773031,
+          51.5339976
+        ]
+      },
+      "properties": {
+        "name": "Whiston Road Surgery",
+        "address": "Kingsland Road 219",
+        "postcode": "E2 8AN",
+        "phone": "+44 20 7739 8625",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1967569,
+          51.499551
+        ]
+      },
+      "properties": {
+        "name": "Kensington Therapy Centre",
+        "address": "Kensington High Street 211-213",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1975306,
+          51.4975818
+        ]
+      },
+      "properties": {
+        "name": "Group Practice",
+        "address": "Earl's Court Road 41",
+        "postcode": "",
+        "phone": "+44 20 7938 5488",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1981951,
+          51.4175604
+        ]
+      },
+      "properties": {
+        "name": "Wimbledon Medical Practice",
+        "address": "Pelham Road 79",
+        "postcode": "SW19 1NX",
+        "phone": "+44 20 8542 2827",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0332712,
+          51.4049877
+        ]
+      },
+      "properties": {
+        "name": "Elm House Surgery",
+        "address": "Croydon Road 379",
+        "postcode": "BR3 3FD",
+        "phone": "",
+        "operator": "NHS Bromley"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.078572,
+          51.5184009
+        ]
+      },
+      "properties": {
+        "name": "Londoncryo",
+        "address": "Artillery Lane 20",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1779046,
+          51.4827625
+        ]
+      },
+      "properties": {
+        "name": "The Good Practice",
+        "address": "King's Road",
+        "postcode": "SW10 0LR",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1831155,
+          51.4922913
+        ]
+      },
+      "properties": {
+        "name": "Chelsea Medical Services",
+        "address": "Rosary Gardens 45",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1358101,
+          51.4520083
+        ]
+      },
+      "properties": {
+        "name": "Clapham Park Group Practice",
+        "address": "Rathmell Drive 9A",
+        "postcode": "SW4 8JG",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1426597,
+          51.6403025
+        ]
+      },
+      "properties": {
+        "name": "The Southgate Surgery",
+        "address": "Chase Side 270",
+        "postcode": "N14 4PR",
+        "phone": "",
+        "operator": "NHS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1589982,
+          51.4962599
+        ]
+      },
+      "properties": {
+        "name": "The Sloane Street Surgery",
+        "address": "Sloane Street 82",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1595228,
+          51.4982486
+        ]
+      },
+      "properties": {
+        "name": "51 Sloane Street Clinic",
+        "address": "Sloane Street 51",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1740081,
+          51.4948754
+        ]
+      },
+      "properties": {
+        "name": "The Smart Clinics",
+        "address": "Thurloe Place 30",
+        "postcode": "",
+        "phone": "+44 20 7052 0070",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1738948,
+          51.4945697
+        ]
+      },
+      "properties": {
+        "name": "The Spencer Clinic of Trichology",
+        "address": "Thurloe Street 31",
+        "postcode": "",
+        "phone": "+44 20 7584 4255",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1733453,
+          51.4937579
+        ]
+      },
+      "properties": {
+        "name": "South Kensington GP Clinic",
+        "address": "Pelham Street 2a",
+        "postcode": "",
+        "phone": "+44 20 7591 1300",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0857787,
+          51.617188
+        ]
+      },
+      "properties": {
+        "name": "Morecambe Surgery",
+        "address": "Morecambe Terrace 1",
+        "postcode": "N18 1LA",
+        "phone": "+44 20 8803 0020",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1900879,
+          51.4893626
+        ]
+      },
+      "properties": {
+        "name": "Brompton Medical Centre",
+        "address": "Old Brompton Road 237",
+        "postcode": "",
+        "phone": "+44 20 7373 4102",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1918438,
+          51.4887873
+        ]
+      },
+      "properties": {
+        "name": "Earls Court Surgery",
+        "address": "Old Brompton Road 269",
+        "postcode": "SW5 9JA",
+        "phone": "+44 20 7373 0140",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1407415,
+          51.5491427
+        ]
+      },
+      "properties": {
+        "name": "Guy Gold Performance Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "+44 20 7018 7180",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1848436,
+          51.4839492
+        ]
+      },
+      "properties": {
+        "name": "The Women's Wellness Centre",
+        "address": "Fulham Road 274",
+        "postcode": "",
+        "phone": "+44 20 7751 4488",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0303382,
+          51.5019881
+        ]
+      },
+      "properties": {
+        "name": "Pontoon Dock Health Centre",
+        "address": "Halyard Place",
+        "postcode": "E16 2TH",
+        "phone": "+44 20 8104 2222",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0248399,
+          51.5513939
+        ]
+      },
+      "properties": {
+        "name": "E7 Health",
+        "address": "Woodgrange Road 121",
+        "postcode": "E7 0EP",
+        "phone": "",
+        "operator": "First 4 Health Group - E7 Health"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0248024,
+          51.5511137
+        ]
+      },
+      "properties": {
+        "name": "The Forest Practice",
+        "address": "Woodgrange Road 121",
+        "postcode": "E7 0EP",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2520713,
+          51.506499
+        ]
+      },
+      "properties": {
+        "name": "The Vale Surgery",
+        "address": "The Vale 97",
+        "postcode": "W3 7RG",
+        "phone": "+44 20 8743 4086",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3152273,
+          51.5099294
+        ]
+      },
+      "properties": {
+        "name": "Gordon House Surgery",
+        "address": "Mattock Lane 78",
+        "postcode": "W13 9NZ",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.157696,
+          51.4920587
+        ]
+      },
+      "properties": {
+        "name": "Sloane Square Medical",
+        "address": "Lower Sloane Street 2",
+        "postcode": "",
+        "phone": "+44 20 7730 8835",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1668011,
+          51.4867901
+        ]
+      },
+      "properties": {
+        "name": "The Chelsea Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1665002,
+          51.4868904
+        ]
+      },
+      "properties": {
+        "name": "Violet Melchett Health Centre",
+        "address": "Flood Walk 30",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1462544,
+          51.5171004
+        ]
+      },
+      "properties": {
+        "name": "David Whitehead ENT",
+        "address": "Harley Street 9",
+        "postcode": "W1G 9QY",
+        "phone": "+44 20 7183 0220",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0428781,
+          51.5484
+        ]
+      },
+      "properties": {
+        "name": "The Lea Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "+44 20 8986 3106",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0010818,
+          51.6080554
+        ]
+      },
+      "properties": {
+        "name": "Handsworth Medical Practice",
+        "address": "Handsworth Avenue",
+        "postcode": "E4 9PD",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1624504,
+          51.4342909
+        ]
+      },
+      "properties": {
+        "name": "Tooting Bec Family Practice",
+        "address": "62",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.024764,
+          51.5181513
+        ]
+      },
+      "properties": {
+        "name": "St Paul's Way Medical Centre",
+        "address": "Selsey Street 11",
+        "postcode": "E14 7LJ",
+        "phone": "",
+        "operator": "Bromley by Bow Health"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2296736,
+          51.5019684
+        ]
+      },
+      "properties": {
+        "name": "Private Walk-In Clinic",
+        "address": "Goldhawk Road 108",
+        "postcode": "",
+        "phone": "+44 20 8746 0830",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1616049,
+          51.4220974
+        ]
+      },
+      "properties": {
+        "name": "Tooting South Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0673232,
+          51.4188498
+        ]
+      },
+      "properties": {
+        "name": "The Chislehurst Medical Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2094738,
+          51.551523
+        ]
+      },
+      "properties": {
+        "name": "Mapesbury Medical Group",
+        "address": "Shoot-up Hill 65",
+        "postcode": "NW2 3PS",
+        "phone": "+44 20 8452 7646",
+        "operator": "NHS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2231589,
+          51.4974673
+        ]
+      },
+      "properties": {
+        "name": "Brook Green Clinic Osteopath",
+        "address": "Shepherds Bush Road 11",
+        "postcode": "",
+        "phone": "+44 20 7610 5459",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2209906,
+          51.4982992
+        ]
+      },
+      "properties": {
+        "name": "Sterndale Surgery",
+        "address": "Sterndale Road 74a",
+        "postcode": "",
+        "phone": "+44 20 7602 3797",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2655803,
+          51.5016804
+        ]
+      },
+      "properties": {
+        "name": "Acton Lane Medical Centre",
+        "address": "Acton Lane 253",
+        "postcode": "W4 5DG",
+        "phone": "+44 20 8995 5706",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0687635,
+          51.5130654
+        ]
+      },
+      "properties": {
+        "name": "Goodman's Field Medical Practice",
+        "address": "Stable Walk 11",
+        "postcode": "E1 8ZF",
+        "phone": "+44 20 7702 2036",
+        "operator": "Operose Health Group"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.112504,
+          51.4956222
+        ]
+      },
+      "properties": {
+        "name": "Lambeth Walk Group Practice",
+        "address": "Lambeth Walk 5",
+        "postcode": "SE11 6SP",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1679934,
+          51.4563793
+        ]
+      },
+      "properties": {
+        "name": "Bolingbroke Medical Centre",
+        "address": "Wakehurst Road",
+        "postcode": "SW11 6BF",
+        "phone": "",
+        "operator": "Bolingbroke Medical Centre"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2486529,
+          51.4523676
+        ]
+      },
+      "properties": {
+        "name": "Daneburgy Avenue Surgery",
+        "address": "Danebury Avenue 351",
+        "postcode": "SW15 4DU",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2196308,
+          51.4250141
+        ]
+      },
+      "properties": {
+        "name": "Wimbledon Village Doctor's Surgery",
+        "address": "High Street 35A",
+        "postcode": "SW19 5BY",
+        "phone": "+44 20 8946 4820",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0556974,
+          51.5542424
+        ]
+      },
+      "properties": {
+        "name": "Sangam Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0751622,
+          51.598347
+        ]
+      },
+      "properties": {
+        "name": "Castleview Surgery",
+        "address": "Lordship Lane 119",
+        "postcode": "N17 6XE",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0081981,
+          51.5584616
+        ]
+      },
+      "properties": {
+        "name": "Harrow Road GP Practice",
+        "address": "Harrow Road 2-4",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1329676,
+          51.470633
+        ]
+      },
+      "properties": {
+        "name": "Springfield Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3937836,
+          51.4716925
+        ]
+      },
+      "properties": {
+        "name": "MWH Practice - Hounslow",
+        "address": "Vincent Road 1",
+        "postcode": "TW4 7LH",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3255736,
+          51.4493965
+        ]
+      },
+      "properties": {
+        "name": "The York Medical Practice",
+        "address": "Oak Lane",
+        "postcode": "TW1 3PA",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3745142,
+          51.5215428
+        ]
+      },
+      "properties": {
+        "name": "St George's Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1408985,
+          51.5911092
+        ]
+      },
+      "properties": {
+        "name": "The Muswell Hill Practice",
+        "address": "Muswell Hill 54",
+        "postcode": "N10 3ST",
+        "phone": "+44 20 8365 3303",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0700608,
+          51.5921455
+        ]
+      },
+      "properties": {
+        "name": "Bruce Grove Primary Health Care Centre",
+        "address": "High Road 461-463",
+        "postcode": "N17 6QB",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0092179,
+          51.4659662
+        ]
+      },
+      "properties": {
+        "name": "Lauren Turner Aesthetics",
+        "address": "Tranquil Vale 15",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0847681,
+          51.5340403
+        ]
+      },
+      "properties": {
+        "name": "Tulasi Medical Centre",
+        "address": "Ripple Road 188",
+        "postcode": "IG11 7PR",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0162566,
+          51.4770297
+        ]
+      },
+      "properties": {
+        "name": "Greenwich Private Doctors",
+        "address": "Greenwich High Road 139",
+        "postcode": "SE10 8JA",
+        "phone": "+44 20 3278 0914",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1460981,
+          51.5178117
+        ]
+      },
+      "properties": {
+        "name": "The Harley Street Eye Centre",
+        "address": "Harley Street 22A",
+        "postcode": "W1G 9BP",
+        "phone": "+44 20 3375 2200",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1115217,
+          51.4873606
+        ]
+      },
+      "properties": {
+        "name": "DS Beauty Studio",
+        "address": "Kennington Road 314",
+        "postcode": "SE11 4LD",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0505523,
+          51.5908447
+        ]
+      },
+      "properties": {
+        "name": "Clayhall Group Practice",
+        "address": "Clayhall Avenue 14",
+        "postcode": "IG5 0LG",
+        "phone": "+44 20 8551 3193",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1417929,
+          51.5294441
+        ]
+      },
+      "properties": {
+        "name": "Regents Park Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.275948,
+          51.6216462
+        ]
+      },
+      "properties": {
+        "name": "EdgCare",
+        "address": "Mowbray Road",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0686395,
+          51.4902336
+        ]
+      },
+      "properties": {
+        "name": "Clover Health Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0087965,
+          51.4449333
+        ]
+      },
+      "properties": {
+        "name": "Park View Medical Centre",
+        "address": "Brownhill Road 186",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0677534,
+          51.3929922
+        ]
+      },
+      "properties": {
+        "name": "The Enmore Practice",
+        "address": "Enmore Road 3",
+        "postcode": "SE25 5NT",
+        "phone": "",
+        "operator": "NHS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1029943,
+          51.4826277
+        ]
+      },
+      "properties": {
+        "name": "Penrose Maddock Way",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2980806,
+          51.536906
+        ]
+      },
+      "properties": {
+        "name": "Sudbury & Alperton Medical Centre",
+        "address": "Ealing Road 267",
+        "postcode": "HA0 1EU",
+        "phone": "+44 20 8997 3486",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3410488,
+          51.5837063
+        ]
+      },
+      "properties": {
+        "name": "Headstone Road Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0170613,
+          51.4038809
+        ]
+      },
+      "properties": {
+        "name": "One Bromley Wellbeing Hub",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0200667,
+          51.3559623
+        ]
+      },
+      "properties": {
+        "name": "Fieldway Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0716516,
+          51.3897474
+        ]
+      },
+      "properties": {
+        "name": "Emma Coleman Skin",
+        "address": "Queensway 129",
+        "postcode": "BR5 1DG",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3666131,
+          51.4729287
+        ]
+      },
+      "properties": {
+        "name": "Hounslow Family Practice",
+        "address": "Lampton Road 77",
+        "postcode": "TW3 4JX",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0420806,
+          51.4424064
+        ]
+      },
+      "properties": {
+        "name": "Jenner Health Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3120554,
+          51.3586825
+        ]
+      },
+      "properties": {
+        "name": "Hook Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1399241,
+          51.5461577
+        ]
+      },
+      "properties": {
+        "name": "James Wigg Group Practice",
+        "address": "Bartholomew Road 2",
+        "postcode": "NW5 2BX",
+        "phone": "+44 20 7428 4555",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1253052,
+          51.5732187
+        ]
+      },
+      "properties": {
+        "name": "Chadwell Heath Surgery",
+        "address": "Chadwell Heath Lane 72",
+        "postcode": "RM6 4AF",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0049313,
+          51.4498659
+        ]
+      },
+      "properties": {
+        "name": "Woodlands Health Centre",
+        "address": "Edwin Hall Place 4",
+        "postcode": "SE13 6RN",
+        "phone": "+44 20 8698 6664",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0350006,
+          51.3926127
+        ]
+      },
+      "properties": {
+        "name": "Dr Vas",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.001009,
+          51.6201193
+        ]
+      },
+      "properties": {
+        "name": "Old Church Surgery",
+        "address": "Friars Close",
+        "postcode": "E4 6UN",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2923997,
+          51.5859965
+        ]
+      },
+      "properties": {
+        "name": "Kenton Clinic",
+        "address": "",
+        "postcode": "",
+        "phone": "+44 2082 042255",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3795299,
+          51.4998554
+        ]
+      },
+      "properties": {
+        "name": "Hammond Road Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "+44 20 8574 5057",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1236799,
+          51.4771081
+        ]
+      },
+      "properties": {
+        "name": "South Lambeth Road Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0198692,
+          51.4781356
+        ]
+      },
+      "properties": {
+        "name": "Blackheath Standard Surgery",
+        "address": "Charlton Road 11,13",
+        "postcode": "SE3 7HB",
+        "phone": "+44 20 8269 2040",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1796921,
+          51.5256164
+        ]
+      },
+      "properties": {
+        "name": "Fortes Clinic",
+        "address": "Clifton Road 22",
+        "postcode": "W9 1ST",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.340077,
+          51.6046223
+        ]
+      },
+      "properties": {
+        "name": "Poland Medical",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3087422,
+          51.3914607
+        ]
+      },
+      "properties": {
+        "name": "London Psychiatric Clinic",
+        "address": "Victoria Road 45",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0998413,
+          51.5842886
+        ]
+      },
+      "properties": {
+        "name": "West Green Surgery",
+        "address": "Green Lanes 590-598",
+        "postcode": "N8 0RA",
+        "phone": "+44 20 8881 9606",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0877039,
+          51.581439
+        ]
+      },
+      "properties": {
+        "name": "St. Ann's Road Surgery",
+        "address": "St Ann's Road 256",
+        "postcode": "N15 5AZ",
+        "phone": "+44 20 8800 4032",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.140677,
+          51.5262188
+        ]
+      },
+      "properties": {
+        "name": "eMed",
+        "address": "Drummond Street 184",
+        "postcode": "NW1 3HP",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2265406,
+          51.5004946
+        ]
+      },
+      "properties": {
+        "name": "Richford Gate Medical Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0942595,
+          51.5007146
+        ]
+      },
+      "properties": {
+        "name": "Tabard",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1403604,
+          51.5195434
+        ]
+      },
+      "properties": {
+        "name": "The Plastic Surgery Group",
+        "address": "Hanson Street 7",
+        "postcode": "W1W 6TE",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0265413,
+          51.4747896
+        ]
+      },
+      "properties": {
+        "name": "Deptford Surgery",
+        "address": "New Cross Road 502,504",
+        "postcode": "SE14 6TJ",
+        "phone": "+44 20 8694 1331",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0761899,
+          51.5408807
+        ]
+      },
+      "properties": {
+        "name": "Victoria and Five Elms Medical Centre",
+        "address": "Queen's Road 1",
+        "postcode": "IG11 8GD",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1465553,
+          51.5170362
+        ]
+      },
+      "properties": {
+        "name": "The Spine MDT",
+        "address": "Harley Street 9",
+        "postcode": "W1G 9QY",
+        "phone": "+44 20 8088 1222",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1841014,
+          51.5310034
+        ]
+      },
+      "properties": {
+        "name": "Monet Beauty Clinic",
+        "address": "Maida Vale 56",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1315117,
+          51.4595599
+        ]
+      },
+      "properties": {
+        "name": "Clapham Park Dermatology",
+        "address": "Clapham Park Road 160",
+        "postcode": "SW4 7DE",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.220298,
+          51.4617441
+        ]
+      },
+      "properties": {
+        "name": "Putneymead Group Medical Practice",
+        "address": "Upper Richmond Road 266",
+        "postcode": "SW15 6TQ",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0256647,
+          51.5780413
+        ]
+      },
+      "properties": {
+        "name": "The Evergreen Surgery",
+        "address": "High Street",
+        "postcode": "E11 2AQ",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0071494,
+          51.5421674
+        ]
+      },
+      "properties": {
+        "name": "Patient First Social Enterprise",
+        "address": "Romford Road 50c",
+        "postcode": "",
+        "phone": "",
+        "operator": "Patient First Social Enterprise ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3050718,
+          51.4140079
+        ]
+      },
+      "properties": {
+        "name": "Kingston Health Centre",
+        "address": "Skerne Road 10",
+        "postcode": "KT2 5AD",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2893621,
+          51.3829992
+        ]
+      },
+      "properties": {
+        "name": "Red Lion Road Surgery",
+        "address": "Red Lion Road 1A",
+        "postcode": "KT6 7QG",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2867062,
+          51.3825433
+        ]
+      },
+      "properties": {
+        "name": "Lambert Sports Clinic",
+        "address": "Ewell Road 380",
+        "postcode": "KT6 7BE",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2834049,
+          51.4125893
+        ]
+      },
+      "properties": {
+        "name": "Hanover House",
+        "address": "Coombe Road 76",
+        "postcode": "KT2 7AZ",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0250305,
+          51.6077159
+        ]
+      },
+      "properties": {
+        "name": "Ching Way Medical Practice",
+        "address": "Ching Way 7",
+        "postcode": "E4 8YD",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1101344,
+          51.5891981
+        ]
+      },
+      "properties": {
+        "name": "Hornsey Wood Green GP Surgery",
+        "address": "Turnpike Lane 114",
+        "postcode": "N8 0PH",
+        "phone": "+44 3300 539 499",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0517089,
+          51.5647945
+        ]
+      },
+      "properties": {
+        "name": "The Clapton Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": "Dr Sarwat Sharif"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.051836,
+          51.5647525
+        ]
+      },
+      "properties": {
+        "name": "The Riverside Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": "Dr Rajiv Goel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0029208,
+          51.5877486
+        ]
+      },
+      "properties": {
+        "name": "Dr. Dital Practice",
+        "address": "Linford Road 6",
+        "postcode": "E17 3LA",
+        "phone": "",
+        "operator": "Dr. Raghav Prasad Dhital"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0223925,
+          51.615948
+        ]
+      },
+      "properties": {
+        "name": "E4 Primary Care Network",
+        "address": "York Road 109",
+        "postcode": "E4 8LF",
+        "phone": "",
+        "operator": "E4 Primary Care Network Ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0097126,
+          51.5417603
+        ]
+      },
+      "properties": {
+        "name": "Newham Vicarage Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0096381,
+          51.5418678
+        ]
+      },
+      "properties": {
+        "name": "The Vicarage Lane Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0216247,
+          51.5974834
+        ]
+      },
+      "properties": {
+        "name": "Queen Mary Practice",
+        "address": "High Road 114",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3081335,
+          51.3928597
+        ]
+      },
+      "properties": {
+        "name": "Evesham Terrace",
+        "address": "St Andrew's Road",
+        "postcode": "KT6 4DS",
+        "phone": "",
+        "operator": "Churchill Medical Centre"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1403064,
+          51.5234491
+        ]
+      },
+      "properties": {
+        "name": "Fitzrovia Medical Clinic",
+        "address": "Fitzroy Square 13-14",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0250514,
+          51.6076877
+        ]
+      },
+      "properties": {
+        "name": "GP CTS",
+        "address": "Ching Way 7",
+        "postcode": "E4 8YD",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0101523,
+          51.5828053
+        ]
+      },
+      "properties": {
+        "name": "Addison Road Medical Practice",
+        "address": "Ravenswood Road 46",
+        "postcode": "E17 9LY",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0100799,
+          51.5826987
+        ]
+      },
+      "properties": {
+        "name": "Comely Bank Health Clinic",
+        "address": "Ravenswood Road 46",
+        "postcode": "E17 9LY",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0246458,
+          51.5945119
+        ]
+      },
+      "properties": {
+        "name": "Eleos Clinic",
+        "address": "The Shrubberies 9",
+        "postcode": "E18 1BD",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0253345,
+          51.5933082
+        ]
+      },
+      "properties": {
+        "name": "London Circumcision Centre",
+        "address": "George Lane 142",
+        "postcode": "",
+        "phone": "",
+        "operator": "Node Medical Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2739977,
+          51.3823861
+        ]
+      },
+      "properties": {
+        "name": "Sunray Surgery",
+        "address": "Warren Drive South 97",
+        "postcode": "KT5 9QD",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3026631,
+          51.368434
+        ]
+      },
+      "properties": {
+        "name": "Orchard Practice",
+        "address": "Orchard Gardens",
+        "postcode": "KT9 1AG",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2770293,
+          51.3831315
+        ]
+      },
+      "properties": {
+        "name": "Transcend Consulting Rooms",
+        "address": "Warren Drive North 65",
+        "postcode": "KT5 9LG",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.035176,
+          51.5802553
+        ]
+      },
+      "properties": {
+        "name": "St James Medical Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": "St James Medical Practice ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.020239,
+          51.4981711
+        ]
+      },
+      "properties": {
+        "name": "Rejuvence Clinic",
+        "address": "30",
+        "postcode": "E14 9DQ",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0257066,
+          51.4985351
+        ]
+      },
+      "properties": {
+        "name": "Barkantine Practice",
+        "address": "Westferry Road 121",
+        "postcode": "E14 8JH",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0135444,
+          51.5120323
+        ]
+      },
+      "properties": {
+        "name": "St Lukes' Medical Centre",
+        "address": "St Luke's Square 2",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0705876,
+          51.5461227
+        ]
+      },
+      "properties": {
+        "name": "Beechwood Medical Centre",
+        "address": "Dalston Lane 86A",
+        "postcode": "E8 3AH",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0538532,
+          51.5478237
+        ]
+      },
+      "properties": {
+        "name": "Newham Transitional Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": "East London NHS Foundation Trust"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1626066,
+          51.5186203
+        ]
+      },
+      "properties": {
+        "name": "Harley Cosmetics London",
+        "address": "78-80 Seymour Pl",
+        "postcode": "W1H 2EH",
+        "phone": "+44 207 859 4132",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0019093,
+          51.5555318
+        ]
+      },
+      "properties": {
+        "name": "LL Medical Care",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": "LL Medical Care ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0135302,
+          51.5119914
+        ]
+      },
+      "properties": {
+        "name": "Carpenter's Practice (St. Luke's Site)",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0096776,
+          51.5418187
+        ]
+      },
+      "properties": {
+        "name": "Vicarage Lane Transitional Team",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0540073,
+          51.547737
+        ]
+      },
+      "properties": {
+        "name": "Carpenters Practice (Church Road)",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": "AT Medics"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0533563,
+          51.5415177
+        ]
+      },
+      "properties": {
+        "name": "Sangam Surgery (Gladstone Avenue)",
+        "address": "Gladstone Avenue 57",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0157496,
+          51.504846
+        ]
+      },
+      "properties": {
+        "name": "Sk:n",
+        "address": "North Colonnade 34",
+        "postcode": "E14 5HX",
+        "phone": "",
+        "operator": "Lorena Cosmetics Holdings SPV Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0219634,
+          51.5052173
+        ]
+      },
+      "properties": {
+        "name": "Pure Sports Medicine",
+        "address": "Cabot Place Mall",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0418183,
+          51.5290715
+        ]
+      },
+      "properties": {
+        "name": "Suttons Wharf Health Centre",
+        "address": "Palmers Road 26",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0380658,
+          51.5183373
+        ]
+      },
+      "properties": {
+        "name": "Harford Health Centre",
+        "address": "Harford Street 115",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0018409,
+          51.5554859
+        ]
+      },
+      "properties": {
+        "name": "Langthorne Sharma Family Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0537435,
+          51.5477144
+        ]
+      },
+      "properties": {
+        "name": "Church Road Health",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": "First 4 Health Group"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0438172,
+          51.5400489
+        ]
+      },
+      "properties": {
+        "name": "Plashet Harmony Practice",
+        "address": "Shrewsbury Road",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0563575,
+          51.5312788
+        ]
+      },
+      "properties": {
+        "name": "The Mission Practice",
+        "address": "Cambridge Heath Road 208",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.055255,
+          51.5135759
+        ]
+      },
+      "properties": {
+        "name": "City Square Medical Group",
+        "address": "Deancross Street",
+        "postcode": "E1 2QA",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.078274,
+          51.5181716
+        ]
+      },
+      "properties": {
+        "name": "LSDC Healthcare",
+        "address": "Widegate Street 22",
+        "postcode": "E1 7HP",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.005471,
+          51.5485182
+        ]
+      },
+      "properties": {
+        "name": "Liberty Bridge Road Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0410255,
+          51.5243769
+        ]
+      },
+      "properties": {
+        "name": "Student Practice",
+        "address": "Bancroft Road",
+        "postcode": "E1 4DG",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0664122,
+          51.5172302
+        ]
+      },
+      "properties": {
+        "name": "Dr Mohammad Hossain Howlader",
+        "address": "Whitechapel Road 38-44",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0156791,
+          51.5049904
+        ]
+      },
+      "properties": {
+        "name": "Dr. Wayne Cottrell",
+        "address": "North Colonnade 34",
+        "postcode": "E14 5HX",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0436654,
+          51.5393632
+        ]
+      },
+      "properties": {
+        "name": "Shrewsbury Road Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0134182,
+          51.4952254
+        ]
+      },
+      "properties": {
+        "name": "Island Health",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": "Island Health Primary Care Ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0128093,
+          51.5109723
+        ]
+      },
+      "properties": {
+        "name": "Gough Walk Practice",
+        "address": "Newby Place",
+        "postcode": "E14 0EY",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0557421,
+          51.539042
+        ]
+      },
+      "properties": {
+        "name": "The Greenhouse Practice",
+        "address": "Tudor Road 19",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0729411,
+          51.5124897
+        ]
+      },
+      "properties": {
+        "name": "British Association for Performing Arts Medicine",
+        "address": "Mansell Street 63",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0455999,
+          51.5313666
+        ]
+      },
+      "properties": {
+        "name": "The Azad Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0502188,
+          51.5325807
+        ]
+      },
+      "properties": {
+        "name": "Central Park Surgery",
+        "address": "Barking Road 269",
+        "postcode": "E6 1FL",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0216653,
+          51.5973417
+        ]
+      },
+      "properties": {
+        "name": "The Elmhurst Practice",
+        "address": "High Road 114",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0195992,
+          51.6003939
+        ]
+      },
+      "properties": {
+        "name": "Harley Fitzrovia Health",
+        "address": "High Road",
+        "postcode": "IG8 9FB",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0972262,
+          51.5210448
+        ]
+      },
+      "properties": {
+        "name": "Nuffield Health Barbican Medical Centre",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": "Nuffield Health"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.098165,
+          51.5189642
+        ]
+      },
+      "properties": {
+        "name": "The Neaman Practice",
+        "address": "Half Moon Court 15",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1059226,
+          51.5199682
+        ]
+      },
+      "properties": {
+        "name": "Numan",
+        "address": "Farringdon Road 33",
+        "postcode": "",
+        "phone": "",
+        "operator": "Vir Health Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1124404,
+          51.5208528
+        ]
+      },
+      "properties": {
+        "name": "2Me Clinic",
+        "address": "Portpool Lane",
+        "postcode": "",
+        "phone": "",
+        "operator": "2MeClinic Ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1124562,
+          51.5208757
+        ]
+      },
+      "properties": {
+        "name": "Med Logistics Properties",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0883276,
+          51.5266889
+        ]
+      },
+      "properties": {
+        "name": "Peppy Health",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": "Peppy Health Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.091063,
+          51.5279146
+        ]
+      },
+      "properties": {
+        "name": "City Road Medical Centre",
+        "address": "City Road 190-196",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0874787,
+          51.5222097
+        ]
+      },
+      "properties": {
+        "name": "Citydoc Moorgate",
+        "address": "City Road 16",
+        "postcode": "EC1Y 2AA",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.093868,
+          51.5242168
+        ]
+      },
+      "properties": {
+        "name": "The General Health Clinic",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.087277,
+          51.5216609
+        ]
+      },
+      "properties": {
+        "name": "Pure Sports Medicine",
+        "address": "Finsbury Square 12",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0796902,
+          51.5212954
+        ]
+      },
+      "properties": {
+        "name": "S E I K Psychiatry",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": "Rose By The Costa Ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.084049,
+          51.521596
+        ]
+      },
+      "properties": {
+        "name": "Elite Sports Professional Services",
+        "address": "Dysart Street 1",
+        "postcode": "EC2A 2BX",
+        "phone": "",
+        "operator": "Elite Sports Professional Services Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2248224,
+          51.6063203
+        ]
+      },
+      "properties": {
+        "name": "The Robins Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2249383,
+          51.6061625
+        ]
+      },
+      "properties": {
+        "name": "Dr B. Saheecha & Dr N. Saheecha",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.224794,
+          51.6064907
+        ]
+      },
+      "properties": {
+        "name": "Central Park Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2250094,
+          51.6060842
+        ]
+      },
+      "properties": {
+        "name": "Abbamoor Surgery",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2193116,
+          51.566476
+        ]
+      },
+      "properties": {
+        "name": "Hornchurch Healthcare",
+        "address": "Billet Lane 58b",
+        "postcode": "RM11 1XA",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.086404,
+          51.5168263
+        ]
+      },
+      "properties": {
+        "name": "Nomad Health Technologies",
+        "address": "London Wall 65",
+        "postcode": "EC2M 5TU",
+        "phone": "",
+        "operator": "Nomad Health Technologies Ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0793772,
+          51.5172383
+        ]
+      },
+      "properties": {
+        "name": "The Doctors Clinic Group",
+        "address": "New Street 7-8",
+        "postcode": "",
+        "phone": "",
+        "operator": "The Doctors Clinic Group Ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0828167,
+          51.5170171
+        ]
+      },
+      "properties": {
+        "name": "Myo - Suvera",
+        "address": "Old Broad Street 69",
+        "postcode": "EC2M 1QS",
+        "phone": "",
+        "operator": "Suvera Ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0836491,
+          51.5167435
+        ]
+      },
+      "properties": {
+        "name": "Health Management",
+        "address": "New Broad Street 64",
+        "postcode": "EC2M 1JJ",
+        "phone": "",
+        "operator": "Health Management Ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0844454,
+          51.5170044
+        ]
+      },
+      "properties": {
+        "name": "Cosmedics City",
+        "address": "New Broad Street 42",
+        "postcode": "EC2M 1JD",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0864938,
+          51.5162197
+        ]
+      },
+      "properties": {
+        "name": "Japan Green Medical Centre",
+        "address": "Throgmorton Avenue 10",
+        "postcode": "",
+        "phone": "",
+        "operator": "Japan Green Medical Centre Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0859598,
+          51.5158178
+        ]
+      },
+      "properties": {
+        "name": "London Gynaecology at Austin Friars",
+        "address": "Austin Friars 15-18",
+        "postcode": "EC2N 2HE",
+        "phone": "",
+        "operator": "London Gynaecology Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.089718,
+          51.5152261
+        ]
+      },
+      "properties": {
+        "name": "The Mole Clinic",
+        "address": "Moorgate 7",
+        "postcode": "EC2R 6AF",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0888949,
+          51.51634
+        ]
+      },
+      "properties": {
+        "name": "One5 Health City",
+        "address": "30",
+        "postcode": "EC2R 6PJ",
+        "phone": "",
+        "operator": "One5 Health Ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0909095,
+          51.5151711
+        ]
+      },
+      "properties": {
+        "name": "Bupa Health Centre - Basinghall",
+        "address": "Basinghall Street 4",
+        "postcode": "EC2V 5BQ",
+        "phone": "",
+        "operator": "Bupa Occupational Health Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0897167,
+          51.5197077
+        ]
+      },
+      "properties": {
+        "name": "Nuffield Health Fitness & Wellbeing",
+        "address": "Ropemaker Street 1",
+        "postcode": "EC2Y 9AW",
+        "phone": "",
+        "operator": "Nuffield Health"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0837524,
+          51.510457
+        ]
+      },
+      "properties": {
+        "name": "Enterprise Health Care",
+        "address": "Eastcheap 20",
+        "postcode": "EC3M 1EB",
+        "phone": "",
+        "operator": "Enterprise Healthcare Solutions Ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0841346,
+          51.5125178
+        ]
+      },
+      "properties": {
+        "name": "The London Migraine Clinic",
+        "address": "Bull's Head Passage 2-4",
+        "postcode": "",
+        "phone": "",
+        "operator": "Mountainside Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0828927,
+          51.512579
+        ]
+      },
+      "properties": {
+        "name": "Askinology",
+        "address": "Leadenhall Market 35-36",
+        "postcode": "EC3V 1LR",
+        "phone": "",
+        "operator": "Kiwi Skin Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0820084,
+          51.5095935
+        ]
+      },
+      "properties": {
+        "name": "London Bridge Regenerative Clinic",
+        "address": "St. Dunstan's Hill 23-26",
+        "postcode": "EC3R 8HN",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0840574,
+          51.5100655
+        ]
+      },
+      "properties": {
+        "name": "Messina Clinic",
+        "address": "Lovat Lane 8-9",
+        "postcode": "EC3R 8DW",
+        "phone": "",
+        "operator": "Messina Clinic Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0926757,
+          51.51168
+        ]
+      },
+      "properties": {
+        "name": "Andreea Medical",
+        "address": "Queen Street 65-66",
+        "postcode": "EC4R 1EB",
+        "phone": "",
+        "operator": "Andreea Medical ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0923099,
+          51.5116166
+        ]
+      },
+      "properties": {
+        "name": "Derma Revive Skin Clinic",
+        "address": "College Hill 1-3",
+        "postcode": "EC4R 2RA",
+        "phone": "+442035145594",
+        "operator": "Derma Revive Skin Clinic ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0914348,
+          51.5096835
+        ]
+      },
+      "properties": {
+        "name": "Nuffield Health",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0871576,
+          51.5115058
+        ]
+      },
+      "properties": {
+        "name": "Fortius Clinic",
+        "address": "King William Street 75",
+        "postcode": "EC4N 7BE",
+        "phone": "",
+        "operator": "Fortius London Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0955187,
+          51.5141746
+        ]
+      },
+      "properties": {
+        "name": "Pure Sports Medicine Limited",
+        "address": "Cheapside",
+        "postcode": "EC4M 9AF",
+        "phone": "",
+        "operator": "Pure Sports Medicine Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1075988,
+          51.5143536
+        ]
+      },
+      "properties": {
+        "name": "Geno Health Clinic",
+        "address": "Fleet Street 150",
+        "postcode": "EC4A 2DQ",
+        "phone": "",
+        "operator": "Geno Health Ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0938371,
+          51.5114139
+        ]
+      },
+      "properties": {
+        "name": "HCA Medical Centre",
+        "address": "Garlick Hill 21",
+        "postcode": "EC4V 2AU",
+        "phone": "",
+        "operator": "Roodlane Medical Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1102502,
+          51.5138204
+        ]
+      },
+      "properties": {
+        "name": "Fleet Street Clinic",
+        "address": "Fleet Street 29",
+        "postcode": "EC4Y 1AA",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1087361,
+          51.5248464
+        ]
+      },
+      "properties": {
+        "name": "Dr John Segarajasinghe",
+        "address": "Pine Street 17",
+        "postcode": "EC1R 0LP",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.108881,
+          51.5249089
+        ]
+      },
+      "properties": {
+        "name": "Clerkenwell Medical Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0793343,
+          51.5172196
+        ]
+      },
+      "properties": {
+        "name": "Samedaydoctor",
+        "address": "New Street 8-9",
+        "postcode": "",
+        "phone": "",
+        "operator": "Samedaydoctor City Ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0864241,
+          51.5168479
+        ]
+      },
+      "properties": {
+        "name": "Broadgate Spine & Joint Clinic",
+        "address": "London Wall 65",
+        "postcode": "EC2M 5TU",
+        "phone": "",
+        "operator": "Broadgate Spine & Joint Clinic Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0863978,
+          51.5168441
+        ]
+      },
+      "properties": {
+        "name": "Medical Prime",
+        "address": "London Wall 65",
+        "postcode": "EC2M 5TU",
+        "phone": "",
+        "operator": "Medical Prime Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1204393,
+          51.5294925
+        ]
+      },
+      "properties": {
+        "name": "The Doctors Clinic",
+        "address": "Gray's Inn Road 283",
+        "postcode": "",
+        "phone": "",
+        "operator": "The Doctors Clinic Group Ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1106071,
+          51.5281795
+        ]
+      },
+      "properties": {
+        "name": "Amwell Group Practice",
+        "address": "Naoroji Street 4",
+        "postcode": "WC1X 0GB",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1114326,
+          51.5187638
+        ]
+      },
+      "properties": {
+        "name": "Apricity Fertility",
+        "address": "Gray's Inn Road 14",
+        "postcode": "WC1X 8HN",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1119666,
+          51.5162308
+        ]
+      },
+      "properties": {
+        "name": "Pure Sports Medicine",
+        "address": "Chancery Lane 36",
+        "postcode": "WC2A 1EN",
+        "phone": "",
+        "operator": "Pure Sports Medicine Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1119982,
+          51.5162735
+        ]
+      },
+      "properties": {
+        "name": "Preventicum UK",
+        "address": "Chancery Lane 38",
+        "postcode": "WC2A 1EN",
+        "phone": "",
+        "operator": "Preventicum UK Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1236645,
+          51.5078146
+        ]
+      },
+      "properties": {
+        "name": "Embankment Place Primary Healthcare",
+        "address": "Embankment Place 1",
+        "postcode": "WC2N 6RH",
+        "phone": "",
+        "operator": "Embankment Place Primary Healthcare Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1172991,
+          51.5129533
+        ]
+      },
+      "properties": {
+        "name": "King's College London NHS Health Centre",
+        "address": "Aldwych 30",
+        "postcode": "WC2B 4PJ",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1149954,
+          51.5232769
+        ]
+      },
+      "properties": {
+        "name": "Vie Aesthetics Holborn",
+        "address": "Gray's Inn Road 95",
+        "postcode": "WC1X 8TX",
+        "phone": "",
+        "operator": "Vie Aesthetics ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1136556,
+          51.5187054
+        ]
+      },
+      "properties": {
+        "name": "Embla",
+        "address": "Fulwood Place 4",
+        "postcode": "WC1V 6HZ",
+        "phone": "",
+        "operator": "Embla Health UK Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2194804,
+          51.5034065
+        ]
+      },
+      "properties": {
+        "name": "The Bush Doctors",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1397511,
+          51.5722396
+        ]
+      },
+      "properties": {
+        "name": "Ashton Gardens Surgery",
+        "address": "Ashton Gardens",
+        "postcode": "RM6 6RT",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1195754,
+          51.5184861
+        ]
+      },
+      "properties": {
+        "name": "Medpro Aesthetics",
+        "address": "Procter Street 25",
+        "postcode": "WC1V 6NY",
+        "phone": "",
+        "operator": "Medpro Aesthetics Ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1195432,
+          51.5184219
+        ]
+      },
+      "properties": {
+        "name": "Sk:n",
+        "address": "Procter Street 25",
+        "postcode": "WC1V 6NY",
+        "phone": "",
+        "operator": "Lasercare Clinics (Harrogate) Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1156262,
+          51.5187988
+        ]
+      },
+      "properties": {
+        "name": "Dottore London",
+        "address": "Hand Court 24-25",
+        "postcode": "WC1V 6JF",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0852836,
+          51.5171788
+        ]
+      },
+      "properties": {
+        "name": "London Wall Clinic",
+        "address": "",
+        "postcode": "EC2M 5NT",
+        "phone": "",
+        "operator": "ToHealth Ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.120789,
+          51.5171371
+        ]
+      },
+      "properties": {
+        "name": "CheqUp HQ",
+        "address": "Kingsway 125",
+        "postcode": "WC2B 6NH",
+        "phone": "",
+        "operator": "CheqUp Health Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1235537,
+          51.5148134
+        ]
+      },
+      "properties": {
+        "name": "NewWoman Health",
+        "address": "Shelton Street 71-75",
+        "postcode": "WC2H 9JQ",
+        "phone": "",
+        "operator": "NewWoman Health Ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0771564,
+          51.5459504
+        ]
+      },
+      "properties": {
+        "name": "AT Medics / The Loxford Practice",
+        "address": "Ilford Lane 417",
+        "postcode": "IG1 2SN",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1287851,
+          51.527253
+        ]
+      },
+      "properties": {
+        "name": "MEDii Health",
+        "address": "Duke's Road 18",
+        "postcode": "WC1H 9PY",
+        "phone": "",
+        "operator": "MEDII Ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1124246,
+          51.5209107
+        ]
+      },
+      "properties": {
+        "name": "Medical Health Limited",
+        "address": "Portpool Lane 1",
+        "postcode": "EC1N 7UU",
+        "phone": "",
+        "operator": "Medical Health Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0863181,
+          51.5167219
+        ]
+      },
+      "properties": {
+        "name": "H3 Care",
+        "address": "Throgmorton Avenue 2",
+        "postcode": "EC2N 2DG",
+        "phone": "",
+        "operator": "H3 Care Ltd"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1241727,
+          51.4705576
+        ]
+      },
+      "properties": {
+        "name": "The Grantham Practice",
+        "address": "Clapham Road 275-277",
+        "postcode": "",
+        "phone": "+44 20 7733 6191",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1368722,
+          51.5156929
+        ]
+      },
+      "properties": {
+        "name": "AI Beauty Clinic",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1016367,
+          51.4487331
+        ]
+      },
+      "properties": {
+        "name": "Brockwel Park Surgery",
+        "address": "Norwood Road 117",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0849614,
+          51.550525
+        ]
+      },
+      "properties": {
+        "name": "Angel Chiropody & Podiatry",
+        "address": "Mildmay Park 89-91",
+        "postcode": "N1 4NB",
+        "phone": "+44 20 7226 7006",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2912161,
+          51.62132
+        ]
+      },
+      "properties": {
+        "name": "Mulberry Medical Practice",
+        "address": "Willow Court 2",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3875155,
+          51.4404636
+        ]
+      },
+      "properties": {
+        "name": "Mount Medical Centre",
+        "address": "Market Parade 7",
+        "postcode": "",
+        "phone": "",
+        "operator": "NHS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3648917,
+          51.5812208
+        ]
+      },
+      "properties": {
+        "name": "The Ridgeway Surgery",
+        "address": "Imperial Drive 71",
+        "postcode": "HA2 7DU",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0259305,
+          51.4102831
+        ]
+      },
+      "properties": {
+        "name": "Bromleag Care Practice",
+        "address": "The Crescent 14",
+        "postcode": "BR3 1DU",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0950126,
+          51.382202
+        ]
+      },
+      "properties": {
+        "name": "Ballater Surgery",
+        "address": "Chislehurst Road 108",
+        "postcode": "BR6 0DP",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0701398,
+          51.3592357
+        ]
+      },
+      "properties": {
+        "name": "Bank House Surgery",
+        "address": "High Street 84",
+        "postcode": "BR6 7BA",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0239494,
+          51.4073025
+        ]
+      },
+      "properties": {
+        "name": "Manor Road Surgery",
+        "address": "Manor Road 14",
+        "postcode": "BR3 5LE",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0179949,
+          51.4073912
+        ]
+      },
+      "properties": {
+        "name": "Atwork GP",
+        "address": "Westgate Road",
+        "postcode": "BR3 5DT",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0202668,
+          51.4070834
+        ]
+      },
+      "properties": {
+        "name": "Corner Ways Surgery",
+        "address": "Manor Road 50",
+        "postcode": "BR3 5LG",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.059596,
+          51.4000524
+        ]
+      },
+      "properties": {
+        "name": "DR RAJASUNDARAM",
+        "address": "Otford Close",
+        "postcode": "BR1 2JQ",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1033495,
+          51.355983
+        ]
+      },
+      "properties": {
+        "name": "Chelsfield Surgery",
+        "address": "Windsor Drive 62",
+        "postcode": "BR6 6HD",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0081392,
+          51.4298973
+        ]
+      },
+      "properties": {
+        "name": "Oakview Family Practice",
+        "address": "Shroffold Road 190",
+        "postcode": "BR1 5NJ",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0157419,
+          51.4004833
+        ]
+      },
+      "properties": {
+        "name": "Dysart Surgery",
+        "address": "Ravensbourne Road 13",
+        "postcode": "BR1 1HN",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0169636,
+          51.414585
+        ]
+      },
+      "properties": {
+        "name": "Sundridge Medical Centre",
+        "address": "London Lane",
+        "postcode": "BR1 4HE",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0900015,
+          51.3553163
+        ]
+      },
+      "properties": {
+        "name": "The Family Surgery",
+        "address": "",
+        "postcode": "BR6 6BG",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0900713,
+          51.3541982
+        ]
+      },
+      "properties": {
+        "name": "Green Street Green Medical Centre",
+        "address": "",
+        "postcode": "BR6 6BG",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0166243,
+          51.3771474
+        ]
+      },
+      "properties": {
+        "name": "Forge Close Surgery",
+        "address": "",
+        "postcode": "BR2 7LL",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0578928,
+          51.4247832
+        ]
+      },
+      "properties": {
+        "name": "White Horse Hill",
+        "address": "",
+        "postcode": "BR7 6DH",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0560555,
+          51.4261078
+        ]
+      },
+      "properties": {
+        "name": "Hill Surgery",
+        "address": "",
+        "postcode": "BR7 6DH",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0964093,
+          51.3686039
+        ]
+      },
+      "properties": {
+        "name": "Highland Medical Practice",
+        "address": "",
+        "postcode": "BR6 9NJ",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.032841,
+          51.4049216
+        ]
+      },
+      "properties": {
+        "name": "Cator Medical Centre",
+        "address": "Croydon Road",
+        "postcode": "BR3 3FD",
+        "phone": "",
+        "operator": "Kelsey Healthcare Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.009841,
+          51.4147891
+        ]
+      },
+      "properties": {
+        "name": "London Lane Clinic",
+        "address": "London Lane",
+        "postcode": "BR1 4HB",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0147575,
+          51.4199018
+        ]
+      },
+      "properties": {
+        "name": "Links Medical Practice",
+        "address": "Brook Lane",
+        "postcode": "BR1 4PX",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0876975,
+          51.3702382
+        ]
+      },
+      "properties": {
+        "name": "Tubbenden Lane Branch",
+        "address": "Tubbenden Lane 7A - 7B",
+        "postcode": "BR6 9PN",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0108495,
+          51.3779937
+        ]
+      },
+      "properties": {
+        "name": "Pickhurst Surgery",
+        "address": "",
+        "postcode": "BR2 7JF",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0263983,
+          51.4059891
+        ]
+      },
+      "properties": {
+        "name": "South View Partnership",
+        "address": "",
+        "postcode": "BR1 3DR",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0419699,
+          51.3991278
+        ]
+      },
+      "properties": {
+        "name": "ES11 Ltd",
+        "address": "Croydon Road",
+        "postcode": "BR3 4DE",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0436288,
+          51.3991973
+        ]
+      },
+      "properties": {
+        "name": "St James' Practice",
+        "address": "Croydon Road",
+        "postcode": "BR3 4DG",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0147656,
+          51.3770695
+        ]
+      },
+      "properties": {
+        "name": "Station Road Surgery",
+        "address": "Station Road",
+        "postcode": "BR4 0PU",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0640833,
+          51.4209932
+        ]
+      },
+      "properties": {
+        "name": "The Woodlands Practice",
+        "address": "Red Hill",
+        "postcode": "BR7 6DB",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0195788,
+          51.3769933
+        ]
+      },
+      "properties": {
+        "name": "The Artemis Clinic",
+        "address": "High Street 106-108",
+        "postcode": "BR4 0ND",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0230697,
+          51.3768301
+        ]
+      },
+      "properties": {
+        "name": "Wickham Park Surgery",
+        "address": "Manor Road 2",
+        "postcode": "BR4 9PS",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.076282,
+          51.3853034
+        ]
+      },
+      "properties": {
+        "name": "The Whitehouse Surgery",
+        "address": "Towncourt Lane 123",
+        "postcode": "BR5 1EL",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0164607,
+          51.4084779
+        ]
+      },
+      "properties": {
+        "name": "SpaMedica Bromley",
+        "address": "Tweedy Road",
+        "postcode": "BR1 3WA",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.009326,
+          51.4091245
+        ]
+      },
+      "properties": {
+        "name": "Integura",
+        "address": "Blythe Road 7",
+        "postcode": "BR1 3RS",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0557296,
+          51.4076631
+        ]
+      },
+      "properties": {
+        "name": "Chislehurst",
+        "address": "Chislehurst Road 59",
+        "postcode": "BR7 5NP",
+        "phone": "",
+        "operator": "The South London Private GP Limited"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4059523,
+          51.3807607
+        ]
+      },
+      "properties": {
+        "name": "The Red Practice Walton",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4059657,
+          51.3807807
+        ]
+      },
+      "properties": {
+        "name": "Yellow Practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4059238,
+          51.3807525
+        ]
+      },
+      "properties": {
+        "name": "The White practice",
+        "address": "",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1186334,
+          51.5161453
+        ]
+      },
+      "properties": {
+        "name": "The Royal College of Radiologists",
+        "address": "Lincoln's Inn Fields 63",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2557208,
+          51.3979898
+        ]
+      },
+      "properties": {
+        "name": "Roselawn Surgery",
+        "address": "Malden Road 149",
+        "postcode": "KT3 6AA",
+        "phone": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.093762,
+          51.5683422
+        ]
+      },
+      "properties": {
+        "name": "John Scott Health Centre",
+        "address": "Green Lanes 220",
+        "postcode": "N4 2NU",
+        "phone": "+442039946900",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0276301,
+          51.5275585
+        ]
+      },
+      "properties": {
+        "name": "Harley Grove Medical Centre",
+        "address": "Harley Grove 15",
+        "postcode": "",
+        "phone": "",
+        "operator": ""
+      }
+    }
+  ]
+}

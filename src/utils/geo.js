@@ -165,7 +165,8 @@ export function computePostcodeScores(lat, lng, choroplethData, layerData, perce
     const sorted = percentileLookups[dim.id];
     if (!sorted) continue;
     const pct = percentileRank(rawValue, sorted);
-    const score = Math.round(100 - pct);
+    // inverse: false means higher raw value = better (e.g. PTAL, green space)
+    const score = dim.inverse === false ? Math.round(pct) : Math.round(100 - pct);
     const enabled = !disabledDims.has(dim.id);
     scores.area[dim.id] = { score, raw: rawValue, label: dim.label, enabled, tip: dim.tip };
     if (enabled) { total += score; count++; }

@@ -10,6 +10,7 @@ import {
   LONDON_ZOOM,
   POINT_LAYERS,
   CHOROPLETH_LAYERS,
+  FILTER_CHOROPLETH_DIMS,
   SCORE_AREA_DIMS,
   SCORE_PROX_DIMS,
 } from "./config.js";
@@ -284,15 +285,21 @@ function App() {
 
     for (const f of refData.features) {
       let passes = true;
-      for (const [dimId, maxVal] of Object.entries(filters)) {
+      for (const [dimId, threshold] of Object.entries(filters)) {
         const layer = CHOROPLETH_LAYERS.find((l) => l.id === dimId);
-        if (!layer) continue;
+        const fd = FILTER_CHOROPLETH_DIMS.find((d) => d.id === dimId);
+        if (!layer || !fd) continue;
         const codeMap = filterCodeMaps[dimId];
         if (!codeMap) { passes = false; break; }
         const match = codeMap.get(f.properties.code);
         if (!match) { passes = false; break; }
         const val = match.properties[layer.property];
-        if (val == null || val > maxVal) { passes = false; break; }
+        if (val == null) { passes = false; break; }
+        if (fd.mode === "min") {
+          if (val < threshold) { passes = false; break; }
+        } else {
+          if (val > threshold) { passes = false; break; }
+        }
       }
       if (passes) pass.add(f.properties.code);
     }

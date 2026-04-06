@@ -1,0 +1,1477 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0909171,
+          51.5282326
+        ]
+      },
+      "properties": {
+        "name": "Old Street Works",
+        "address": "City Road 197-205",
+        "postcode": "EC1V 1JN",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0794392,
+          51.5203906
+        ]
+      },
+      "properties": {
+        "name": "WeWork",
+        "address": "Primrose Street 1",
+        "postcode": "EC2A 2EX",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1757393,
+          51.6135157
+        ]
+      },
+      "properties": {
+        "name": "SSV Suites",
+        "address": "High Road 708A",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1052606,
+          51.5226802
+        ]
+      },
+      "properties": {
+        "name": "wallacespace",
+        "address": "Clerkenwell Green 18",
+        "postcode": "EC1R 0DP",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0820256,
+          51.516291
+        ]
+      },
+      "properties": {
+        "name": "Hubworking",
+        "address": "",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0902699,
+          51.5179936
+        ]
+      },
+      "properties": {
+        "name": "WeWork",
+        "address": "Fore Street Avenue 1",
+        "postcode": "EC2Y 9DT",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1073695,
+          51.5081435
+        ]
+      },
+      "properties": {
+        "name": "WeWork",
+        "address": "Upper Ground 22",
+        "postcode": "SE1 9PD",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0524707,
+          51.565323
+        ]
+      },
+      "properties": {
+        "name": "R-A-R-A",
+        "address": "Grosvenor Way 2",
+        "postcode": "E5 9ND",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1259671,
+          51.5176696
+        ]
+      },
+      "properties": {
+        "name": "Rentadesk",
+        "address": "Little Russell Street 35",
+        "postcode": "WC1A 2HH",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1343809,
+          51.5152959
+        ]
+      },
+      "properties": {
+        "name": "WeWork",
+        "address": "Great Chapel Street 16",
+        "postcode": "W1F 8FL",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1425801,
+          51.4952696
+        ]
+      },
+      "properties": {
+        "name": "Spaces",
+        "address": "Wilton Road",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0967741,
+          51.5266615
+        ]
+      },
+      "properties": {
+        "name": "Fora",
+        "address": "Central Street 71",
+        "postcode": "EC1V 8AB",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1156791,
+          51.4988705
+        ]
+      },
+      "properties": {
+        "name": "Health Foundry",
+        "address": "Royal Street 1",
+        "postcode": "SE1 7LL",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1100875,
+          51.5186269
+        ]
+      },
+      "properties": {
+        "name": "WeWork",
+        "address": "Waterhouse Square 138 -140",
+        "postcode": "EC1N 2SW",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.090205,
+          51.5280163
+        ]
+      },
+      "properties": {
+        "name": "Coffice",
+        "address": "City Road 163",
+        "postcode": "EC1V 1NR",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1043426,
+          51.5011112
+        ]
+      },
+      "properties": {
+        "name": "Foundry Cafe",
+        "address": "Blackfriars Road 160",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0834697,
+          51.5147072
+        ]
+      },
+      "properties": {
+        "name": "WeWork",
+        "address": "",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0933196,
+          51.5015239
+        ]
+      },
+      "properties": {
+        "name": "Fora",
+        "address": "Borough High Street 189",
+        "postcode": "SE1 1LB",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1546798,
+          51.4656641
+        ]
+      },
+      "properties": {
+        "name": "Idea Space",
+        "address": "",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.083625,
+          51.5201122
+        ]
+      },
+      "properties": {
+        "name": "Central Working",
+        "address": "",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1923879,
+          51.5016426
+        ]
+      },
+      "properties": {
+        "name": "Kensington Pavilion",
+        "address": "Kensington High Street 96",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0813733,
+          51.5103933
+        ]
+      },
+      "properties": {
+        "name": "Spaces",
+        "address": "",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0781472,
+          51.5165043
+        ]
+      },
+      "properties": {
+        "name": "WeWork",
+        "address": "Devonshire Square 10",
+        "postcode": "EC2M 4YP",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1393762,
+          51.5244751
+        ]
+      },
+      "properties": {
+        "name": "Spaces",
+        "address": "Euston Road 307",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0149403,
+          51.5038157
+        ]
+      },
+      "properties": {
+        "name": "WeWork",
+        "address": "Churchill Place 30",
+        "postcode": "E14 5EU",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0782673,
+          51.5135916
+        ]
+      },
+      "properties": {
+        "name": "WeWork",
+        "address": "",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0095764,
+          51.5421082
+        ]
+      },
+      "properties": {
+        "name": "Workable",
+        "address": "Westfield Avenue 1",
+        "postcode": "E20 1HZ",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0782129,
+          51.5186051
+        ]
+      },
+      "properties": {
+        "name": "Wallacespace",
+        "address": "Artillery Lane 15-25",
+        "postcode": "E1 7LP",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3081656,
+          51.3947052
+        ]
+      },
+      "properties": {
+        "name": "Maple Works Surbiton",
+        "address": "Maple Road 73",
+        "postcode": "KT6 4AG",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0426302,
+          51.5473645
+        ]
+      },
+      "properties": {
+        "name": "Greenhouse E9",
+        "address": "Mackintosh Lane 8",
+        "postcode": "E9 6AB",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0080246,
+          51.5355657
+        ]
+      },
+      "properties": {
+        "name": "Maybank Offices",
+        "address": "New Plaistow Road 1",
+        "postcode": "E15 3JB",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0195795,
+          51.5311381
+        ]
+      },
+      "properties": {
+        "name": "The Factory London",
+        "address": "High Street 5-7",
+        "postcode": "E13 0AD",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1077756,
+          51.5636564
+        ]
+      },
+      "properties": {
+        "name": "Indycube Finsbury Park",
+        "address": "Fonthill Road 149",
+        "postcode": "N4 3HF",
+        "operator": "Indycube"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1436224,
+          51.5200603
+        ]
+      },
+      "properties": {
+        "name": "Spaces",
+        "address": "New Cavendish Street 77",
+        "postcode": "W1W 6XB",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0211735,
+          51.5444304
+        ]
+      },
+      "properties": {
+        "name": "Hackney Bridge Co-Work",
+        "address": "",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0785568,
+          51.5368572
+        ]
+      },
+      "properties": {
+        "name": "The Halley",
+        "address": "",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0785484,
+          51.5363054
+        ]
+      },
+      "properties": {
+        "name": "Storey",
+        "address": "Orsman Road 6",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0938706,
+          51.4758231
+        ]
+      },
+      "properties": {
+        "name": "ARC Club",
+        "address": "Camberwell Road 272-274",
+        "postcode": "SE5 0DL",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1357046,
+          51.521724
+        ]
+      },
+      "properties": {
+        "name": "Regus",
+        "address": "Tottenham Court Road 85",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1191657,
+          51.5175293
+        ]
+      },
+      "properties": {
+        "name": "The Space Holborn",
+        "address": "High Holborn 235",
+        "postcode": "WC1V 7DN",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0197227,
+          51.5546843
+        ]
+      },
+      "properties": {
+        "name": "Forest Gate Works",
+        "address": "Winchelsea Road Arch 362",
+        "postcode": "E7 0AQ",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0415107,
+          51.5908099
+        ]
+      },
+      "properties": {
+        "name": "Big Penny Workspaces",
+        "address": "",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0228884,
+          51.5409561
+        ]
+      },
+      "properties": {
+        "name": "The Trampery",
+        "address": "",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1102938,
+          51.5235772
+        ]
+      },
+      "properties": {
+        "name": "Tentacle Zone",
+        "address": "Bakers Yard 1",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0682944,
+          51.5989397
+        ]
+      },
+      "properties": {
+        "name": "The Trampery Tottenham",
+        "address": "High Road 639",
+        "postcode": "N17 8AA",
+        "operator": "The Trampery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0407091,
+          51.5896066
+        ]
+      },
+      "properties": {
+        "name": "Yonder Workspace",
+        "address": "Hookers Road 4-6",
+        "postcode": "E17 6DP",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1048514,
+          51.5059676
+        ]
+      },
+      "properties": {
+        "name": "Working From Southwark",
+        "address": "",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3081866,
+          51.4833334
+        ]
+      },
+      "properties": {
+        "name": "Digital Dock",
+        "address": "",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0232983,
+          51.5440898
+        ]
+      },
+      "properties": {
+        "name": "Mainyard Studios",
+        "address": "Wallis Road 80",
+        "postcode": "E9 5LN",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0086099,
+          51.5713364
+        ]
+      },
+      "properties": {
+        "name": "Mainyard Studios",
+        "address": "High Road Leyton 679",
+        "postcode": "E10 6RA",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3265797,
+          51.4476025
+        ]
+      },
+      "properties": {
+        "name": "Patch Twickenham",
+        "address": "York Street 42",
+        "postcode": "TW1 3BW",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0087604,
+          51.532513
+        ]
+      },
+      "properties": {
+        "name": "Divisible",
+        "address": "",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1142125,
+          51.4738498
+        ]
+      },
+      "properties": {
+        "name": "Unit Z",
+        "address": "Alphabet Mews 23",
+        "postcode": "SW9 0FN",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1481197,
+          51.4938018
+        ]
+      },
+      "properties": {
+        "name": "25 EP",
+        "address": "Eccleston Place 25",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.124368,
+          51.5050101
+        ]
+      },
+      "properties": {
+        "name": "PUBLIC Hall by Huckletree",
+        "address": "Horse Guards Avenue 1",
+        "postcode": "SW1A 2HU",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0106413,
+          51.541182
+        ]
+      },
+      "properties": {
+        "name": "Work Hub",
+        "address": "",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0108086,
+          51.5571937
+        ]
+      },
+      "properties": {
+        "name": "Mainyard Studios",
+        "address": "Ruckholt Road 80",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0108878,
+          51.557221
+        ]
+      },
+      "properties": {
+        "name": "Property With Simon",
+        "address": "Ruckholt Road 80",
+        "postcode": "E10 5FA",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0991091,
+          51.4921312
+        ]
+      },
+      "properties": {
+        "name": "Hotel Elephant",
+        "address": "",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1364039,
+          51.5151692
+        ]
+      },
+      "properties": {
+        "name": "Work.Life",
+        "address": "Noel Street 9",
+        "postcode": "W1F 8GQ",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.081079,
+          51.5020435
+        ]
+      },
+      "properties": {
+        "name": "Runway East",
+        "address": "Crucifix Lane 18",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.195896,
+          51.4796384
+        ]
+      },
+      "properties": {
+        "name": "Homework Workspace",
+        "address": "Effie Road 25",
+        "postcode": "SW6 1EL",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0723969,
+          51.5655223
+        ]
+      },
+      "properties": {
+        "name": "Another Place",
+        "address": "",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0077751,
+          51.4673048
+        ]
+      },
+      "properties": {
+        "name": "The Workers' League",
+        "address": "Royal Parade Mews 44-50",
+        "postcode": "SE3 0TN",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1898451,
+          51.4396378
+        ]
+      },
+      "properties": {
+        "name": "ARC Club",
+        "address": "Trewint Street 21",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0091357,
+          51.5320967
+        ]
+      },
+      "properties": {
+        "name": "Stratford Sustainability Hub",
+        "address": "Sugar House Lane 1",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0945774,
+          51.5318499
+        ]
+      },
+      "properties": {
+        "name": "Moneypenny Workhub",
+        "address": "Wenlock Road 20",
+        "postcode": "N1 7GU",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0690524,
+          51.5149137
+        ]
+      },
+      "properties": {
+        "name": "Techspace",
+        "address": "Commercial Road 38-40",
+        "postcode": "E1 1LN",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0034467,
+          51.5852356
+        ]
+      },
+      "properties": {
+        "name": "Wood Street Studios",
+        "address": "Barrett Road",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3105738,
+          51.512039
+        ]
+      },
+      "properties": {
+        "name": "Spaces",
+        "address": "Uxbridge Road 71-75",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0754467,
+          51.5301166
+        ]
+      },
+      "properties": {
+        "name": "Shoreditch Exchange",
+        "address": "Gorsuch Place",
+        "postcode": "E2 8JF",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.173193,
+          51.5188205
+        ]
+      },
+      "properties": {
+        "name": "WeWork",
+        "address": "",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0004072,
+          51.5398609
+        ]
+      },
+      "properties": {
+        "name": "SBN",
+        "address": "High Street 415",
+        "postcode": "E15 4QZ",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2204565,
+          51.5340267
+        ]
+      },
+      "properties": {
+        "name": "The Bureau",
+        "address": "Station Terrace 7",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1180527,
+          51.5102642
+        ]
+      },
+      "properties": {
+        "name": "Makerversity",
+        "address": "Victoria Embankment",
+        "postcode": "WC2R 1LA",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0055808,
+          51.5356286
+        ]
+      },
+      "properties": {
+        "name": "ARC Club",
+        "address": "High Street 180",
+        "postcode": "E15 2LS",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1909428,
+          51.5485906
+        ]
+      },
+      "properties": {
+        "name": "apex coworking",
+        "address": "",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0091031,
+          51.5320964
+        ]
+      },
+      "properties": {
+        "name": "Divisible Space",
+        "address": "Sugar House Lane 1",
+        "postcode": "E15 2QS",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0983703,
+          51.4989914
+        ]
+      },
+      "properties": {
+        "name": "The Ministry",
+        "address": "Borough Road 79-81",
+        "postcode": "SE1 1DN",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1186583,
+          51.5016791
+        ]
+      },
+      "properties": {
+        "name": "Sustainable Ventures",
+        "address": "Belvedere Road",
+        "postcode": "SE1 7PB",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0578783,
+          51.5389262
+        ]
+      },
+      "properties": {
+        "name": "Laundry Studios",
+        "address": "Warburton Road 2",
+        "postcode": "E8 3RT",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1148855,
+          51.51249
+        ]
+      },
+      "properties": {
+        "name": "Soho Works 180 Strand",
+        "address": "Strand 180",
+        "postcode": "WC2R 1EA",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0749029,
+          51.5182856
+        ]
+      },
+      "properties": {
+        "name": "Lenta Serviced Offices",
+        "address": "White's Row 10",
+        "postcode": "E1 7NF",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0811306,
+          51.5005281
+        ]
+      },
+      "properties": {
+        "name": "Work.Life",
+        "address": "Tanner Street 5-7",
+        "postcode": "SE1 3LE",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0925677,
+          51.5023528
+        ]
+      },
+      "properties": {
+        "name": "Work.Life",
+        "address": "Borough High Street 140",
+        "postcode": "SE1 1LB",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1565304,
+          51.5213226
+        ]
+      },
+      "properties": {
+        "name": "Deskin",
+        "address": "David Mews 13",
+        "postcode": "W1U 6EQ",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0091762,
+          51.466036
+        ]
+      },
+      "properties": {
+        "name": "Nicholas James Serviced Work Space",
+        "address": "Tranquil Vale 18",
+        "postcode": "SE3 0AX",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0162072,
+          51.5601375
+        ]
+      },
+      "properties": {
+        "name": "Artworks East",
+        "address": "Osier Way 32-34",
+        "postcode": "",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1155117,
+          51.5037459
+        ]
+      },
+      "properties": {
+        "name": "WeWork",
+        "address": "York Road 10",
+        "postcode": "SE1 7ND",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0837971,
+          51.5250772
+        ]
+      },
+      "properties": {
+        "name": "The Hoxton Mix",
+        "address": "Paul Street 66-68",
+        "postcode": "EC2A 4NA",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0606783,
+          51.5901535
+        ]
+      },
+      "properties": {
+        "name": "ARC Tottenham",
+        "address": "Watermead Way 3",
+        "postcode": "N17 9QZ",
+        "operator": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1034792,
+          51.4341588
+        ]
+      },
+      "properties": {
+        "name": "Badger Badger",
+        "address": "Norwood Road 543",
+        "postcode": "SE27 9DL",
+        "operator": ""
+      }
+    }
+  ]
+}

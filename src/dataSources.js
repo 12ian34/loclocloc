@@ -46,6 +46,48 @@ export const DATA_ROWS = [
     vintage: "IMD 2019 (next national update is infrequent)",
   },
   {
+    id: "restaurants",
+    title: "Restaurants",
+    source: "OpenStreetMap (amenity=restaurant)",
+    vintage: "Snapshot — same as other OSM POI layers",
+  },
+  {
+    id: "gp-surgeries",
+    title: "GP Surgeries",
+    source: "OpenStreetMap (amenity=doctors, healthcare=doctor)",
+    vintage: "Snapshot — same as other OSM POI layers",
+  },
+  {
+    id: "coworking",
+    title: "Coworking Spaces",
+    source: "OpenStreetMap (amenity=coworking_space, office=coworking)",
+    vintage: "Snapshot — same as other OSM POI layers",
+  },
+  {
+    id: "pop-density",
+    title: "Population Density",
+    source: "ONS Census 2021 — TS006 (LSOA, persons/km²); XLSX via [UK Data Service CKAN mirror](https://statistics.ukdataservice.ac.uk/dataset/ons_2021_demography_population_density)",
+    vintage: "Census 2021 (decennial)",
+  },
+  {
+    id: "ptal",
+    title: "PTAL / transport access",
+    source: "TfL — LSOA aggregated PTAL stats 2023 (mean access index); CSV via ArcGIS Hub gis-tfl.opendata.arcgis.com (dataset 3eb38b75667a49df9ef1240e9a197615)",
+    vintage: "2023 LSOA release (AI values; banded PTAL in source CSV)",
+  },
+  {
+    id: "green-space",
+    title: "Green Space",
+    source: "OpenStreetMap parks/gardens/greenspace — density scored per LSOA",
+    vintage: "Snapshot — re-export when you update layers",
+  },
+  {
+    id: "noise",
+    title: "Noise (Lden)",
+    source: "Curated from Defra Strategic Noise Mapping Round 4 (2022), IDW interpolated to LSOA",
+    vintage: "Based on 2022 Defra noise contour data",
+  },
+  {
     id: "tiles",
     title: "Basemap",
     source: "CARTO light tiles + OpenStreetMap data",

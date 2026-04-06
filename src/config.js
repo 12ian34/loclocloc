@@ -15,6 +15,9 @@ export const POINT_LAYERS = [
   { id: "cinemas", name: "Cinemas", file: "/data/cinemas.geojson", color: "#8b5cf6", emoji: "🎬" },
   { id: "bike-parking", name: "Bike Parking", file: "/data/bike-parking.geojson", color: "#0ea5e9", emoji: "🚲" },
   { id: "betting", name: "Betting Shops", file: "/data/betting.geojson", color: "#ef4444", emoji: "🎰" },
+  { id: "restaurants", name: "Restaurants", file: "/data/restaurants.geojson", color: "#f97316", emoji: "🍽️" },
+  { id: "gp-surgeries", name: "GP Surgeries", file: "/data/gp-surgeries.geojson", color: "#22c55e", emoji: "🏥" },
+  { id: "coworking", name: "Coworking", file: "/data/coworking.geojson", color: "#3b82f6", emoji: "💻" },
 ];
 
 export const CHOROPLETH_LAYERS = [
@@ -139,6 +142,65 @@ export const CHOROPLETH_LAYERS = [
     format: (v) => `${v.toFixed(1)}`,
     inverse: true,
   },
+  {
+    id: "pop-density",
+    name: "Population Density",
+    file: "/data/population-density.geojson",
+    property: "value",
+    emoji: "👥",
+    unit: "persons/km²",
+    colorStops: ["#f7fbff", "#c6dbef", "#6baed6", "#3182bd", "#08519c", "#08306b"],
+    format: (v) => v.toLocaleString(),
+    inverse: true,
+  },
+  {
+    id: "ptal",
+    name: "PTAL (Transport)",
+    file: "/data/ptal.geojson",
+    property: "value",
+    emoji: "🚌",
+    unit: "access index",
+    colorStops: ["#f7fcf5", "#c7e9c0", "#74c476", "#31a354", "#006d2c", "#00441b"],
+    format: (v) => (typeof v === "number" ? v.toFixed(1) : String(v ?? "")),
+    inverse: false,
+  },
+  {
+    id: "green-space",
+    name: "Green Space",
+    file: "/data/green-space.geojson",
+    property: "value",
+    emoji: "🌿",
+    unit: "score",
+    colorStops: ["#fff7ec", "#d9f0a3", "#addd8e", "#78c679", "#31a354", "#006837"],
+    format: (v) => `${v}`,
+    inverse: false,
+  },
+  {
+    id: "noise",
+    name: "Noise (Lden)",
+    file: "/data/noise.geojson",
+    property: "value",
+    emoji: "🔊",
+    unit: "dB",
+    colorStops: ["#f7fcf0", "#d9f0a3", "#fdae6b", "#f16913", "#d94801", "#8c2d04"],
+    format: (v) => `${v} dB`,
+    inverse: true,
+  },
+];
+
+/**
+ * Area filter sliders. mode "max": LSOA passes when raw ≤ threshold. mode "min": passes when raw ≥ threshold.
+ * Threshold keys match `CHOROPLETH_LAYERS` ids (URL hash `f` JSON).
+ */
+export const FILTER_CHOROPLETH_DIMS = [
+  { id: "crime-current", label: "Max Crime Score", mode: "max", min: 0, max: 200, step: 1 },
+  { id: "air", label: "Max NO\u2082 (\u00b5g/m\u00b3)", mode: "max", min: 0, max: 80, step: 1 },
+  { id: "rent-est", label: "Max est. rent (\u00a3/mo)", mode: "max", min: 0, max: 3500, step: 1 },
+  { id: "imd", label: "Max Deprivation", mode: "max", min: 0, max: 60, step: 1 },
+  { id: "pop-density", label: "Max population density (per km\u00b2)", mode: "max", min: 0, max: 25000, step: 100 },
+  { id: "noise", label: "Max noise (Lden dB)", mode: "max", min: 40, max: 80, step: 1 },
+  { id: "ptal", label: "Min access index", mode: "min", min: 0, max: 100, step: 1 },
+  { id: "green-space", label: "Min green space score", mode: "min", min: 0, max: 100, step: 1 },
 ];
 
 export const TRANSIT_RINGS = [
@@ -168,6 +230,10 @@ export const SCORE_AREA_DIMS = [
   { id: "imd-health", label: "Health", property: "health", choroplethFile: "/data/imd.geojson", tip: "IMD Health Deprivation & Disability score. Measures risk of premature death and impairment of quality of life through poor health. Lower = higher score." },
   { id: "imd-barriers", label: "Housing Access", property: "barriers", choroplethFile: "/data/imd.geojson", tip: "IMD Barriers to Housing & Services score. Measures physical and financial accessibility of housing and local services. Lower barriers = higher score." },
   { id: "imd-living", label: "Living Env.", property: "living", choroplethFile: "/data/imd.geojson", tip: "IMD Living Environment score. Measures quality of the indoor and outdoor local environment (housing condition, air quality, road traffic accidents). Lower = higher score." },
+  { id: "pop-density", label: "Low Density", property: "value", choroplethFile: "/data/population-density.geojson", tip: "Population density (persons/km\u00b2) from Census 2021. Lower density = higher score." },
+  { id: "ptal", label: "Transport", property: "value", choroplethFile: "/data/ptal.geojson", inverse: false, tip: "TfL 2023 LSOA mean access index (AI) — numeric input to PTAL bands. Higher = better public transport access = higher score." },
+  { id: "green-space", label: "Green Space", property: "value", choroplethFile: "/data/green-space.geojson", inverse: false, tip: "Green space density score derived from OpenStreetMap parks and gardens near each LSOA. Higher = more green space nearby = higher score." },
+  { id: "noise", label: "Low Noise", property: "value", choroplethFile: "/data/noise.geojson", tip: "Noise levels (Lden dB) interpolated from Defra noise mapping data. Lower noise = higher score." },
 ];
 
 export const SCORE_PROX_DIMS = [
@@ -182,4 +248,7 @@ export const SCORE_PROX_DIMS = [
   { id: "cinemas", label: "Cinemas", pointLayer: "cinemas", cap: 3, tip: "Density-weighted score for nearby cinemas. Rewards having options within reach." },
   { id: "bike-parking", label: "Bike Parking", pointLayer: "bike-parking", cap: 30, tip: "Density-weighted score for nearby bicycle parking. Very abundant in London; needs high density to score well." },
   { id: "betting", label: "No Betting", pointLayer: "betting", inverse: true, cap: 4, tip: "Inverse density score \u2014 more betting shops nearby = lower score. Areas with none nearby score 100." },
+  { id: "restaurants", label: "Restaurants", pointLayer: "restaurants", cap: 20, tip: "Density-weighted score for nearby restaurants. Rewards areas with a good selection within walking distance." },
+  { id: "gp-surgeries", label: "GP Surgery", pointLayer: "gp-surgeries", cap: 3, tip: "Density-weighted score for nearby GP surgeries. Having options nearby = higher score." },
+  { id: "coworking", label: "Coworking", pointLayer: "coworking", cap: 4, tip: "Density-weighted score for nearby coworking spaces. More options = higher score." },
 ];
