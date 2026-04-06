@@ -1,5 +1,7 @@
 # loclocloc
 
+**[Open the app →](https://loclocloc.netlify.app)** · **[Source on GitHub](https://github.com/12ian34/loclocloc)**
+
 <p align="center">
   <img src="docs/screenshot.png" alt="loclocloc — London map with sidebar layer toggles (Tube &amp; Rail, amenities, area data)" width="920" />
 </p>

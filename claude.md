@@ -2,6 +2,9 @@
 
 Vite + React + Leaflet app for location/scoring exploration.
 
+- **Live:** https://loclocloc.netlify.app
+- **Repo:** https://github.com/12ian34/loclocloc
+
 ## Repo hygiene
 
 - **`scrapers/`** is listed in `.gitignore` so it is not pushed to the public GitHub repo (`12ian34/loclocloc`). Keep one-off or site-specific collection scripts local; published data used by the app should live under paths that *are* tracked (e.g. `public/` assets) if you want them in the repo.
@@ -12,6 +15,11 @@ Vite + React + Leaflet app for location/scoring exploration.
 - `npm run dev` — local dev
 - `npm run build` — production build
 - `npm run lint` — ESLint
+
+## Sidebar UX
+
+- Default: no POI layers, no area choropleth; **Filter Areas** expanded; POI / Area Data sections can collapse via their headers.
+- Re-clicking the active area overlay row clears it (same as **Clear overlay**).
 
 ## Docs
 

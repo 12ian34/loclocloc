@@ -777,6 +777,10 @@
   user-select: none;
 }
 
+.layers h2.filter-toggle-header {
+  margin-top: 12px;
+}
+
 .filter-chevron {
   font-size: 10px;
   color: #666;

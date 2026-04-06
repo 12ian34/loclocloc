@@ -928,7 +928,7 @@ function App() {
   const initialState = useMemo(() => decodeAppState(window.location.hash), []);
 
   const [activeLayers, setActiveLayers] = useState(
-    () => new Set(initialState.layers || ["tube"])
+    () => new Set(initialState.layers ?? [])
   );
   const [activeChoropleth, setActiveChoropleth] = useState(initialState.choropleth);
   const [layerData, setLayerData] = useState({});
@@ -940,7 +940,9 @@ function App() {
   const [expandedCard, setExpandedCard] = useState(null);
   const [showComparison, setShowComparison] = useState(false);
   const [filters, setFilters] = useState(initialState.filters || {});
-  const [showFilters, setShowFilters] = useState(Object.keys(initialState.filters || {}).length > 0);
+  const [showFilters, setShowFilters] = useState(true);
+  const [showPoiSection, setShowPoiSection] = useState(true);
+  const [showAreaSection, setShowAreaSection] = useState(true);
   const [transitData, setTransitData] = useState({});
   const [showTransit, setShowTransit] = useState(false);
   const [disabledScoreDims, setDisabledScoreDims] = useState(new Set());
@@ -1270,29 +1272,60 @@ function App() {
         )}
 
         <div className="layers">
-          <h2>Points of Interest</h2>
-          {POINT_LAYERS.map((layer) => (
-            <label key={layer.id} className={`layer-toggle ${activeLayers.has(layer.id) ? "active" : ""}`}>
-              <input type="checkbox" checked={activeLayers.has(layer.id)} onChange={() => toggleLayer(layer.id)} />
-              <span className="layer-dot" style={{ backgroundColor: layer.color }} />
-              <span className="layer-name">{layer.emoji} {layer.name}</span>
-              <span className="layer-count">{featureCount(layer.id)}</span>
-            </label>
-          ))}
+          <h2
+            className="filter-toggle-header"
+            onClick={() => setShowPoiSection(!showPoiSection)}
+          >
+            Points of Interest
+            <span className="filter-chevron">{showPoiSection ? "▾" : "▸"}</span>
+          </h2>
+          {showPoiSection &&
+            POINT_LAYERS.map((layer) => (
+              <label key={layer.id} className={`layer-toggle ${activeLayers.has(layer.id) ? "active" : ""}`}>
+                <input type="checkbox" checked={activeLayers.has(layer.id)} onChange={() => toggleLayer(layer.id)} />
+                <span className="layer-dot" style={{ backgroundColor: layer.color }} />
+                <span className="layer-name">{layer.emoji} {layer.name}</span>
+                <span className="layer-count">{featureCount(layer.id)}</span>
+              </label>
+            ))}
         </div>
 
         <div className="layers">
-          <h2>Area Data (LSOA)</h2>
-          {CHOROPLETH_LAYERS.map((layer) => (
-            <label key={layer.id} className={`layer-toggle ${activeChoropleth === layer.id ? "active" : ""}`}>
-              <input type="radio" name="choropleth" checked={activeChoropleth === layer.id} onChange={() => toggleChoropleth(layer.id)} />
-              <span className="layer-name">{layer.emoji} {layer.name}</span>
-            </label>
-          ))}
-          {activeChoropleth && (
-            <button className="clear-choropleth" onClick={() => setActiveChoropleth(null)}>
-              Clear overlay
-            </button>
+          <h2
+            className="filter-toggle-header"
+            onClick={() => setShowAreaSection(!showAreaSection)}
+          >
+            Area Data (LSOA)
+            <span className="filter-chevron">{showAreaSection ? "▾" : "▸"}</span>
+          </h2>
+          {showAreaSection && (
+            <>
+              {CHOROPLETH_LAYERS.map((layer) => (
+                <label
+                  key={layer.id}
+                  className={`layer-toggle ${activeChoropleth === layer.id ? "active" : ""}`}
+                  onMouseDown={(e) => {
+                    if (activeChoropleth === layer.id) {
+                      e.preventDefault();
+                      setActiveChoropleth(null);
+                    }
+                  }}
+                >
+                  <input
+                    type="radio"
+                    name="choropleth"
+                    checked={activeChoropleth === layer.id}
+                    onChange={() => toggleChoropleth(layer.id)}
+                  />
+                  <span className="layer-name">{layer.emoji} {layer.name}</span>
+                </label>
+              ))}
+              {activeChoropleth && (
+                <button className="clear-choropleth" onClick={() => setActiveChoropleth(null)}>
+                  Clear overlay
+                </button>
+              )}
+            </>
           )}
         </div>
 
