@@ -13,7 +13,7 @@
   width: 340px;
   min-width: 340px;
   background: #0a0a0a;
-  color: #c8ccd0;
+  color: #e2e6ec;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -52,7 +52,7 @@
 }
 
 .subtitle {
-  color: #505050;
+  color: #868d96;
   font-size: 11px;
   margin: 0 0 16px 0;
   letter-spacing: 0.5px;
@@ -74,7 +74,8 @@
   border: 1px solid #222222;
   background: #0e0e0e;
   color: #e0e4e8;
-  font-size: 13px;
+  /* 16px prevents iOS auto-zoom on focus */
+  font-size: 16px;
   font-family: 'JetBrains Mono', monospace;
   outline: none;
   transition: border-color 0.15s;
@@ -86,7 +87,7 @@
 }
 
 .search-input::placeholder {
-  color: #3a4050;
+  color: #6d7684;
 }
 
 .search-btn {
@@ -134,7 +135,7 @@
 }
 
 .search-result span {
-  color: #606060;
+  color: #9aa3ad;
   font-size: 11px;
 }
 
@@ -148,7 +149,7 @@
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #606060;
+  color: #9aa3ad;
   margin: 0;
   font-family: 'JetBrains Mono', monospace;
   font-weight: 600;
@@ -180,13 +181,13 @@
 
 .section-chevron {
   font-size: 14px;
-  color: #444444;
+  color: #6b727c;
   transition: transform 0.2s ease, color 0.15s;
   line-height: 1;
 }
 
 .section-header:hover .section-chevron {
-  color: #666666;
+  color: #9098a3;
 }
 
 .section-chevron-open {
@@ -244,7 +245,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: 1.5px solid #444444;
+  border: 1.5px solid #6b727c;
   flex-shrink: 0;
   transition: all 0.15s;
 }
@@ -259,7 +260,7 @@
   flex: 1;
   font-size: 12px;
   font-weight: 500;
-  color: #aaaaaa;
+  color: #c5ccd4;
 }
 
 .layer-toggle.active .layer-name {
@@ -268,7 +269,7 @@
 
 .layer-count {
   font-size: 10px;
-  color: #444444;
+  color: #6b727c;
   background: rgba(255, 255, 255, 0.03);
   padding: 1px 7px;
   border-radius: 3px;
@@ -280,7 +281,7 @@
   padding: 6px;
   border: 1px solid #222222;
   background: rgba(255, 255, 255, 0.02);
-  color: #606060;
+  color: #9aa3ad;
   font-size: 11px;
   font-family: 'JetBrains Mono', monospace;
   border-radius: 4px;
@@ -307,7 +308,7 @@
 
 .legend-title {
   font-size: 10px;
-  color: #606060;
+  color: #9aa3ad;
   margin-bottom: 8px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -329,7 +330,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 10px;
-  color: #505050;
+  color: #868d96;
   margin-top: 4px;
   font-family: 'JetBrains Mono', monospace;
 }
@@ -342,7 +343,7 @@
   border: 1px solid #1c1c1c;
   border-left: 2px solid #00ffa3;
   border-radius: 4px;
-  color: #606060;
+  color: #9aa3ad;
   font-size: 11px;
   text-align: left;
   margin-bottom: 8px;
@@ -358,7 +359,7 @@
 
 .info-hint {
   font-size: 11px;
-  color: #505050;
+  color: #868d96;
   line-height: 1.5;
   margin: 0 0 12px 0;
 }
@@ -377,9 +378,9 @@
   height: 100%;
 }
 
-/* ── Mobile drawer + menu ──────────────────────────────────── */
+/* ── Mobile topbar + drawer ────────────────────────────────── */
 
-.mobile-menu-btn,
+.mobile-topbar,
 .mobile-scrim {
   display: none;
 }
@@ -406,7 +407,7 @@
   border-radius: 4px;
   border: 1px solid #222222;
   background: rgba(255, 255, 255, 0.02);
-  color: #808080;
+  color: #aeb4bd;
   font-size: 11px;
   font-family: 'JetBrains Mono', monospace;
   font-weight: 500;
@@ -422,7 +423,7 @@
 
 .sidebar-source-link {
   font-size: 11px;
-  color: #3a6a50;
+  color: #52b882;
   text-decoration: none;
   transition: color 0.15s;
 }
@@ -465,7 +466,7 @@
   display: flex;
   flex-direction: column;
   background: #0e0e0e;
-  color: #c8ccd0;
+  color: #e2e6ec;
   border-radius: 8px;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
   border: 1px solid #222222;
@@ -490,7 +491,7 @@
 .modal-close {
   border: none;
   background: transparent;
-  color: #606060;
+  color: #9aa3ad;
   font-size: 22px;
   line-height: 1;
   cursor: pointer;
@@ -512,12 +513,12 @@
 .modal-foot {
   font-size: 12px;
   line-height: 1.6;
-  color: #808080;
+  color: #aeb4bd;
   margin: 0 0 12px 0;
 }
 
 .modal-build strong {
-  color: #c8ccd0;
+  color: #e2e6ec;
 }
 
 .modal-data-list {
@@ -548,12 +549,12 @@
 
 .modal-data-meta {
   font-size: 11px;
-  color: #606060;
+  color: #9aa3ad;
 }
 
 .modal-data-vintage {
   font-size: 10px;
-  color: #444444;
+  color: #6b727c;
   margin-top: 2px;
 }
 
@@ -589,14 +590,14 @@
 }
 
 .pinned-info span {
-  color: #606060;
+  color: #9aa3ad;
   font-size: 10px;
 }
 
 .pinned-remove {
   background: none;
   border: none;
-  color: #444444;
+  color: #6b727c;
   font-size: 16px;
   cursor: pointer;
   padding: 0 4px;
@@ -731,7 +732,7 @@
 }
 
 .score-card-title span {
-  color: #606060;
+  color: #9aa3ad;
   font-size: 10px;
 }
 
@@ -758,7 +759,7 @@
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: #444444;
+  color: #6b727c;
   margin: 8px 0 4px;
   font-family: 'JetBrains Mono', monospace;
 }
@@ -780,7 +781,7 @@
 .score-label {
   width: 85px;
   font-size: 11px;
-  color: #808080;
+  color: #aeb4bd;
   flex-shrink: 0;
 }
 
@@ -803,7 +804,7 @@
   text-align: right;
   font-size: 11px;
   font-weight: 700;
-  color: #aaaaaa;
+  color: #c5ccd4;
   font-family: 'JetBrains Mono', monospace;
 }
 
@@ -811,7 +812,7 @@
   width: 42px;
   text-align: right;
   font-size: 9px;
-  color: #444444;
+  color: #6b727c;
   font-family: 'JetBrains Mono', monospace;
 }
 
@@ -829,7 +830,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  border: 1.5px solid #444444;
+  border: 1.5px solid #6b727c;
   background: transparent;
   flex-shrink: 0;
   transition: all 0.15s;
@@ -847,7 +848,7 @@
 
 .score-hint {
   font-size: 9px;
-  color: #444444;
+  color: #6b727c;
   font-weight: 400;
   letter-spacing: 0;
   text-transform: none;
@@ -862,7 +863,7 @@
   height: 14px;
   border-radius: 50%;
   background: #1c1c1c;
-  color: #505050;
+  color: #868d96;
   font-size: 9px;
   font-weight: 700;
   font-style: italic;
@@ -874,7 +875,7 @@
 
 .score-info:hover {
   background: #2a2a2a;
-  color: #808080;
+  color: #aeb4bd;
 }
 
 .score-tooltip {
@@ -888,7 +889,7 @@
   background: #0e0e0e;
   border: 1px solid #222222;
   border-radius: 4px;
-  color: #aaaaaa;
+  color: #c5ccd4;
   font-size: 11px;
   font-style: normal;
   font-weight: 400;
@@ -923,7 +924,7 @@
   padding: 3px 10px;
   border: 1px solid #222222;
   background: rgba(255, 255, 255, 0.02);
-  color: #606060;
+  color: #9aa3ad;
   font-size: 10px;
   font-family: 'JetBrains Mono', monospace;
   border-radius: 3px;
@@ -950,7 +951,7 @@
   padding: 6px 8px;
   border: 1px solid #222222;
   background: rgba(255, 255, 255, 0.02);
-  color: #606060;
+  color: #9aa3ad;
   font-size: 11px;
   font-family: 'JetBrains Mono', monospace;
   border-radius: 4px;
@@ -961,7 +962,7 @@
 .action-btn:hover {
   background: rgba(255, 255, 255, 0.04);
   border-color: #2a2a2a;
-  color: #808080;
+  color: #aeb4bd;
 }
 
 .action-btn.active {
@@ -998,7 +999,7 @@
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: #444444;
+  color: #6b727c;
   padding-bottom: 4px;
   border-bottom: 1px solid #1c1c1c;
   font-family: 'JetBrains Mono', monospace;
@@ -1040,7 +1041,7 @@
 
 .cmp-overall-sub {
   font-size: 10px;
-  color: #444444;
+  color: #6b727c;
 }
 
 .cmp-metric {
@@ -1051,7 +1052,7 @@
 
 .cmp-metric-label {
   font-size: 11px;
-  color: #606060;
+  color: #9aa3ad;
   font-weight: 500;
 }
 
@@ -1070,7 +1071,7 @@
 .cmp-pc-label {
   width: 70px;
   font-size: 10px;
-  color: #505050;
+  color: #868d96;
   flex-shrink: 0;
   text-align: right;
   font-family: 'JetBrains Mono', monospace;
@@ -1094,7 +1095,7 @@
   width: 24px;
   font-size: 11px;
   font-weight: 600;
-  color: #808080;
+  color: #aeb4bd;
   text-align: right;
   font-family: 'JetBrains Mono', monospace;
 }
@@ -1106,7 +1107,7 @@
 .cmp-bar-detail {
   width: 55px;
   font-size: 9px;
-  color: #444444;
+  color: #6b727c;
   text-align: right;
   font-family: 'JetBrains Mono', monospace;
 }
@@ -1125,7 +1126,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 11px;
-  color: #606060;
+  color: #9aa3ad;
   margin-bottom: 6px;
 }
 
@@ -1178,7 +1179,7 @@
 
 .filter-chevron {
   font-size: 12px;
-  color: #444444;
+  color: #6b727c;
   transition: transform 0.2s ease, color 0.15s;
   display: inline-block;
 }
@@ -1188,7 +1189,7 @@
 }
 
 .filter-toggle-header:hover .filter-chevron {
-  color: #666666;
+  color: #9098a3;
 }
 
 .filter-panel {
@@ -1208,7 +1209,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 11px;
-  color: #808080;
+  color: #aeb4bd;
 }
 
 .filter-value {
@@ -1240,7 +1241,7 @@
   padding: 6px;
   border: 1px solid #222222;
   background: rgba(255, 255, 255, 0.02);
-  color: #606060;
+  color: #9aa3ad;
   font-size: 11px;
   font-family: 'JetBrains Mono', monospace;
   border-radius: 4px;
@@ -1271,28 +1272,58 @@
 /* ── Mobile ────────────────────────────────────────────────── */
 
 @media (max-width: 768px) {
-  .mobile-menu-btn {
+  /* ── Top navbar ── */
+  .mobile-topbar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     position: fixed;
-    top: 12px;
-    left: 12px;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 3001;
-    width: 44px;
-    height: 44px;
-    padding: 0;
-    border-radius: 8px;
-    border: 1px solid rgba(0, 255, 163, 0.2);
+    height: 48px;
+    padding: 0 14px;
     background: #0a0a0a;
-    color: #00ffa3;
-    font-size: 20px;
-    line-height: 1;
-    cursor: pointer;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid #1c1c1c;
     font-family: 'JetBrains Mono', monospace;
   }
 
+  .mobile-topbar-logo {
+    font-size: 16px;
+    font-weight: 800;
+    color: #00ffa3;
+    letter-spacing: -0.5px;
+    text-shadow: 0 0 14px rgba(0, 255, 163, 0.25);
+  }
+
+  .mobile-topbar-toggle {
+    padding: 6px 14px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 255, 163, 0.25);
+    background: rgba(0, 255, 163, 0.06);
+    color: #00ffa3;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: all 0.15s;
+  }
+
+  .mobile-topbar-toggle:hover,
+  .mobile-topbar-toggle:active {
+    background: rgba(0, 255, 163, 0.12);
+    border-color: rgba(0, 255, 163, 0.4);
+  }
+
+  .app--menu-open .mobile-topbar-toggle {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: #333;
+    color: #999;
+  }
+
+  /* ── Scrim ── */
   .mobile-scrim {
     display: block;
     position: fixed;
@@ -1312,20 +1343,26 @@
     pointer-events: auto;
   }
 
+  /* ── Sidebar drawer ── */
   .sidebar {
     position: fixed;
     left: 0;
-    top: 0;
+    top: 48px;
     bottom: 0;
     width: min(340px, 92vw);
     max-height: none;
     min-width: unset;
     padding: 16px;
-    padding-top: 56px;
     z-index: 3000;
     transform: translateX(-100%);
     transition: transform 0.22s ease;
     box-shadow: none;
+  }
+
+  /* Hide the logo/subtitle in sidebar on mobile — topbar shows the name */
+  .sidebar .logo,
+  .sidebar .subtitle {
+    display: none;
   }
 
   .app--menu-open .sidebar {
@@ -1340,11 +1377,13 @@
     max-height: none;
   }
 
+  /* ── Map adjusts for topbar ── */
   .map-shell {
     flex: 1;
     width: 100%;
-    height: 100vh;
-    height: 100dvh;
+    height: calc(100vh - 48px);
+    height: calc(100dvh - 48px);
+    margin-top: 48px;
   }
 
   .map {
@@ -1353,6 +1392,6 @@
   }
 
   .leaflet-control-container .leaflet-top.leaflet-left {
-    margin-top: 56px;
+    margin-top: 8px;
   }
 }

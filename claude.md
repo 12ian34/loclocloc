@@ -14,7 +14,7 @@ This file is **safe for a public repo** — no secrets. API keys live only in lo
 | Area | Location |
 |------|----------|
 | UI / map | `src/App.jsx` (large single file: layers, scoring, sidebar, modals) |
-| Styles | `src/App.css` (includes mobile drawer, data modal, sidebar footer) |
+| Styles | `src/App.css` (includes mobile drawer, data modal, sidebar footer; sidebar/modal text colours tuned for contrast on dark panels) |
 | Data copy (modal) | `src/dataSources.js` — `BUILD_DATE` from Vite `define` |
 | Boot | `src/main.jsx`, `index.html` |
 | Build | `vite.config.js` — `__BUILD_DATE__` injected at build time |

@@ -98,6 +98,28 @@ export function ZoomLabels({ data, format, property }) {
   ));
 }
 
+// Ensure Leaflet recalculates map size after layout settles (fixes mobile viewport issues)
+export function MapSizeInvalidator() {
+  const map = useMap();
+  useEffect(() => {
+    // Delay to let CSS layout (especially dvh on iOS) settle
+    const t1 = setTimeout(() => map.invalidateSize(), 100);
+    const t2 = setTimeout(() => map.invalidateSize(), 500);
+    const onResize = () => map.invalidateSize();
+    window.addEventListener("resize", onResize);
+    // Also handle orientation change on mobile
+    window.addEventListener("orientationchange", () => {
+      setTimeout(() => map.invalidateSize(), 200);
+    });
+    return () => {
+      clearTimeout(t1);
+      clearTimeout(t2);
+      window.removeEventListener("resize", onResize);
+    };
+  }, [map]);
+  return null;
+}
+
 // #5: FlyTo clears itself after animation completes
 export function FlyTo({ center, zoom, onComplete }) {
   const map = useMap();

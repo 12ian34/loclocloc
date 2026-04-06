@@ -16,7 +16,7 @@ import {
 import { interpolateColor, computeScale, buildPercentileLookups, computePostcodeScores } from "./utils/geo.js";
 import { encodeAppState, decodeAppState } from "./utils/url.js";
 import { computeTransitIsochrones } from "./utils/tfl.js";
-import { PointMarkers, ZoomLabels, FlyTo, WalkingRings, TransitIsochrones, ChoroplethLayer } from "./components/MapLayers.jsx";
+import { PointMarkers, ZoomLabels, FlyTo, WalkingRings, TransitIsochrones, ChoroplethLayer, MapSizeInvalidator } from "./components/MapLayers.jsx";
 import {
   PostcodeSearch,
   PostcodeScoreCard,
@@ -373,15 +373,18 @@ function App() {
 
   return (
     <div className={`app ${mobileMenuOpen ? "app--menu-open" : ""}`}>
-      <button
-        type="button"
-        className="mobile-menu-btn"
-        aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
-        aria-expanded={mobileMenuOpen}
-        onClick={() => setMobileMenuOpen((o) => !o)}
-      >
-        {mobileMenuOpen ? "\u2715" : "\u2630"}
-      </button>
+      <nav className="mobile-topbar" aria-label="Mobile navigation">
+        <button
+          type="button"
+          className="mobile-topbar-toggle"
+          aria-label={mobileMenuOpen ? "Close panel" : "Open data layers"}
+          aria-expanded={mobileMenuOpen}
+          onClick={() => setMobileMenuOpen((o) => !o)}
+        >
+          {mobileMenuOpen ? "\u2715 Close" : "Data layers"}
+        </button>
+        <span className="mobile-topbar-logo">loclocloc</span>
+      </nav>
       <button
         type="button"
         className="mobile-scrim"
@@ -611,6 +614,7 @@ function App() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>'
           url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
         />
+        <MapSizeInvalidator />
 
         {/* #5: FlyTo now clears itself */}
         {flyTarget && <FlyTo center={flyTarget.center} zoom={flyTarget.zoom} onComplete={clearFlyTarget} />}
