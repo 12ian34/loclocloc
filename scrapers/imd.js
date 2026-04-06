@@ -6,10 +6,12 @@
  * Outputs a single GeoJSON with all domain scores as properties on each LSOA.
  */
 
-import { writeFileSync, readFileSync, existsSync } from "fs";
+import * as fs from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
 import XLSX from "xlsx";
+
+XLSX.set_fs(fs);
 import { getLSOABoundaries } from "./lib/boundaries.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -21,11 +23,11 @@ async function main() {
   console.log("Extracting all IMD 2019 domains at LSOA level...\n");
 
   // Download IMD if not cached
-  if (!existsSync(IMD_CACHE)) {
+  if (!fs.existsSync(IMD_CACHE)) {
     console.log("Downloading IMD 2019 scores...");
     const res = await fetch(IMD_URL);
     const buf = Buffer.from(await res.arrayBuffer());
-    writeFileSync(IMD_CACHE, buf);
+    fs.writeFileSync(IMD_CACHE, buf);
     console.log("Cached IMD data");
   } else {
     console.log("Using cached IMD data");
@@ -110,7 +112,7 @@ async function main() {
 
   console.log(`Matched: ${matched}, borough-averaged: ${unmatched}`);
 
-  writeFileSync(OUTPUT_PATH, JSON.stringify(lsoas));
+  fs.writeFileSync(OUTPUT_PATH, JSON.stringify(lsoas));
   console.log(`\nSaved IMD choropleth (${lsoas.features.length} LSOAs, 8 domains) to ${OUTPUT_PATH}`);
 }
 

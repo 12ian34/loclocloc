@@ -72,6 +72,17 @@ This file is **safe for a public repo** — no secrets. API keys live only in lo
 ## Scrapers & data
 
 - **`scrapers/*.js`** — regenerate `public/data/*.geojson` (and caches e.g. `_lsoa-boundaries.geojson`, `_imd_scores.xlsx`, `_population-density-ts006.xlsx`, `_ptal-lsoa-2023.csv`). Full procedure: **`README.md`** **Updating bundled data** + **Data sources**.
+
+### SheetJS `xlsx` (spreadsheet parsing)
+
+- **Do not use** the public npm registry package `xlsx` for version bumps — it is **frozen at 0.18.5** and is **unmaintained** there. Patched releases are published only on **[cdn.sheetjs.com](https://cdn.sheetjs.com/)** (see [Node install docs](https://docs.sheetjs.com/docs/getting-started/installation/nodejs)).
+- **Security:** CE versions **before 0.19.3** were reported vulnerable to **prototype pollution** when reading malicious files; **before 0.20.2** to **ReDoS**. This repo pins **SheetJS 0.20.3** via tarball URL in **`package.json`**:  
+  `https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz`  
+  `package-lock.json` records `resolved` + `integrity`; **`npm audit`** should show **no** `xlsx` issues after install.
+- **ESM scrapers:** SheetJS’s **ESM** build (`xlsx.mjs`) does not auto-bind Node `fs`. Any scraper that uses **`XLSX.readFile`** must call **`XLSX.set_fs(fs)`** once (after `import * as fs from "fs"`). **`scrapers/imd.js`** and **`scrapers/rent.js`** do this. **`scrapers/population-density.js`** only uses **`XLSX.read(buf, { type: "buffer" })`** — no `set_fs` needed.
+- **CI / Netlify:** `npm install` needs network access to fetch the tarball the first time (or when the lockfile changes). **Optional supply-chain hardening:** vendor the `.tgz` (e.g. under `vendor/`) and depend on `xlsx@file:vendor/xlsx-0.20.3.tgz` per SheetJS vendoring instructions — enables offline / pinned installs without hitting the CDN each time.
+- **User-facing note:** `README.md` explains that spreadsheet support uses the CDN tarball, not registry `xlsx`.
+
 - **`scrapers/lib/boundaries.js`** — ONS ArcGIS LSOA 2021 for London; shared by IMD, crime, air, rent, population-density, ptal, noise, green-space, etc.
 - **`scrapers/lib/overpass.js`** — rotates public Overpass endpoints + retries (used by heavy POI / green-space scrapers).
 - **`scrapers/rent.js`** — outputs **`rent.geojson`**; IMD 2011 codes mapped / imputed to 2021 LSOAs; borough anchor table inside file.

@@ -7,10 +7,12 @@
  * Then calibrates against known borough median rents to produce estimated monthly rents.
  */
 
-import { writeFileSync, readFileSync, existsSync } from "fs";
+import * as fs from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
 import XLSX from "xlsx";
+
+XLSX.set_fs(fs);
 import { getLSOABoundaries, featureCentroid, distFromCenter } from "./lib/boundaries.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -48,11 +50,11 @@ async function main() {
   console.log("Building rent choropleth with real IMD data...\n");
 
   // Download IMD scores
-  if (!existsSync(IMD_CACHE)) {
+  if (!fs.existsSync(IMD_CACHE)) {
     console.log("Downloading IMD 2019 scores...");
     const res = await fetch(IMD_URL);
     const buf = Buffer.from(await res.arrayBuffer());
-    writeFileSync(IMD_CACHE, buf);
+    fs.writeFileSync(IMD_CACHE, buf);
     console.log("Cached IMD data");
   } else {
     console.log("Using cached IMD data");
@@ -152,7 +154,7 @@ async function main() {
     delete f.properties._imd;
   }
 
-  writeFileSync(OUTPUT_PATH, JSON.stringify(lsoas));
+  fs.writeFileSync(OUTPUT_PATH, JSON.stringify(lsoas));
   console.log(`\nSaved rent choropleth (${lsoas.features.length} LSOAs) to ${OUTPUT_PATH}`);
 }
 
