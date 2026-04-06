@@ -14,6 +14,7 @@ This file is **safe for a public repo** — no secrets. API keys live only in lo
 | Area | Location |
 |------|----------|
 | UI / map | `src/App.jsx` (large single file: layers, scoring, sidebar, modals) |
+| Sidebar widgets | `src/components/Sidebar.jsx` — includes **`InfoTip`**: hover tooltip on pointer devices; **tap toggles** + outside dismiss on touch (choropleth rows + score rows). Tooltips use **`score-info--tooltip-end`** so they stay inside the sidebar and are not clipped by the map. |
 | Styles | `src/App.css` (includes mobile drawer, data modal, sidebar footer; sidebar/modal text colours tuned for contrast on dark panels) |
 | Data copy (modal) | `src/dataSources.js` — `BUILD_DATE` from Vite `define` |
 | Boot | `src/main.jsx`, `index.html` |
@@ -32,14 +33,14 @@ This file is **safe for a public repo** — no secrets. API keys live only in lo
 
 ## Layers (IDs matter for URL + scoring)
 
-**POIs** — `POINT_LAYERS`: each `{ id, name, file, color, emoji }`. Fetched on load into `layerData`.
+**POIs** — `POINT_LAYERS`: each `{ id, name, file, color, emoji }` (`color` unused in sidebar UI; list shows emoji + name). Fetched on load into `layerData`. **Clear all POIs** turns off every active POI layer at once (same `.clear-choropleth` style as choropleth clear).
 
-**Choropleths** — `CHOROPLETH_LAYERS`: each `{ id, name, file, property, emoji, unit, colorStops, format, inverse }`. Multiple entries can share one **file** (e.g. IMD domains); loader dedupes by `file` and fills `choroplethData[id]` per layer id.
+**Choropleths** — `CHOROPLETH_LAYERS`: each `{ id, name, file, property, emoji, unit, colorStops, format, inverse, tip? }`. Optional **`tip`** powers the **i** hover tooltip in the Area Data list (same `score-info` / `score-tooltip` pattern as score rows). Multiple entries can share one **file** (e.g. IMD domains); loader dedupes by `file` and fills `choroplethData[id]` per layer id.
 
 **Notable choropleth ids**
 
 - `crime-current`, `air`, `imd`, `imd-*` domains, **`rent-est`**, `pop-density`, **`ptal`** (TfL mean access index), **`green-space`**, **`noise`** (modelled Lden).
-- Re-clicking the active choropleth row clears it (`onMouseDown` + `toggleChoropleth`).
+- Re-clicking the active choropleth row clears it (`toggleChoropleth`).
 
 **Defaults** — no POI layers on; no choropleth; Filter Areas section expanded; POI / Area sections collapsible.
 
@@ -86,6 +87,8 @@ This file is **safe for a public repo** — no secrets. API keys live only in lo
 
 ## UX extras
 
+- **Postcode search** (`PostcodeSearch` in `Sidebar.jsx`): mint gradient frame on the field (stronger on focus), example placeholder; `search-block` on the form in `App.css`.
+- **Walk & transit** — collapsible sidebar section (same pattern as POI / Area): walk rings (`WALK_RINGS` in `config.js`: 5/15/30/45 min, labels north of each ring on the map) + transit isochrones (`TRANSIT_RINGS`: 15/30/45 min, labels past the northernmost vertex of each polygon, colour matches that pin’s isochrone stroke) + transit isochrone toggles; short hint about TfL latency. **Transit** opens `ConfirmModal` only when a pinned postcode still needs a fetch; `transitData` + `transitDataRef` cache per pin (hide overlay does not clear). **Clear** all pins resets transit cache. Loading shows a horizontal mint fill on the transit button; `computeTransitIsochrones` in `tfl.js` accepts optional batch `onProgress`. **Heavy POI layers** (`HEAVY_POI_LAYER_IDS` in `config.js`: bike parking, restaurants) open the same modal pattern before enabling.
 - Sidebar footer: **Copy share link**, **Data & freshness** modal (`DataAboutModal` + `dataSources.js`), **Source code** link to GitHub.
 - **Mobile** (`max-width: 768px`): fixed ☰ opens drawer; scrim; map full viewport (`100dvh`); `Esc` closes drawer/modal.
 
@@ -94,7 +97,7 @@ This file is **safe for a public repo** — no secrets. API keys live only in lo
 ## Docs & licence
 
 - **User-facing:** `README.md` (features, run, build, data sources, refresh how-to, licence link).
-- **Screenshot:** `docs/screenshot.png` for README hero.
+- **README hero images:** `docs/hero-1.png`, `docs/hero-2.png`.
 - **Licence:** `LICENSE` (MIT), `package.json` `"license": "MIT"`.
 
 ---

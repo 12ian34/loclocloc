@@ -13,6 +13,7 @@ import {
   FILTER_CHOROPLETH_DIMS,
   SCORE_AREA_DIMS,
   SCORE_PROX_DIMS,
+  HEAVY_POI_LAYER_IDS,
 } from "./config.js";
 import { interpolateColor, computeScale, buildPercentileLookups, computePostcodeScores } from "./utils/geo.js";
 import { encodeAppState, decodeAppState } from "./utils/url.js";
@@ -23,8 +24,10 @@ import {
   PostcodeScoreCard,
   ComparisonTable,
   DataAboutModal,
+  ConfirmModal,
   FilterPanel,
   SidebarFooter,
+  InfoTip,
 } from "./components/Sidebar.jsx";
 
 // #3: keyboard handler for accessible interactive elements
@@ -55,8 +58,12 @@ function App() {
   const [filters, setFilters] = useState(initialState.filters || {});
   const [showFilters, setShowFilters] = useState(true);
   const [showPoiSection, setShowPoiSection] = useState(true);
+  const [showReachSection, setShowReachSection] = useState(true);
   const [showAreaSection, setShowAreaSection] = useState(true);
+  const [blockingModal, setBlockingModal] = useState(null);
   const [transitData, setTransitData] = useState({});
+  const transitDataRef = useRef(transitData);
+  transitDataRef.current = transitData;
   const [showTransit, setShowTransit] = useState(initialState.showTransit);
   // #6: restore disabled dims from URL
   const [disabledScoreDims, setDisabledScoreDims] = useState(
@@ -73,6 +80,7 @@ function App() {
       if (e.key === "Escape") {
         setShowDataModal(false);
         setMobileMenuOpen(false);
+        setBlockingModal(null);
       }
     };
     window.addEventListener("keydown", onKey);
@@ -190,9 +198,21 @@ function App() {
   const toggleLayer = (id) => {
     setActiveLayers((prev) => {
       const next = new Set(prev);
-      if (next.has(id)) next.delete(id); else next.add(id);
+      if (next.has(id)) {
+        next.delete(id);
+        return next;
+      }
+      if (HEAVY_POI_LAYER_IDS.has(id)) {
+        setBlockingModal({ type: "heavy-poi", layerId: id });
+        return prev;
+      }
+      next.add(id);
       return next;
     });
+  };
+
+  const clearAllPoiLayers = () => {
+    setActiveLayers(new Set());
   };
 
   const toggleChoropleth = (id) => {
@@ -218,19 +238,66 @@ function App() {
   const clearFlyTarget = useCallback(() => setFlyTarget(null), []);
 
   const [transitLoading, setTransitLoading] = useState(false);
+  const [transitLoadProgress, setTransitLoadProgress] = useState(null);
 
-  const fetchTransitIsochrones = async () => {
+  const fetchTransitIsochrones = useCallback(async () => {
+    const pending = pinnedPostcodes.filter((p) => !transitDataRef.current[p.postcode]);
     setShowTransit(true);
+    if (pending.length === 0) {
+      return;
+    }
     setTransitLoading(true);
+    setTransitLoadProgress(0);
     try {
-      for (const p of pinnedPostcodes) {
-        if (transitData[p.postcode]) continue;
-        const iso = await computeTransitIsochrones(p.lat, p.lng);
-        setTransitData((prev) => ({ ...prev, [p.postcode]: iso }));
+      const n = pending.length;
+      for (let i = 0; i < n; i++) {
+        const p = pending[i];
+        const iso = await computeTransitIsochrones(p.lat, p.lng, (batchFrac) => {
+          setTransitLoadProgress(Math.min(99, Math.round(((i + batchFrac) / n) * 100)));
+        });
+        setTransitData((prev) => {
+          const next = { ...prev, [p.postcode]: iso };
+          transitDataRef.current = next;
+          return next;
+        });
       }
+      setTransitLoadProgress(100);
     } finally {
       setTransitLoading(false);
+      setTransitLoadProgress(null);
     }
+  }, [pinnedPostcodes]);
+
+  const onWalkButtonClick = () => {
+    setShowRings((r) => !r);
+  };
+
+  const onTransitButtonClick = () => {
+    if (transitLoading) return;
+    if (showTransit) {
+      setShowTransit(false);
+      return;
+    }
+    if (pinnedPostcodes.length === 0) return;
+
+    const needsFetch = pinnedPostcodes.some((p) => !transitData[p.postcode]);
+    if (!needsFetch) {
+      setShowTransit(true);
+      return;
+    }
+    setBlockingModal({ type: "transit" });
+  };
+
+  const confirmTransitLoad = () => {
+    setBlockingModal(null);
+    fetchTransitIsochrones();
+  };
+
+  const confirmHeavyPoiLayer = () => {
+    if (blockingModal?.type !== "heavy-poi") return;
+    const layerId = blockingModal.layerId;
+    setBlockingModal(null);
+    setActiveLayers((prev) => new Set(prev).add(layerId));
   };
 
   const toggleScoreDim = (dimId) => {
@@ -459,22 +526,14 @@ function App() {
                 </button>
               )}
               <button
-                className={`action-btn ${showRings ? "active" : ""}`}
-                onClick={() => setShowRings(!showRings)}
-              >
-                {showRings ? "Hide walk" : "Walk"}
-              </button>
-              <button
-                className={`action-btn ${showTransit ? "active" : ""}`}
+                type="button"
+                className="action-btn"
                 onClick={() => {
-                  if (showTransit) { setShowTransit(false); }
-                  else { fetchTransitIsochrones(); }
+                  setPinnedPostcodes([]);
+                  setTransitData({});
+                  setShowTransit(false);
                 }}
-                disabled={transitLoading}
               >
-                {transitLoading ? "Loading..." : showTransit ? "Hide transit" : "Transit"}
-              </button>
-              <button className="action-btn" onClick={() => setPinnedPostcodes([])}>
                 Clear
               </button>
             </div>
@@ -488,6 +547,64 @@ function App() {
         <div className="layers">
           <h2
             className="filter-toggle-header"
+            onClick={() => setShowReachSection(!showReachSection)}
+            onKeyDown={onKeyActivate(() => setShowReachSection(!showReachSection))}
+            tabIndex={0}
+            role="button"
+            aria-expanded={showReachSection}
+          >
+            Walk &amp; transit
+            <span className={`filter-chevron ${showReachSection ? "filter-chevron-open" : ""}`}>&#9656;</span>
+          </h2>
+          {showReachSection && (
+            <div className="reach-section">
+              {pinnedPostcodes.length === 0 ? (
+                <p className="reach-hint">Pin a postcode to show walk-time rings or public-transit reach from your pins.</p>
+              ) : (
+                <>
+                  <p className="reach-hint">
+                    Walk rings draw instantly. Transit isochrones call TfL for each pin &mdash; often ~1 minute per pin, and the page can feel stuck until they finish.
+                  </p>
+                  <div className="reach-actions">
+                    <button
+                      type="button"
+                      className={`action-btn ${showRings ? "active" : ""}`}
+                      onClick={onWalkButtonClick}
+                    >
+                      {showRings ? "Hide walk rings" : "Walk rings"}
+                    </button>
+                    <button
+                      type="button"
+                      className={`action-btn action-btn--transit-progress ${showTransit ? "active" : ""}`}
+                      onClick={onTransitButtonClick}
+                      disabled={transitLoading}
+                      aria-busy={transitLoading}
+                    >
+                      {transitLoading && transitLoadProgress != null ? (
+                        <>
+                          <span
+                            className="action-btn-progress-fill"
+                            style={{ width: `${transitLoadProgress}%` }}
+                            aria-hidden="true"
+                          />
+                          <span className="action-btn-progress-label">Loading transit…</span>
+                        </>
+                      ) : (
+                        <span className="action-btn-progress-label">
+                          {showTransit ? "Hide transit" : "Transit isochrones"}
+                        </span>
+                      )}
+                    </button>
+                  </div>
+                </>
+              )}
+            </div>
+          )}
+        </div>
+
+        <div className="layers">
+          <h2
+            className="filter-toggle-header"
             onClick={() => setShowPoiSection(!showPoiSection)}
             onKeyDown={onKeyActivate(() => setShowPoiSection(!showPoiSection))}
             tabIndex={0}
@@ -497,15 +614,22 @@ function App() {
             Points of Interest
             <span className={`filter-chevron ${showPoiSection ? "filter-chevron-open" : ""}`}>&#9656;</span>
           </h2>
-          {showPoiSection &&
-            POINT_LAYERS.map((layer) => (
-              <label key={layer.id} className={`layer-toggle ${activeLayers.has(layer.id) ? "active" : ""}`}>
-                <input type="checkbox" checked={activeLayers.has(layer.id)} onChange={() => toggleLayer(layer.id)} />
-                <span className="layer-dot" style={{ backgroundColor: layer.color }} />
-                <span className="layer-name">{layer.emoji} {layer.name}</span>
-                <span className="layer-count">{featureCount(layer.id)}</span>
-              </label>
-            ))}
+          {showPoiSection && (
+            <>
+              {POINT_LAYERS.map((layer) => (
+                <label key={layer.id} className={`layer-toggle ${activeLayers.has(layer.id) ? "active" : ""}`}>
+                  <input type="checkbox" checked={activeLayers.has(layer.id)} onChange={() => toggleLayer(layer.id)} />
+                  <span className="layer-name">{layer.emoji} {layer.name}</span>
+                  <span className="layer-count">{featureCount(layer.id)}</span>
+                </label>
+              ))}
+              {activeLayers.size > 0 && (
+                <button type="button" className="clear-choropleth" onClick={clearAllPoiLayers}>
+                  Clear all POIs
+                </button>
+              )}
+            </>
+          )}
         </div>
 
         <div className="layers">
@@ -535,6 +659,7 @@ function App() {
                 >
                   <span className={`layer-radio ${activeChoropleth === layer.id ? "layer-radio-on" : ""}`} />
                   <span className="layer-name">{layer.emoji} {layer.name}</span>
+                  {layer.tip && <InfoTip tip={layer.tip} />}
                 </div>
               ))}
               {activeChoropleth && (
@@ -608,6 +733,34 @@ function App() {
       </div>
 
       {showDataModal && <DataAboutModal onClose={() => setShowDataModal(false)} />}
+
+      {blockingModal?.type === "transit" && (
+        <ConfirmModal
+          title="Load transit isochrones?"
+          cancelLabel="Cancel"
+          confirmLabel="Continue"
+          onCancel={() => setBlockingModal(null)}
+          onConfirm={confirmTransitLoad}
+        >
+          <p>
+            Each pinned postcode is sent to the TfL journey API. Expect on the order of one minute per pin, and the UI may not respond until each request completes. Pins you have already loaded stay cached until you remove them or clear all pins &mdash; turning the overlay off does not refetch.
+          </p>
+        </ConfirmModal>
+      )}
+
+      {blockingModal?.type === "heavy-poi" && (
+        <ConfirmModal
+          title={`Enable ${POINT_LAYERS.find((l) => l.id === blockingModal.layerId)?.name ?? "layer"}?`}
+          cancelLabel="Cancel"
+          confirmLabel="Show layer"
+          onCancel={() => setBlockingModal(null)}
+          onConfirm={confirmHeavyPoiLayer}
+        >
+          <p>
+            This layer contains a huge number of points. Turning it on can freeze or stutter the tab for several seconds while Leaflet draws every marker.
+          </p>
+        </ConfirmModal>
+      )}
 
       <div className="map-shell">
       <MapContainer

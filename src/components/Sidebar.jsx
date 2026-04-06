@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef, useId } from "react";
 import { BUILD_DATE, DATA_INTRO, DATA_ROWS } from "../dataSources.js";
 import { SCORE_AREA_DIMS, SCORE_PROX_DIMS, CHOROPLETH_LAYERS, FILTER_CHOROPLETH_DIMS } from "../config.js";
 
@@ -10,6 +10,57 @@ function onKeyActivate(callback) {
       callback();
     }
   };
+}
+
+/** Hover shows tooltip on pointer devices; tap toggles + tap-outside dismiss for touch. Tooltip is right-anchored (see `.score-info--tooltip-end`) so it is not clipped by the sidebar. */
+export function InfoTip({ tip }) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const close = (e) => {
+      if (ref.current && !ref.current.contains(e.target)) setOpen(false);
+    };
+    const onKey = (e) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("mousedown", close);
+    document.addEventListener("touchstart", close, { passive: true });
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", close);
+      document.removeEventListener("touchstart", close);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
+
+  if (!tip) return null;
+
+  return (
+    <span
+      ref={ref}
+      className={`score-info score-info--tooltip-end ${open ? "score-info--open" : ""}`}
+      role="button"
+      tabIndex={0}
+      aria-label="About this layer"
+      aria-expanded={open}
+      onClick={(e) => {
+        e.stopPropagation();
+        setOpen((o) => !o);
+      }}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          e.stopPropagation();
+          setOpen((o) => !o);
+        }
+      }}
+    >
+      i
+      <span className="score-tooltip">{tip}</span>
+    </span>
+  );
 }
 
 export function PostcodeSearch({ onResult }) {
@@ -44,15 +95,22 @@ export function PostcodeSearch({ onResult }) {
   };
 
   return (
-    <form className="search" onSubmit={search}>
-      <input
-        type="text"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        placeholder="Search postcode..."
-        className="search-input"
-      />
-      <button type="submit" className="search-btn">Go</button>
+    <form className="search search-block" onSubmit={search}>
+      <div className="search-input-wrap">
+        <span className="search-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </span>
+        <input
+          type="text"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="e.g. SW1A 1AA, E2 8DY"
+          className="search-input"
+          autoComplete="postal-code"
+          aria-label="UK postcode"
+        />
+      </div>
+      <button type="submit" className="search-btn">Pin</button>
       {error && <div className="search-error">{error}</div>}
     </form>
   );
@@ -73,15 +131,7 @@ function ScoreBar({ score, label, detail, enabled, onToggle, tip }) {
         <span className={`score-toggle ${enabled === false ? "" : "score-toggle-on"}`} />
       )}
       <span className="score-label">{label}</span>
-      {tip && (
-        <span
-          className="score-info"
-          onClick={(e) => e.stopPropagation()}
-        >
-          i
-          <span className="score-tooltip">{tip}</span>
-        </span>
-      )}
+      {tip && <InfoTip tip={tip} />}
       <div className="score-bar-track">
         <div className="score-bar-fill" style={{ width: `${score}%`, background: enabled === false ? "#555" : color }} />
       </div>
@@ -228,6 +278,42 @@ export function ComparisonTable({ postcodes, allScores }) {
             <ComparisonBar values={getValues(dim.id, "prox")} postcodes={postcodes} />
           </div>
         ))}
+      </div>
+    </div>
+  );
+}
+
+export function ConfirmModal({ title, children, confirmLabel, cancelLabel, onConfirm, onCancel }) {
+  const descId = useId();
+  return (
+    <div className="modal-root" role="presentation">
+      <div className="modal-backdrop" onClick={onCancel} aria-hidden="true" />
+      <div
+        className="modal-panel modal-panel--confirm"
+        role="alertdialog"
+        aria-modal="true"
+        aria-labelledby="confirm-modal-title"
+        aria-describedby={descId}
+      >
+        <div className="modal-header">
+          <h2 id="confirm-modal-title">{title}</h2>
+          <button type="button" className="modal-close" onClick={onCancel} aria-label="Close">
+            ×
+          </button>
+        </div>
+        <div className="modal-body modal-body--confirm">
+          <div id={descId} className="modal-intro confirm-modal-desc">
+            {children}
+          </div>
+          <div className="confirm-modal-actions">
+            <button type="button" className="confirm-modal-btn confirm-modal-btn--secondary" onClick={onCancel}>
+              {cancelLabel}
+            </button>
+            <button type="button" className="confirm-modal-btn confirm-modal-btn--primary" onClick={onConfirm}>
+              {confirmLabel}
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

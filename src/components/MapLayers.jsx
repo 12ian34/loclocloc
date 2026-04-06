@@ -134,11 +134,16 @@ export function FlyTo({ center, zoom, onComplete }) {
   return null;
 }
 
+/** Meters north of `lat` for a label sitting on the ring (approximate). */
+function ringLabelLat(lat, metersNorth) {
+  return lat + metersNorth / 111320;
+}
+
 export function WalkingRings({ postcodes }) {
   return postcodes.flatMap((p) =>
-    WALK_RINGS.map((ring) => (
+    WALK_RINGS.flatMap((ring) => [
       <Circle
-        key={`${p.postcode}-${ring.mins}`}
+        key={`walk-c-${p.postcode}-${ring.mins}`}
         center={[p.lat, p.lng]}
         radius={ring.meters}
         interactive={false}
@@ -150,21 +155,47 @@ export function WalkingRings({ postcodes }) {
           dashArray: "6 4",
           opacity: 0.5,
         }}
-      />
-    ))
+      />,
+      <Marker
+        key={`walk-l-${p.postcode}-${ring.mins}`}
+        position={[ringLabelLat(p.lat, ring.meters), p.lng]}
+        icon={L.divIcon({
+          className: "walk-ring-label",
+          html: `<span>${ring.mins} min</span>`,
+          iconSize: [52, 16],
+          iconAnchor: [26, 8],
+        })}
+        interactive={false}
+      />,
+    ])
   );
+}
+
+/** Label sits just past the northernmost vertex of the ring (same idea as walk rings). */
+function transitRingLabelPosition(positions, offsetM = 140) {
+  if (!positions?.length) return null;
+  let maxLat = -Infinity;
+  let at = positions[0];
+  for (const pt of positions) {
+    if (pt[0] > maxLat) {
+      maxLat = pt[0];
+      at = pt;
+    }
+  }
+  return [at[0] + offsetM / 111320, at[1]];
 }
 
 export function TransitIsochrones({ data }) {
   if (!data) return null;
-  const postcodes = Object.keys(data);
-  return postcodes.flatMap((postcode, pcIdx) => {
+  const keys = Object.keys(data);
+  return keys.flatMap((postcode, pcIdx) => {
     const color = TRANSIT_COLORS[pcIdx % TRANSIT_COLORS.length];
     const isochrones = data[postcode];
-    return TRANSIT_RINGS.map((ring) => {
+    return TRANSIT_RINGS.flatMap((ring) => {
       const positions = isochrones[ring.mins];
-      if (!positions || positions.length < 3) return null;
-      return (
+      if (!positions || positions.length < 3) return [];
+      const labelPos = transitRingLabelPosition(positions);
+      const polygon = (
         <Polygon
           key={`transit-${postcode}-${ring.mins}`}
           positions={positions}
@@ -179,6 +210,21 @@ export function TransitIsochrones({ data }) {
           }}
         />
       );
+      if (labelPos == null) return [polygon];
+      return [
+        polygon,
+        <Marker
+          key={`transit-l-${postcode}-${ring.mins}`}
+          position={labelPos}
+          icon={L.divIcon({
+            className: "transit-isochrone-label",
+            html: `<span style="color:${color}">${ring.mins} min</span>`,
+            iconSize: [52, 16],
+            iconAnchor: [26, 8],
+          })}
+          interactive={false}
+        />,
+      ];
     });
   });
 }

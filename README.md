@@ -5,7 +5,8 @@
 https://loclocloc.netlify.app
 
 <p align="center">
-  <img src="docs/screenshot.png" alt="loclocloc — London map with sidebar layer toggles (Tube &amp; Rail, amenities, area data)" width="920" />
+  <img src="docs/hero-1.png" alt="loclocloc — London map with choropleth and pinned postcodes" width="920" /><br /><br />
+  <img src="docs/hero-2.png" alt="loclocloc — sidebar with POI layers, scores, walk rings, and area data" width="920" />
 </p>
 
 ## What is this
@@ -20,9 +21,9 @@ https://loclocloc.netlify.app
 - **Scorecards** — blended scores for each pinned postcode (proximity + area signals), with short explanations on what each metric means. Disable dimensions you don't care about.
 - **Filters** — set thresholds on crime, air quality, rent, deprivation, population density, noise, minimum transport access index, and minimum green-space score to grey out areas that don't pass.
 - **Compare** — pin multiple postcodes and see a side-by-side comparison across all dimensions.
-- **Walking rings** — concentric distance rings around pinned postcodes (5/10/15/20 min walk).
+- **Walking rings** — concentric distance rings around pinned postcodes (5/15/30/45 min walk), with each ring labelled on the map.
 - **Optional transit isochrones** — public-transit reach from pinned postcodes when the app has a TfL API key configured.
-- **Shareable URLs** — all app state (postcodes, layers, filters, disabled score dims) is encoded in the URL hash.
+- **Shareable URLs** — app state is encoded in the URL hash: postcodes, active POI layers, selected choropleth, choropleth opacity, walking rings, area filters, disabled scorecard dimensions, and optional transit isochrone visibility.
 
 Data is bundled as static GeoJSON in the repo, so the map works offline once built — no database required.
 

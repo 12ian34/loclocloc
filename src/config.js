@@ -20,6 +20,9 @@ export const POINT_LAYERS = [
   { id: "coworking", name: "Coworking", file: "/data/coworking.geojson", color: "#3b82f6", emoji: "💻" },
 ];
 
+/** POI ids with very large marker counts; UI warns before enabling (map can freeze while rendering). */
+export const HEAVY_POI_LAYER_IDS = new Set(["bike-parking", "restaurants"]);
+
 export const CHOROPLETH_LAYERS = [
   {
     id: "crime-current",
@@ -31,6 +34,7 @@ export const CHOROPLETH_LAYERS = [
     colorStops: ["#fff5f0", "#fdcab5", "#fc8d6a", "#e7442e", "#a50f15", "#67000d"],
     format: (v) => `${v}`,
     inverse: true,
+    tip: "Monthly street-level crime count per LSOA from data.police.uk. Darker = more crimes reported. Covers theft, violence, anti-social behaviour, etc.",
   },
   {
     id: "air",
@@ -42,6 +46,7 @@ export const CHOROPLETH_LAYERS = [
     colorStops: ["#f0f9e8", "#bae4bc", "#7bccc4", "#f4a460", "#d95f0e", "#8b4513"],
     format: (v) => `${v}`,
     inverse: true,
+    tip: "Nitrogen dioxide concentration (µg/m³) interpolated from London Air Quality Network monitors. Higher values mean worse air quality, often near busy roads.",
   },
   {
     id: "rent-est",
@@ -53,6 +58,7 @@ export const CHOROPLETH_LAYERS = [
     colorStops: ["#f7fcf0", "#e0f3db", "#ccebc5", "#a8ddb5", "#4eb3d3", "#2b8cbe", "#08589e"],
     format: (v) => `£${v}`,
     inverse: true,
+    tip: "Indicative 1-bed-style monthly rent (£) modelled from IMD 2019 data and borough anchor rents — not live market data. Useful for relative comparison across areas.",
   },
   {
     id: "imd",
@@ -64,6 +70,7 @@ export const CHOROPLETH_LAYERS = [
     colorStops: ["#f7fcf5", "#c7e9c0", "#74c476", "#fd8d3c", "#e6550d", "#a63603"],
     format: (v) => `${v}`,
     inverse: true,
+    tip: "Index of Multiple Deprivation 2019 (ONS). Combines income, employment, education, health, crime, housing and environment into one score. Higher = more deprived.",
   },
   {
     id: "imd-income",
@@ -75,6 +82,7 @@ export const CHOROPLETH_LAYERS = [
     colorStops: ["#f7fbff", "#c6dbef", "#6baed6", "#3182bd", "#08519c", "#08306b"],
     format: (v) => `${(v * 100).toFixed(0)}%`,
     inverse: true,
+    tip: "IMD Income domain — proportion of the population experiencing deprivation relating to low income (benefits, tax credits). Higher % = more income-deprived.",
   },
   {
     id: "imd-employment",
@@ -86,6 +94,7 @@ export const CHOROPLETH_LAYERS = [
     colorStops: ["#fff5eb", "#fdd0a2", "#fdae6b", "#f16913", "#d94801", "#8c2d04"],
     format: (v) => `${(v * 100).toFixed(0)}%`,
     inverse: true,
+    tip: "IMD Employment domain — proportion of the working-age population involuntarily excluded from the labour market (unemployment, incapacity). Higher % = more deprived.",
   },
   {
     id: "imd-education",
@@ -97,6 +106,7 @@ export const CHOROPLETH_LAYERS = [
     colorStops: ["#f7fcfd", "#ccece6", "#66c2a4", "#41ae76", "#238b45", "#005824"],
     format: (v) => `${v.toFixed(1)}`,
     inverse: true,
+    tip: "IMD Education, Skills & Training domain. Measures lack of qualifications and school performance in the area. Higher score = more educationally deprived.",
   },
   {
     id: "imd-health",
@@ -108,6 +118,7 @@ export const CHOROPLETH_LAYERS = [
     colorStops: ["#f7fcfd", "#d0d1e6", "#a6bddb", "#74a9cf", "#2b8cbe", "#045a8d"],
     format: (v) => `${v.toFixed(1)}`,
     inverse: true,
+    tip: "IMD Health Deprivation & Disability domain. Measures risk of premature death and impairment of quality of life through poor physical or mental health. Higher = worse.",
   },
   {
     id: "imd-crime",
@@ -119,6 +130,7 @@ export const CHOROPLETH_LAYERS = [
     colorStops: ["#fff5f0", "#fdcab5", "#fc8d6a", "#e7442e", "#a50f15", "#67000d"],
     format: (v) => `${v.toFixed(1)}`,
     inverse: true,
+    tip: "IMD Crime domain (2019 snapshot). Measures risk of personal and material victimisation at the local level. Higher score = higher crime risk. See also Crime (Current) for latest data.",
   },
   {
     id: "imd-barriers",
@@ -130,6 +142,7 @@ export const CHOROPLETH_LAYERS = [
     colorStops: ["#f2f0f7", "#cbc9e2", "#9e9ac8", "#756bb1", "#54278f", "#3f007d"],
     format: (v) => `${v.toFixed(1)}`,
     inverse: true,
+    tip: "IMD Barriers to Housing & Services domain. Measures physical and financial accessibility of housing and key local services (e.g. GP, post office). Higher = harder to access.",
   },
   {
     id: "imd-living",
@@ -141,6 +154,7 @@ export const CHOROPLETH_LAYERS = [
     colorStops: ["#ffffcc", "#d9f0a3", "#addd8e", "#78c679", "#31a354", "#006837"],
     format: (v) => `${v.toFixed(1)}`,
     inverse: true,
+    tip: "IMD Living Environment domain. Measures quality of indoor (housing condition) and outdoor (air quality, road traffic accidents) local environment. Higher = worse living conditions.",
   },
   {
     id: "pop-density",
@@ -152,6 +166,7 @@ export const CHOROPLETH_LAYERS = [
     colorStops: ["#f7fbff", "#c6dbef", "#6baed6", "#3182bd", "#08519c", "#08306b"],
     format: (v) => v.toLocaleString(),
     inverse: true,
+    tip: "Population density (persons per km²) from Census 2021. Darker areas have more people packed in. Central London LSOAs can exceed 20,000/km².",
   },
   {
     id: "ptal",
@@ -163,6 +178,7 @@ export const CHOROPLETH_LAYERS = [
     colorStops: ["#f7fcf5", "#c7e9c0", "#74c476", "#31a354", "#006d2c", "#00441b"],
     format: (v) => (typeof v === "number" ? v.toFixed(1) : String(v ?? "")),
     inverse: false,
+    tip: "TfL Public Transport Accessibility Level — mean access index per LSOA (2023). Higher = better connected by bus, tube, rail, tram and DLR. Darker = more accessible.",
   },
   {
     id: "green-space",
@@ -174,6 +190,7 @@ export const CHOROPLETH_LAYERS = [
     colorStops: ["#fff7ec", "#d9f0a3", "#addd8e", "#78c679", "#31a354", "#006837"],
     format: (v) => `${v}`,
     inverse: false,
+    tip: "Green space density score from OpenStreetMap parks and gardens near each LSOA (see scrapers/green-space.js). Higher score = more green space nearby; darker greens on the map = more green space.",
   },
   {
     id: "noise",
@@ -185,6 +202,7 @@ export const CHOROPLETH_LAYERS = [
     colorStops: ["#f7fcf0", "#d9f0a3", "#fdae6b", "#f16913", "#d94801", "#8c2d04"],
     format: (v) => `${v} dB`,
     inverse: true,
+    tip: "Day-evening-night noise level (Lden, dB) from Defra strategic noise mapping, interpolated to LSOAs. Higher = louder; busy roads and flight paths dominate. Lower is generally better for sleep and health.",
   },
 ];
 
@@ -215,9 +233,9 @@ export const TRANSIT_COLORS = [
 
 export const WALK_RINGS = [
   { mins: 5, meters: 400, color: "#ff3366", opacity: 0.18 },
-  { mins: 10, meters: 800, color: "#ff3366", opacity: 0.12 },
-  { mins: 15, meters: 1200, color: "#ff3366", opacity: 0.08 },
-  { mins: 20, meters: 1600, color: "#ff3366", opacity: 0.05 },
+  { mins: 15, meters: 1200, color: "#ff3366", opacity: 0.13 },
+  { mins: 30, meters: 2400, color: "#ff3366", opacity: 0.09 },
+  { mins: 45, meters: 3600, color: "#ff3366", opacity: 0.055 },
 ];
 
 export const SCORE_AREA_DIMS = [

@@ -23,7 +23,8 @@ async function queryTfLJourneyTime(fromLat, fromLng, toLat, toLng) {
   }
 }
 
-export async function computeTransitIsochrones(lat, lng) {
+/** @param {(fraction: number) => void} [onProgress] — called after each API batch, fraction 0–1 within this isochrone compute */
+export async function computeTransitIsochrones(lat, lng, onProgress) {
   const numAngles = 24;
   const sampleDistKm = [2, 5, 10, 16];
   const targetMinutes = TRANSIT_RINGS.map((r) => r.mins);
@@ -40,12 +41,16 @@ export async function computeTransitIsochrones(lat, lng) {
   }
 
   const BATCH = 10;
+  const totalBatches = Math.ceil(samples.length / BATCH);
+  let batchDone = 0;
   for (let b = 0; b < samples.length; b += BATCH) {
     const batch = samples.slice(b, b + BATCH);
     const results = await Promise.all(
       batch.map((s) => queryTfLJourneyTime(lat, lng, s.destLat, s.destLng))
     );
     batch.forEach((s, i) => { s.time = results[i]; });
+    batchDone += 1;
+    onProgress?.(batchDone / totalBatches);
   }
 
   const isochrones = {};
