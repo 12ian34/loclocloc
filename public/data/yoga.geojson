@@ -1,0 +1,2249 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.191566,
+          51.4899057
+        ]
+      },
+      "properties": {
+        "name": "London Lifestyle Academy",
+        "address": "Earls Court Square",
+        "postcode": "SW5 9DJ",
+        "website": "http://derosekensington.co.uk/",
+        "phone": "+44 20 7373 7070"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1515399,
+          51.4663533
+        ]
+      },
+      "properties": {
+        "name": "Union Station Yoga",
+        "address": "Lavender Hill 18",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1179981,
+          51.5632666
+        ]
+      },
+      "properties": {
+        "name": "Hello Yoga Studio & Fair-Well Shop",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.sayhellostudio.co.uk",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0882054,
+          51.5286593
+        ]
+      },
+      "properties": {
+        "name": "Bikram Yoga",
+        "address": "",
+        "postcode": "",
+        "website": "http://hotbikramyoga.co.uk/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1585197,
+          51.5238603
+        ]
+      },
+      "properties": {
+        "name": "Total Chi Yoga",
+        "address": "Baker Street 243",
+        "postcode": "",
+        "website": "https://www.totalchi.com/",
+        "phone": "+44 20 7224 2929"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.173496,
+          51.4614942
+        ]
+      },
+      "properties": {
+        "name": "Sadhana Yoga & Wellbeing",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4219899,
+          51.3868476
+        ]
+      },
+      "properties": {
+        "name": "Body & Brain",
+        "address": "Bridge Street 37",
+        "postcode": "KT12 1AF",
+        "website": "https://www.bodynbrain.co.uk/",
+        "phone": "+44 1932 259759"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1016518,
+          51.5366248
+        ]
+      },
+      "properties": {
+        "name": "MoreYoga",
+        "address": "Essex Road 21",
+        "postcode": "N1 2SA",
+        "website": "https://www.moreyoga.co.uk/yoga-london/angel-studio/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3042282,
+          51.4606419
+        ]
+      },
+      "properties": {
+        "name": "Richmond Yoga",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.hotyoga.co.uk/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1801929,
+          51.4594125
+        ]
+      },
+      "properties": {
+        "name": "Instate Fitness",
+        "address": "East Hill 5",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0977021,
+          51.6423047
+        ]
+      },
+      "properties": {
+        "name": "North London Yoga Studio",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1470397,
+          51.5397174
+        ]
+      },
+      "properties": {
+        "name": "Triyoga",
+        "address": "Jamestown Road 57",
+        "postcode": "NW1 7DB",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.178998,
+          51.6916603
+        ]
+      },
+      "properties": {
+        "name": "Zero Gravity Pilates",
+        "address": "Barnet Road 23-25",
+        "postcode": "EN6 2QX",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1059267,
+          51.4402495
+        ]
+      },
+      "properties": {
+        "name": "More Yoga",
+        "address": "Norwood Road 357",
+        "postcode": "SE27 9BQ",
+        "website": "https://moreyoga.co.uk",
+        "phone": "+44 808 175 0238"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.088064,
+          51.5174713
+        ]
+      },
+      "properties": {
+        "name": "Light Centre Moorgate",
+        "address": "London Wall 114",
+        "postcode": "EC2M 5QA",
+        "website": "http://www.lightcentremoorgate.co.uk",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1384983,
+          51.5125528
+        ]
+      },
+      "properties": {
+        "name": "Triyoga",
+        "address": "Kingly Court",
+        "postcode": "",
+        "website": "https://triyoga.co.uk/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.054528,
+          51.5474134
+        ]
+      },
+      "properties": {
+        "name": "Paper Dress Yoga",
+        "address": "Mare Street 352",
+        "postcode": "E8 1HR",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0671473,
+          51.4699198
+        ]
+      },
+      "properties": {
+        "name": "Yogarise",
+        "address": "Rye Lane 133",
+        "postcode": "SE15 4ST",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.117797,
+          51.5486582
+        ]
+      },
+      "properties": {
+        "name": "More Yoga",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4854845,
+          51.3724063
+        ]
+      },
+      "properties": {
+        "name": "Akram Hot Yooga",
+        "address": "Station Road 157",
+        "postcode": "KT15 2AT",
+        "website": "https://www.akramyoga.co.uk",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1651164,
+          51.5226537
+        ]
+      },
+      "properties": {
+        "name": "Indaba Yoga",
+        "address": "Hayes Place 18",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0785507,
+          51.5140289
+        ]
+      },
+      "properties": {
+        "name": "Fly",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2011137,
+          51.3640442
+        ]
+      },
+      "properties": {
+        "name": "The Saraswati Yoga Studio",
+        "address": "Robin Hood Lane 122",
+        "postcode": "SM1 2SE",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4208524,
+          51.4189975
+        ]
+      },
+      "properties": {
+        "name": "The Gym",
+        "address": "Staines Road West",
+        "postcode": "TW16 7BB",
+        "website": "https://www.thegymgroup.com/find-a-gym/south-london-gyms/sunbury/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3000871,
+          51.4644858
+        ]
+      },
+      "properties": {
+        "name": "Yogahaven",
+        "address": "Kew Road",
+        "postcode": "TW9 2NA",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0382466,
+          51.4907018
+        ]
+      },
+      "properties": {
+        "name": "More yoga",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2664646,
+          51.4671716
+        ]
+      },
+      "properties": {
+        "name": "The Garage Studio",
+        "address": "Sheen Lane 55",
+        "postcode": "SW14 8AB",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0037893,
+          51.5487453
+        ]
+      },
+      "properties": {
+        "name": "More Yoga",
+        "address": "Liberty Bridge Road 47",
+        "postcode": "E15 1FT",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1772377,
+          51.6135223
+        ]
+      },
+      "properties": {
+        "name": "More Yoga",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.moreyoga.co.uk/north-finchley",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0725149,
+          51.5239673
+        ]
+      },
+      "properties": {
+        "name": "Triyoga",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1929999,
+          51.5116978
+        ]
+      },
+      "properties": {
+        "name": "Heartcore",
+        "address": "Ossington Street 57",
+        "postcode": "",
+        "website": "https://www.heartcore.co.uk/studios?studio=studio-2",
+        "phone": "+44 20 7305 7760"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0555622,
+          51.648236
+        ]
+      },
+      "properties": {
+        "name": "Bikram Yoga Essex",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.307794,
+          51.5139095
+        ]
+      },
+      "properties": {
+        "name": "Triyoga",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1417079,
+          51.5448859
+        ]
+      },
+      "properties": {
+        "name": "Kentish Town Studio",
+        "address": "",
+        "postcode": "",
+        "website": "kentishtownstudio.com",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0882886,
+          51.4724504
+        ]
+      },
+      "properties": {
+        "name": "Zen Yoga",
+        "address": "Camberwell Grove 24A",
+        "postcode": "SE5 8RE",
+        "website": "http://www.zenyoga.org.uk/",
+        "phone": "+44 1698 542677"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0476245,
+          51.5440279
+        ]
+      },
+      "properties": {
+        "name": "The Refinery",
+        "address": "Collent Street 14",
+        "postcode": "E9 6SG",
+        "website": "https://therefinerye9.com/",
+        "phone": "+44 20 7148 5990"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1766136,
+          51.4842213
+        ]
+      },
+      "properties": {
+        "name": "Triyoga",
+        "address": "King's Road 372",
+        "postcode": "",
+        "website": "https://triyoga.co.uk/",
+        "phone": "+44 20 3362 3366"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1579029,
+          51.492199
+        ]
+      },
+      "properties": {
+        "name": "Vita Boutique Fitness",
+        "address": "Sloane Square 31",
+        "postcode": "SW1W 8AQ",
+        "website": "https://www.vitaboutiquefitness.com",
+        "phone": "+44 20 7730 4814"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0802024,
+          51.5551285
+        ]
+      },
+      "properties": {
+        "name": "Yoga Home",
+        "address": "Allen Road 14",
+        "postcode": "N16 8SD",
+        "website": "https://yogahome.com/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1698018,
+          51.4268396
+        ]
+      },
+      "properties": {
+        "name": "Yoga Studio",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1635728,
+          51.4235985
+        ]
+      },
+      "properties": {
+        "name": "Ivengar Yoga Studio",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2159125,
+          51.5086826
+        ]
+      },
+      "properties": {
+        "name": "Equilibrium",
+        "address": "St. Anns Road 27",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3168272,
+          51.5031905
+        ]
+      },
+      "properties": {
+        "name": "The Lounge by Yoga Whites",
+        "address": "Northfield Avenue 121",
+        "postcode": "W13 9QR",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1570759,
+          51.4372263
+        ]
+      },
+      "properties": {
+        "name": "Revive",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0983578,
+          51.5582028
+        ]
+      },
+      "properties": {
+        "name": "LIM",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0958232,
+          51.4937194
+        ]
+      },
+      "properties": {
+        "name": "More Yoga",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0082049,
+          51.5085487
+        ]
+      },
+      "properties": {
+        "name": "More Yoga",
+        "address": "Arniston Way 10",
+        "postcode": "E14 0RE",
+        "website": "https://www.moreyoga.co.uk/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2275847,
+          51.4977978
+        ]
+      },
+      "properties": {
+        "name": "Body & Brain",
+        "address": "Hammersmith Grove 101",
+        "postcode": "",
+        "website": "https://www.bodynbrain.co.uk/hammersmith",
+        "phone": "+44 20 8222 8542"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0574885,
+          51.5421674
+        ]
+      },
+      "properties": {
+        "name": "Hotpod Yoga",
+        "address": "Mentmore Terrace 406",
+        "postcode": "E8 3PH",
+        "website": "https://hotpodyoga.com/studios/hackney/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0078641,
+          51.4663543
+        ]
+      },
+      "properties": {
+        "name": "Blackheath Yoga",
+        "address": "Tranquil Vale 35",
+        "postcode": "SE3 0BU",
+        "website": "https://www.blackheathyoga.co.uk/",
+        "phone": "+44 20 3920 7108"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0972194,
+          51.4941036
+        ]
+      },
+      "properties": {
+        "name": "Tempo 301",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0060045,
+          51.5126861
+        ]
+      },
+      "properties": {
+        "name": "Hum Yoga",
+        "address": "Lyell Street",
+        "postcode": "E14 0SZ",
+        "website": "https://www.hum.yoga/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4112994,
+          51.3284977
+        ]
+      },
+      "properties": {
+        "name": "Cobham Yoga",
+        "address": "High Street Rear of 10",
+        "postcode": "KT11 3DY",
+        "website": "https://cobhamyoga.com",
+        "phone": "+44 1932 867600"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2350123,
+          51.4931673
+        ]
+      },
+      "properties": {
+        "name": "Yoga Studio",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1381256,
+          51.5563347
+        ]
+      },
+      "properties": {
+        "name": "Down To Earth",
+        "address": "Brecknock Road 225",
+        "postcode": "N19 5AA",
+        "website": "https://downtoearthlondon.co.uk/tufnell-park/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1410396,
+          51.590958
+        ]
+      },
+      "properties": {
+        "name": "The Good Rooms",
+        "address": "",
+        "postcode": "",
+        "website": "https://thegoodrooms.co.uk",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0486022,
+          51.4989942
+        ]
+      },
+      "properties": {
+        "name": "Canada Water Studios",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.canadawaterstudios.com/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.063837,
+          51.4932017
+        ]
+      },
+      "properties": {
+        "name": "More Yoga",
+        "address": "Hare Street 44",
+        "postcode": "SE18 6LZ",
+        "website": "https://www.moreyoga.co.uk/studios/woolwich/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0239127,
+          51.4737012
+        ]
+      },
+      "properties": {
+        "name": "Kindred Yoga",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.kindredyogalife.com/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3097012,
+          51.4556849
+        ]
+      },
+      "properties": {
+        "name": "Studio 17",
+        "address": "Richmond Road",
+        "postcode": "TW1 2DY",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0871667,
+          51.5588377
+        ]
+      },
+      "properties": {
+        "name": "Mudra Yoga",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.mudrayogalondon.com/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4210544,
+          51.2920818
+        ]
+      },
+      "properties": {
+        "name": "Ellie Yoki",
+        "address": "Forest Road 2",
+        "postcode": "KT24 5HE",
+        "website": "https://ellieyoki.co.uk/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0019358,
+          51.4844343
+        ]
+      },
+      "properties": {
+        "name": "One One One Pilates",
+        "address": "Trafalgar Road 115a",
+        "postcode": "SE10 9TX",
+        "website": "https://greenwich.111pilates.com/",
+        "phone": "+44 20 8318 5221"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0408255,
+          51.5896044
+        ]
+      },
+      "properties": {
+        "name": "Yonder The Studio",
+        "address": "Hookers Road 4-6",
+        "postcode": "E17 6DP",
+        "website": "https://www.thisisyonder.com/thestudio",
+        "phone": "+44 20 3746 3869"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0615983,
+          51.5357657
+        ]
+      },
+      "properties": {
+        "name": "Waking Dreams",
+        "address": "Ada Street",
+        "postcode": "",
+        "website": "https://www.wakingdreams.co/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0202869,
+          51.48034
+        ]
+      },
+      "properties": {
+        "name": "More Yoga",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.moreyoga.co.uk/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0173853,
+          51.4500182
+        ]
+      },
+      "properties": {
+        "name": "Forma",
+        "address": "Rushey Green 20",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0980221,
+          51.4946808
+        ]
+      },
+      "properties": {
+        "name": "Gymbox Elephant and Castle",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.gymbox.com/gyms/elephant-and-castle",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0864823,
+          51.5593172
+        ]
+      },
+      "properties": {
+        "name": "Hackey Aerial Yoga",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.hackneyaerialyoga.co.uk/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0202724,
+          51.554177
+        ]
+      },
+      "properties": {
+        "name": "E7 Movement",
+        "address": "Station Road 368",
+        "postcode": "E7 0AB",
+        "website": "https://www.e7movement.com/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1405327,
+          51.4635716
+        ]
+      },
+      "properties": {
+        "name": "YogaHaven",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0105304,
+          51.5653881
+        ]
+      },
+      "properties": {
+        "name": "Pause",
+        "address": "High Road Leyton",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0004668,
+          51.5451618
+        ]
+      },
+      "properties": {
+        "name": "CorePower Yoga",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.thepranaspace.com/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2180719,
+          51.4655453
+        ]
+      },
+      "properties": {
+        "name": "Sivananda Yoga Vedanta Centre",
+        "address": "Felsham Road",
+        "postcode": "",
+        "website": "https://sivanandalondon.org/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1927578,
+          51.4151637
+        ]
+      },
+      "properties": {
+        "name": "Hotpod Yoga South Wimbledon",
+        "address": "",
+        "postcode": "",
+        "website": "https://hotpodyoga.com/studios/south-wimbledon/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2805074,
+          51.5597138
+        ]
+      },
+      "properties": {
+        "name": "More Yoga",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.moreyoga.co.uk/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0090031,
+          51.4857929
+        ]
+      },
+      "properties": {
+        "name": "MoreYoga",
+        "address": "12",
+        "postcode": "SE10 9GB",
+        "website": "https://www.moreyoga.co.uk/yoga-london/east-greenwich-studio/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1439606,
+          51.5387111
+        ]
+      },
+      "properties": {
+        "name": "Yoga Base",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0896546,
+          51.5861956
+        ]
+      },
+      "properties": {
+        "name": "Bind Yoga Studio",
+        "address": "Vicarage Parade 3",
+        "postcode": "N15 3BL",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0903477,
+          51.572858
+        ]
+      },
+      "properties": {
+        "name": "Evoke",
+        "address": "Seven Sisters Road Unit A",
+        "postcode": "N4 1FS",
+        "website": "https://weareevoke.com",
+        "phone": "+44 7583 097292"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1186294,
+          51.5824704
+        ]
+      },
+      "properties": {
+        "name": "Yoga Centre",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.110993,
+          51.4622897
+        ]
+      },
+      "properties": {
+        "name": "Hot Yoga Brixton",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0115778,
+          51.5107794
+        ]
+      },
+      "properties": {
+        "name": "Shakti Space",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0449136,
+          51.5477212
+        ]
+      },
+      "properties": {
+        "name": "Flo Yoga",
+        "address": "Homerton High Street 130",
+        "postcode": "",
+        "website": "https://www.floyogastudio.co.uk/homerton",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2865667,
+          51.4831372
+        ]
+      },
+      "properties": {
+        "name": "Cat on the Mat",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.catonthematkew.com/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1546782,
+          51.5432147
+        ]
+      },
+      "properties": {
+        "name": "Fierce Grace Hot Yoga",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0129566,
+          51.5110567
+        ]
+      },
+      "properties": {
+        "name": "Luv Yourself Space",
+        "address": "Hoy Street",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3286099,
+          51.4483683
+        ]
+      },
+      "properties": {
+        "name": "Heartspace",
+        "address": "Katherine Street 46-48",
+        "postcode": "",
+        "website": "https://www.heartspaceyoga.co/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0281356,
+          51.4750877
+        ]
+      },
+      "properties": {
+        "name": "Iyengar Yoga Institute",
+        "address": "New Cross Road 470",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1233734,
+          51.5276935
+        ]
+      },
+      "properties": {
+        "name": "Rebel Studio",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0203559,
+          51.5345297
+        ]
+      },
+      "properties": {
+        "name": "Liquid Movement - Yoga, Sound, Motion",
+        "address": "Wick Lane 455",
+        "postcode": "E3 2TB",
+        "website": "https://liquidmvmt.com/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0557771,
+          51.5460763
+        ]
+      },
+      "properties": {
+        "name": "Doom Yoga",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.doom.yoga/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0244353,
+          51.5400882
+        ]
+      },
+      "properties": {
+        "name": "Social Yoga",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.socialyoga.co.uk/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1234044,
+          51.5683563
+        ]
+      },
+      "properties": {
+        "name": "Sol Studio",
+        "address": "Fairbridge Road 214",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1219312,
+          51.5662115
+        ]
+      },
+      "properties": {
+        "name": "The Factory",
+        "address": "Hornsey Road 407",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1555892,
+          51.5206786
+        ]
+      },
+      "properties": {
+        "name": "BXR",
+        "address": "Paddington Street 24",
+        "postcode": "W1U 5QY",
+        "website": "https://www.bxrlondon.com/",
+        "phone": "+44 20 3146 3436"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1174037,
+          51.4671237
+        ]
+      },
+      "properties": {
+        "name": "Moreyoga",
+        "address": "Stockwell Rd 139",
+        "postcode": "SW9 9TN",
+        "website": "https://www.moreyoga.co.uk/yoga-studio-london/brixton",
+        "phone": "+44 808 175 0238"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1577979,
+          51.4366414
+        ]
+      },
+      "properties": {
+        "name": "Moreyoga",
+        "address": "Balham High Road",
+        "postcode": "SW17 7BD",
+        "website": "https://www.moreyoga.co.uk",
+        "phone": "+44 808 175 0238"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0618572,
+          51.5902517
+        ]
+      },
+      "properties": {
+        "name": "Hotpod Yoga Tottenham Hale",
+        "address": "",
+        "postcode": "",
+        "website": "https://hotpodyoga.com/studios/tottenham-hale/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0252777,
+          51.4089309
+        ]
+      },
+      "properties": {
+        "name": "Power Pilates",
+        "address": "High Street 58",
+        "postcode": "BR3 1AY",
+        "website": "https://powerpilatesuk.com",
+        "phone": "+44 757 024 7376"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0732876,
+          51.4574102
+        ]
+      },
+      "properties": {
+        "name": "Casa Cora",
+        "address": "North Cross Road 33",
+        "postcode": "",
+        "website": "https://www.casacore.uk/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1679578,
+          51.5536851
+        ]
+      },
+      "properties": {
+        "name": "Barre Core",
+        "address": "Pond Street 7",
+        "postcode": "NW3 2PN",
+        "website": "",
+        "phone": "+44 20 7317 7105"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2085535,
+          51.5399276
+        ]
+      },
+      "properties": {
+        "name": "Yoga In Daily Life",
+        "address": "Salusbury Road 133",
+        "postcode": "NW6 6RN",
+        "website": "https://www.yogaindailylife.org/",
+        "phone": "+44 20 7378 7163"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0988164,
+          51.5248002
+        ]
+      },
+      "properties": {
+        "name": "CitySport",
+        "address": "Goswell Road 124",
+        "postcode": "EC1V 7DP",
+        "website": "https://www.citysport.org.uk/",
+        "phone": "+44 20 7040 5656"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0009639,
+          51.6068299
+        ]
+      },
+      "properties": {
+        "name": "Lotus Health And Fitness",
+        "address": "Hale End Road 479",
+        "postcode": "E4 9PT",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1656922,
+          51.6059168
+        ]
+      },
+      "properties": {
+        "name": "Navagraha Sri Kathirgaama Yogi Yogishwara Yoga Dhandayuthapaani Swami Temple",
+        "address": "Legion Way",
+        "postcode": "N12 0QF",
+        "website": "https://www.omsharavanabhavamatham.org.uk/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0389718,
+          51.4637567
+        ]
+      },
+      "properties": {
+        "name": "Renaissance yoga & well being",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0805978,
+          51.4175554
+        ]
+      },
+      "properties": {
+        "name": "The Yoga Edge",
+        "address": "Church Road 83",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1350188,
+          51.5204977
+        ]
+      },
+      "properties": {
+        "name": "Good Vibes",
+        "address": "Tottenham Street 11",
+        "postcode": "W1T 2AQ",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1112421,
+          51.4559897
+        ]
+      },
+      "properties": {
+        "name": "Yoga point",
+        "address": "Dalberg Road 122",
+        "postcode": "SW2 1AP",
+        "website": "https://yogapoint.co.uk/",
+        "phone": "+44 20 7326 1166"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3282298,
+          51.4474065
+        ]
+      },
+      "properties": {
+        "name": "The Yoga Bar",
+        "address": "London Road 16a",
+        "postcode": "TW1 3RR",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2096756,
+          51.5315837
+        ]
+      },
+      "properties": {
+        "name": "Yogarise Queen's Park",
+        "address": "Beethoven Street 27",
+        "postcode": "W10 4LG",
+        "website": "https://yogarise.london/queens-park-studio/",
+        "phone": "+44 20 7625 2645"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2089802,
+          51.5323939
+        ]
+      },
+      "properties": {
+        "name": "Yoga Studio",
+        "address": "Kilburn Lane 260",
+        "postcode": "W10 4BA",
+        "website": "http://www.fiercegracewest.com/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0101672,
+          51.5667988
+        ]
+      },
+      "properties": {
+        "name": "Fitness Hub East London",
+        "address": "High Road Leytonstone 771-773",
+        "postcode": "E11 4QS",
+        "website": "https://www.fitnesshubeastlondon.com/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0703191,
+          51.5529315
+        ]
+      },
+      "properties": {
+        "name": "Yoga On The Lane",
+        "address": "Shacklewell Lane 105",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0130901,
+          51.449303
+        ]
+      },
+      "properties": {
+        "name": "Lite Up",
+        "address": "Burnt Ash Hill",
+        "postcode": "SE12 0AA",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0248809,
+          51.5475096
+        ]
+      },
+      "properties": {
+        "name": "FS8",
+        "address": "East Bay Lane 31",
+        "postcode": "E15 2GW",
+        "website": "https://fs8stratford.fs8-studio.com/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0238283,
+          51.5466587
+        ]
+      },
+      "properties": {
+        "name": "Yoga Barre Pilates",
+        "address": "East Bay Lane",
+        "postcode": "E15 2GW",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1896609,
+          51.5320476
+        ]
+      },
+      "properties": {
+        "name": "Iyengar Yoga Maida Vale",
+        "address": "Randolph Avenue 223a",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.208859,
+          51.5322589
+        ]
+      },
+      "properties": {
+        "name": "Re:Connect Studio",
+        "address": "Kilburn Lane 260",
+        "postcode": "",
+        "website": "https://reconnectstudio.co.uk",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3567178,
+          51.4257957
+        ]
+      },
+      "properties": {
+        "name": "Ember",
+        "address": "High Street 44",
+        "postcode": "",
+        "website": "https://www.emberyoga.co.uk",
+        "phone": "+44 20 8943 0270"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2005666,
+          51.5124843
+        ]
+      },
+      "properties": {
+        "name": "Shanti Sadan",
+        "address": "Chepstow Villas 29",
+        "postcode": "W11 3DR",
+        "website": "https://shantisadan.org/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1958125,
+          51.5073886
+        ]
+      },
+      "properties": {
+        "name": "The Life Centre Notting Hill",
+        "address": "Edge Street 15",
+        "postcode": "W8 7PN",
+        "website": "https://thelifecentre.com/",
+        "phone": "+44 20 7221 4602"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1152674,
+          51.5804261
+        ]
+      },
+      "properties": {
+        "name": "Yoga Junction",
+        "address": "Weston Park 93A",
+        "postcode": "N8 9PR",
+        "website": "https://www.yogajunction.co.uk",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3394984,
+          51.4555816
+        ]
+      },
+      "properties": {
+        "name": "Virgin Active",
+        "address": "Whitton Road 196",
+        "postcode": "TW2 7BA",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0100887,
+          51.3775691
+        ]
+      },
+      "properties": {
+        "name": "Yoga Feeling",
+        "address": "Station Approach 6",
+        "postcode": "BR2 7EH",
+        "website": "https://yogafeeling.co.uk/",
+        "phone": "+44 7850 556822"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2614497,
+          51.3335217
+        ]
+      },
+      "properties": {
+        "name": "Body & Brain",
+        "address": "",
+        "postcode": "KT17 4RJ",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2186398,
+          51.4613726
+        ]
+      },
+      "properties": {
+        "name": "The House Of Yoga",
+        "address": "",
+        "postcode": "",
+        "website": "",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2165885,
+          51.4635142
+        ]
+      },
+      "properties": {
+        "name": "Hot Pod Yoga",
+        "address": "Putney High Street",
+        "postcode": "SW15 1TW",
+        "website": "https://hotpodyoga.com/studios/putney/",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1926689,
+          51.458315
+        ]
+      },
+      "properties": {
+        "name": "MoreYoga",
+        "address": "Chivers Passage 7",
+        "postcode": "SW18 1UP",
+        "website": "https://www.moreyoga.co.uk/studios/wandsworth/",
+        "phone": "+44 808 175 0238"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1144906,
+          51.3934281
+        ]
+      },
+      "properties": {
+        "name": "Iyengar Yoga House",
+        "address": "High Street 70",
+        "postcode": "",
+        "website": "https://www.iyengaryogahouse.com",
+        "phone": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2239533,
+          51.5475021
+        ]
+      },
+      "properties": {
+        "name": "ZENW2",
+        "address": "Walm Lane",
+        "postcode": "NW2 5HT",
+        "website": "",
+        "phone": ""
+      }
+    }
+  ]
+}

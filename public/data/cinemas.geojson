@@ -1,0 +1,1429 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0937556,
+          51.5197763
+        ]
+      },
+      "properties": {
+        "name": "Barbican Centre (Cinema)",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1290844,
+          51.5102139
+        ]
+      },
+      "properties": {
+        "name": "Odeon Mezzanine",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1304091,
+          51.5109335
+        ]
+      },
+      "properties": {
+        "name": "Cineworld Leicester Square",
+        "address": "Leicester Square 5-6",
+        "postcode": "WC2H 7NA",
+        "website": "https://www.cineworld.co.uk/cinemas/london-leicester-square/103"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1293677,
+          51.5112449
+        ]
+      },
+      "properties": {
+        "name": "Vue Leicester Square",
+        "address": "Cranbourn Street 3",
+        "postcode": "WC2H 7AL",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1312249,
+          51.5095663
+        ]
+      },
+      "properties": {
+        "name": "Odeon Luxe Haymarket",
+        "address": "Panton Street 11-18",
+        "postcode": "SW1Y 4DP",
+        "website": "https://www.odeon.co.uk/cinemas/london-haymarket/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1306078,
+          51.5126577
+        ]
+      },
+      "properties": {
+        "name": "Curzon Soho",
+        "address": "Shaftesbury Avenue 99",
+        "postcode": "W1D 5DY",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1246385,
+          51.3780368
+        ]
+      },
+      "properties": {
+        "name": "Vue Purley Way",
+        "address": "Hesterman Way 21",
+        "postcode": "CR0 4YA",
+        "website": "https://www.myvue.com/cinema/croydon-purley-way/whats-on"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2048792,
+          51.4198096
+        ]
+      },
+      "properties": {
+        "name": "Odeon Wimbledon",
+        "address": "The Broadway 39",
+        "postcode": "SW19 1QB",
+        "website": "https://www.odeon.co.uk/cinemas/wimbledon/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3324561,
+          51.5865654
+        ]
+      },
+      "properties": {
+        "name": "Metro Cinema",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.338995,
+          51.5815021
+        ]
+      },
+      "properties": {
+        "name": "Vue Cinema",
+        "address": "St Anns Road 27",
+        "postcode": "HA1 1HS",
+        "website": "https://www.myvue.com/cinema/harrow/whats-on"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1149611,
+          51.46115
+        ]
+      },
+      "properties": {
+        "name": "The Ritzy",
+        "address": "Brixton Oval 1",
+        "postcode": "SW2 1JG",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1381521,
+          51.4625014
+        ]
+      },
+      "properties": {
+        "name": "Clapham Picturehouse",
+        "address": "Venn Street 76",
+        "postcode": "SW4 0AT",
+        "website": "https://www.picturehouses.com/cinema/clapham-picturehouse"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1953102,
+          51.3647655
+        ]
+      },
+      "properties": {
+        "name": "Omniplex Cinema Sutton",
+        "address": "St. Nicholas Way",
+        "postcode": "",
+        "website": "https://www.omniplexcinemas.co.uk/cinema/sutton/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1637085,
+          51.5885079
+        ]
+      },
+      "properties": {
+        "name": "Phoenix Cinema",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0990117,
+          51.3721316
+        ]
+      },
+      "properties": {
+        "name": "David Lean Cinema",
+        "address": "Katharine Street",
+        "postcode": "CR9 1ET",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1009089,
+          51.372906
+        ]
+      },
+      "properties": {
+        "name": "Vue",
+        "address": "High Street 14",
+        "postcode": "CR0 1GT",
+        "website": "https://www.myvue.com/cinema/croydon-grants/whats-on"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0316159,
+          51.4070192
+        ]
+      },
+      "properties": {
+        "name": "Odeon Cinema",
+        "address": "High Street",
+        "postcode": "BR3 1DY",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1058269,
+          51.5343822
+        ]
+      },
+      "properties": {
+        "name": "Vue Islington",
+        "address": "Parkfield Street 36",
+        "postcode": "N1 0PS",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0730953,
+          51.5243518
+        ]
+      },
+      "properties": {
+        "name": "Rich Mix Cinema",
+        "address": "Bethnal Green Road 35-47",
+        "postcode": "E1 6LA",
+        "website": "https://richmix.org.uk/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1934097,
+          51.4541535
+        ]
+      },
+      "properties": {
+        "name": "Cineworld",
+        "address": "Southside Shopping Centre",
+        "postcode": "SW18 4TF",
+        "website": "https://www.cineworld.co.uk/cinemas/london-wandsworth/066"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2188484,
+          51.503414
+        ]
+      },
+      "properties": {
+        "name": "Vue",
+        "address": "Shepherd's Bush Green",
+        "postcode": "W12 8PP",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1731524,
+          51.4855904
+        ]
+      },
+      "properties": {
+        "name": "Everyman Chelsea",
+        "address": "King's Road 279",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0807865,
+          51.4976739
+        ]
+      },
+      "properties": {
+        "name": "The Arzner",
+        "address": "Bermondsey Square 10",
+        "postcode": "SE1 3UN",
+        "website": "http://thearzner.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1013366,
+          51.4650547
+        ]
+      },
+      "properties": {
+        "name": "Whirled Cinema",
+        "address": "Hardess Street 259",
+        "postcode": "SE24 0HN",
+        "website": "https://www.whirledcinema.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2992998,
+          51.4119331
+        ]
+      },
+      "properties": {
+        "name": "Odeon Kingston",
+        "address": "Clarence Street",
+        "postcode": "KT1 1QP",
+        "website": "https://www.odeon.co.uk/cinemas/kingston/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1437574,
+          51.5389741
+        ]
+      },
+      "properties": {
+        "name": "Odeon",
+        "address": "Parkway 14",
+        "postcode": "NW1 7AA",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2979129,
+          51.4858042
+        ]
+      },
+      "properties": {
+        "name": "Watermans Arts Centre",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1790185,
+          51.5747423
+        ]
+      },
+      "properties": {
+        "name": "Vue",
+        "address": "Waterloo Rd 1-15",
+        "postcode": "RM1 1AU",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1117273,
+          51.5217117
+        ]
+      },
+      "properties": {
+        "name": "The Nickel Cinema",
+        "address": "Clerkenwell Road 117-119",
+        "postcode": "EC1R 5BY",
+        "website": "https://thenickel.co.uk/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0361232,
+          51.4741947
+        ]
+      },
+      "properties": {
+        "name": "Curzon Goldsmiths",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.curzongoldsmiths.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1815748,
+          51.5481248
+        ]
+      },
+      "properties": {
+        "name": "Vue Finchley Road",
+        "address": "Finchley Road 255",
+        "postcode": "",
+        "website": "https://www.myvue.com/cinema/finchley-road/whats-on"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1428506,
+          51.5168155
+        ]
+      },
+      "properties": {
+        "name": "Regent Street Cinema",
+        "address": "Regent Street 307",
+        "postcode": "",
+        "website": "https://www.regentstreetcinema.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1780006,
+          51.500423
+        ]
+      },
+      "properties": {
+        "name": "Imperial Cinema",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0224965,
+          51.5078481
+        ]
+      },
+      "properties": {
+        "name": "Cineworld",
+        "address": "Hertsmere Road 4",
+        "postcode": "E14 4AL",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0928567,
+          51.5210215
+        ]
+      },
+      "properties": {
+        "name": "Barbican Cinemas 2 & 3",
+        "address": "Silk Street",
+        "postcode": "EC2Y 8DS",
+        "website": "https://www.barbican.org.uk/film/new-cinemas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2839283,
+          51.5563016
+        ]
+      },
+      "properties": {
+        "name": "Cineworld Wembley",
+        "address": "Wembley Park Boulevard",
+        "postcode": "HA9 0TG",
+        "website": "https://www.cineworld.co.uk/cinemas/london-wembley/082"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1365788,
+          51.4975349
+        ]
+      },
+      "properties": {
+        "name": "Curzon Victoria",
+        "address": "Victoria Street 58",
+        "postcode": "SW1E 6QW",
+        "website": "https://www.curzon.com/venues/victoria/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1852042,
+          51.5794872
+        ]
+      },
+      "properties": {
+        "name": "Lumiere Cinema Romford",
+        "address": "Mercury Shopping Centre",
+        "postcode": "RM1 3EE",
+        "website": "https://www.lumiereromford.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1343413,
+          51.508942
+        ]
+      },
+      "properties": {
+        "name": "Vue",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.020193,
+          51.5849488
+        ]
+      },
+      "properties": {
+        "name": "Forest Cinemas",
+        "address": "High Street 267",
+        "postcode": "E17 7FD",
+        "website": "https://forestcinema.co.uk"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0739235,
+          51.5244086
+        ]
+      },
+      "properties": {
+        "name": "Electric Cinema",
+        "address": "Redchurch Street 64-66",
+        "postcode": "E2 7DP",
+        "website": "https://electriccinema.co.uk/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1337164,
+          51.5107107
+        ]
+      },
+      "properties": {
+        "name": "Picturehouse Central",
+        "address": "Great Windmill Street",
+        "postcode": "W1D 7DH",
+        "website": "https://www.picturehouses.com/cinema/Picturehouse_Central"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0719999,
+          51.5236118
+        ]
+      },
+      "properties": {
+        "name": "Close-Up Film Centre",
+        "address": "Sclater Street 97-99",
+        "postcode": "E1 6HR",
+        "website": "https://www.closeupfilmcentre.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3070003,
+          51.4592448
+        ]
+      },
+      "properties": {
+        "name": "Curzon Richmond",
+        "address": "Water Lane",
+        "postcode": "TW9 1TJ",
+        "website": "https://www.curzon.com/venues/richmond/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2052534,
+          51.4203554
+        ]
+      },
+      "properties": {
+        "name": "Curzon Wimbledon",
+        "address": "The Broadway 23",
+        "postcode": "SW19 1RE",
+        "website": "https://www.curzon.com/venues/wimbledon/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0689221,
+          51.5138199
+        ]
+      },
+      "properties": {
+        "name": "Curzon Aldgate",
+        "address": "Canter Way 4",
+        "postcode": "E1 8PS",
+        "website": "https://www.curzoncinemas.com/aldgate/info"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1269986,
+          51.5377019
+        ]
+      },
+      "properties": {
+        "name": "Everyman On The Corner",
+        "address": "Handyside Street 1",
+        "postcode": "N1C 4BP",
+        "website": "https://www.everymancinema.com/kings-cross"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1732082,
+          51.6038551
+        ]
+      },
+      "properties": {
+        "name": "Vue Cinema",
+        "address": "Chaplin Square",
+        "postcode": "N12 0GL",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0846045,
+          51.5196469
+        ]
+      },
+      "properties": {
+        "name": "Everyman",
+        "address": "Finsbury Avenue 1",
+        "postcode": "EC2M 2PA",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1240562,
+          51.5375291
+        ]
+      },
+      "properties": {
+        "name": "Everyman King's Cross",
+        "address": "Handyside Street 14-18",
+        "postcode": "N1C 4DN",
+        "website": "https://www.everymancinema.com/kings-cross"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0791334,
+          51.4190933
+        ]
+      },
+      "properties": {
+        "name": "Everyman",
+        "address": "Church Road 25",
+        "postcode": "SE19 2TE",
+        "website": "https://www.everymancinema.com/venues-list/x11dr-everyman-crystal-palace/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1565601,
+          51.5205013
+        ]
+      },
+      "properties": {
+        "name": "Everyman",
+        "address": "Baker Street 96",
+        "postcode": "",
+        "website": "https://www.everymancinema.com/baker-street"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1469763,
+          51.4825125
+        ]
+      },
+      "properties": {
+        "name": "The Cinema in the Arches",
+        "address": "Arches Lane 22",
+        "postcode": "SW11 8AB",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1029573,
+          51.4330712
+        ]
+      },
+      "properties": {
+        "name": "West Norwood Picturehouse",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.picturehouses.com/cinema/west-norwood-picturehouse"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1013825,
+          51.3765645
+        ]
+      },
+      "properties": {
+        "name": "Odeon",
+        "address": "",
+        "postcode": "BR6 0TW",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1657783,
+          51.5508149
+        ]
+      },
+      "properties": {
+        "name": "Everyman",
+        "address": "Haverstock Hill 203",
+        "postcode": "NW3 4QG",
+        "website": "https://www.everymancinema.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0178293,
+          51.5061329
+        ]
+      },
+      "properties": {
+        "name": "Everyman",
+        "address": "Crossrail Place 1",
+        "postcode": "E14 5AR",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0199365,
+          51.4329339
+        ]
+      },
+      "properties": {
+        "name": "The Fellowship Cinema",
+        "address": "Randlesdown Road",
+        "postcode": "SE6 3BT",
+        "website": "https://fellowshipinn.co.uk/the-cinema/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1771484,
+          51.4945283
+        ]
+      },
+      "properties": {
+        "name": "Ciné Lumière",
+        "address": "Queensbury Place 17",
+        "postcode": "SW7 2DT",
+        "website": "https://www.institut-francais.org.uk/cine-lumiere/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.066645,
+          51.5083106
+        ]
+      },
+      "properties": {
+        "name": "London Dock - Residents Cinema",
+        "address": "Vaughan Way 150",
+        "postcode": "E1W 2AH",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2259926,
+          51.5104293
+        ]
+      },
+      "properties": {
+        "name": "Electric Cinema",
+        "address": "Wood Lane 101",
+        "postcode": "",
+        "website": "https://www.electriccinema.co.uk/cinemas/whitecity/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1035717,
+          51.5386358
+        ]
+      },
+      "properties": {
+        "name": "Odeon Luxe & Dine",
+        "address": "Esther Anne Place 13",
+        "postcode": "N1 1TU",
+        "website": "https://www.odeon.co.uk/cinemas/islington/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3280474,
+          51.4884965
+        ]
+      },
+      "properties": {
+        "name": "Sky Cinema",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3639612,
+          51.3707417
+        ]
+      },
+      "properties": {
+        "name": "Everyman",
+        "address": "High Street 20-22",
+        "postcode": "KT10 9RT",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.083797,
+          51.5288806
+        ]
+      },
+      "properties": {
+        "name": "Curzon Hoxton",
+        "address": "Pitfield Street 55",
+        "postcode": "",
+        "website": "https://www.curzon.com/venues/curzon-hoxton/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2684113,
+          51.5065997
+        ]
+      },
+      "properties": {
+        "name": "Act One Cinema",
+        "address": "High Street",
+        "postcode": "W3 6NA",
+        "website": "https://actonecinema.co.uk/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.00135,
+          51.4185688
+        ]
+      },
+      "properties": {
+        "name": "Laser Quest & VR Centre Bromley",
+        "address": "Bromley Hill 94",
+        "postcode": "BR1 4JU",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1302154,
+          51.5099104
+        ]
+      },
+      "properties": {
+        "name": "Odeon Luxe West End",
+        "address": "Leicester Square 38",
+        "postcode": "WC2H 7DX",
+        "website": "https://www.odeon.co.uk/cinemas/london-west-end/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1074654,
+          51.565068
+        ]
+      },
+      "properties": {
+        "name": "Finsbury Park Picturehouse",
+        "address": "City North Place 17",
+        "postcode": "N4 3FU",
+        "website": "https://www.picturehouses.com/cinema/finsbury-park"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0568051,
+          51.4506065
+        ]
+      },
+      "properties": {
+        "name": "Vue",
+        "address": "Eltham High Street 174",
+        "postcode": "SE9 1BJ",
+        "website": "https://www.myvue.com/cinema/eltham/whats-on"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0810416,
+          51.5223614
+        ]
+      },
+      "properties": {
+        "name": "Rooftop Film Club",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0011234,
+          51.5416661
+        ]
+      },
+      "properties": {
+        "name": "Rooftop Film Club",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0922029,
+          51.5056351
+        ]
+      },
+      "properties": {
+        "name": "Everyman",
+        "address": "Dirty Lane 3",
+        "postcode": "SE1 9PA",
+        "website": "https://www.everymancinema.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1922538,
+          51.459185
+        ]
+      },
+      "properties": {
+        "name": "Backyard Cinema",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.backyardcinema.co.uk/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1311127,
+          51.5061096
+        ]
+      },
+      "properties": {
+        "name": "ICA Cinema",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.073899,
+          51.5574848
+        ]
+      },
+      "properties": {
+        "name": "Cineworld",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.cineworld.co.uk/cinemas/london-ilford/060"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1434672,
+          51.5422302
+        ]
+      },
+      "properties": {
+        "name": "Curzon Camden",
+        "address": "Dockray Place",
+        "postcode": "NW1 8QD",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3068819,
+          51.5119899
+        ]
+      },
+      "properties": {
+        "name": "Ealing Picturehouse",
+        "address": "",
+        "postcode": "",
+        "website": "https://picturehouses.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1777493,
+          51.49721
+        ]
+      },
+      "properties": {
+        "name": "The Ronson Theatre",
+        "address": "Exhibition Road;South Kensington",
+        "postcode": "SW7 2DD",
+        "website": "https://www.sciencemuseum.org.uk/imax-cinema"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.251007,
+          51.4930902
+        ]
+      },
+      "properties": {
+        "name": "The Chiswick Cinema",
+        "address": "Chiswick High Road 94-96",
+        "postcode": "",
+        "website": "https://www.chiswickcinema.co.uk"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3626798,
+          51.4695854
+        ]
+      },
+      "properties": {
+        "name": "Cineworld",
+        "address": "Unity Square",
+        "postcode": "TW3 1EL",
+        "website": "https://www.cineworld.co.uk/cinemas/london-hounslow/118"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0105386,
+          51.5424397
+        ]
+      },
+      "properties": {
+        "name": "Everyman",
+        "address": "Redman Place 4",
+        "postcode": "E20 1JQ",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1200548,
+          51.5818917
+        ]
+      },
+      "properties": {
+        "name": "ArtHouse Crouch End",
+        "address": "Tottenham Lane 159A",
+        "postcode": "N8 9BT",
+        "website": "https://www.arthousecrouchend.co.uk/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1208243,
+          51.5816373
+        ]
+      },
+      "properties": {
+        "name": "Crouch End Picturehouse",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4165477,
+          51.3838616
+        ]
+      },
+      "properties": {
+        "name": "Everyman Cinema",
+        "address": "High Street 85-89",
+        "postcode": "KT12 1DN",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0832021,
+          51.5262974
+        ]
+      },
+      "properties": {
+        "name": "Film House",
+        "address": "",
+        "postcode": "",
+        "website": "https://artotel.com/en/hotels/london/hoxton/event/artotel-film-house"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.307835,
+          51.4827893
+        ]
+      },
+      "properties": {
+        "name": "Everyman",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1944172,
+          51.4808021
+        ]
+      },
+      "properties": {
+        "name": "Vue",
+        "address": "Fulham Road",
+        "postcode": "SW6 1BW",
+        "website": "https://www.myvue.com/cinema/fulham-broadway/whats-on"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3049355,
+          51.4110413
+        ]
+      },
+      "properties": {
+        "name": "Curzon",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    }
+  ]
+}

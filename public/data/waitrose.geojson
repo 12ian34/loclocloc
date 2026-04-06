@@ -1,0 +1,1835 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1872591,
+          51.516488
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Porchester Road 38",
+        "postcode": "W2 6ES"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2039214,
+          51.6559569
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "",
+        "postcode": "EN5 5XY"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0921222,
+          51.5222888
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Cherry Tree Walk",
+        "postcode": "EC1Y 8NX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.192598,
+          51.5515632
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4692746,
+          51.6409707
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2191224,
+          51.506411
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "",
+        "postcode": "W12 7GA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1239343,
+          51.5795019
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "The Broadway 35-39",
+        "postcode": "N8 8DU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.179645,
+          51.5464243
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Finchley Road 199",
+        "postcode": "NW3 6NN"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1027254,
+          51.524152
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "St. John Street 174",
+        "postcode": "EC1V 4DE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2163434,
+          51.3587154
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1677865,
+          51.4626128
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "St John's Rd",
+        "postcode": "SW11 1PW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1776699,
+          51.4922734
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "Old Brompton Road 103",
+        "postcode": "SW7 3LE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3289565,
+          51.4484848
+        ]
+      },
+      "properties": {
+        "name": "Waitrose & Partners",
+        "address": "London Road 50",
+        "postcode": "TW1 3RJ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2220019,
+          51.6876975
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3058558,
+          51.4111573
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Wood Street",
+        "postcode": "KT1 1TE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.118692,
+          51.517431
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "High Holborn 246",
+        "postcode": "WC1V 7EX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1840325,
+          51.510714
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0841614,
+          51.6517074
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Palace Gardens 8-12",
+        "postcode": "EN2 6SN"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0167335,
+          51.5046343
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Canada Square 16-19",
+        "postcode": "E14 5EW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.219429,
+          51.483934
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.104305,
+          51.5469392
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "Highbury Corner 28-32",
+        "postcode": "N5 1RD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0156614,
+          51.4823225
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Victoria Parade",
+        "postcode": "SE10 9DD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1371563,
+          51.4974036
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "Victoria Street 62",
+        "postcode": "SW1E 6QP"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0866773,
+          51.5100098
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "King William Street 46",
+        "postcode": "EC4R 9AN"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2116631,
+          51.4594908
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "Upper Richmond Road 77-83",
+        "postcode": "SW15 2TD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1649712,
+          51.4991279
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "Brompton Road 118-120",
+        "postcode": "SW3 1JE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.207372,
+          51.42093
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "Wimbledon Hill Road 2",
+        "postcode": "SW19 7NS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2008632,
+          51.4741421
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "Parsons Green 8",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1351202,
+          51.4824122
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "New Union Square 1",
+        "postcode": "SW11 7DN"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0903697,
+          51.5120941
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "Walbrook 23",
+        "postcode": "EC4N 8AF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1235071,
+          51.5360857
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Wharf Road 1",
+        "postcode": "N1C 4BZ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1456147,
+          51.5156874
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "",
+        "postcode": "W1A 1EX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.105715,
+          51.5072719
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "Stamford Street 20",
+        "postcode": "SE1 9LS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3292453,
+          51.2947222
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Church Street 14-22",
+        "postcode": "KT22 8DW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1949205,
+          51.6000852
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "Regent's Park Road 318-320",
+        "postcode": "N3 2LN"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2909819,
+          51.5163909
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0939689,
+          51.6353261
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Green Lanes 889",
+        "postcode": "N21 2QP"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2333804,
+          51.4091848
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Coombe Lane 25",
+        "postcode": "SW20 0BW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2226177,
+          51.5773482
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.513537,
+          51.2817198
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "Portsmouth Road",
+        "postcode": "GU23 7JY"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1991573,
+          51.5088424
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "Notting Hill Gate 132-136",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3275728,
+          51.4893635
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "Grant Way",
+        "postcode": "TW7 5QD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.200158,
+          51.3614684
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4916015,
+          51.3708224
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Station Road",
+        "postcode": "KT15 2GL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1425346,
+          51.4979706
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Bressenden Place",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1481302,
+          51.4783134
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "Queenstown Road 326",
+        "postcode": "SW11 8NE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2087656,
+          51.4723999
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.301844,
+          51.4613659
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Sheen Road 4-10",
+        "postcode": "TW9 1AE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2639319,
+          51.6312478
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.297929,
+          51.6072236
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2536753,
+          51.6429888
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4567125,
+          51.3736946
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "High Street 62-66",
+        "postcode": "KT13 8BL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1881111,
+          51.4613492
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1065476,
+          51.6957569
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1758029,
+          51.6314179
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "High Road 1305",
+        "postcode": "N20 9HX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2017521,
+          51.4250706
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Alexandra Road",
+        "postcode": "SW19 7JY"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0193244,
+          51.3989864
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Masons Hill 45",
+        "postcode": "BR2 9HD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4230065,
+          51.571324
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Kingsend 9",
+        "postcode": "HA4 7DS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0234331,
+          51.5954499
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "High Road 92-96",
+        "postcode": "E18 2NA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3051755,
+          51.393852
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Claremont Road 15a",
+        "postcode": "KT6 4QR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2432915,
+          51.3781252
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0673199,
+          51.5068601
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Thomas More Street 41",
+        "postcode": "E1W 1YY"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1987817,
+          51.3230889
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "High Street 102-104",
+        "postcode": "SM7 2NB"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2560593,
+          51.4027297
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "High Street 24-28",
+        "postcode": "KT3 4HE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.3001875,
+          51.3966728
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Station Road 63",
+        "postcode": "DA3 7QA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3521836,
+          51.5676344
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Northolt Road 140",
+        "postcode": "HA2 0EG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.116155,
+          51.5561703
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Holloway Road 366",
+        "postcode": "N7 6PA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1084862,
+          51.5503255
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1241527,
+          51.5248978
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Brunswick Square 23-29",
+        "postcode": "WC1N 1AF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0263468,
+          51.4115805
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Southend Road",
+        "postcode": "BR3 1SD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5056667,
+          51.3371837
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0900925,
+          51.3551194
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "High Street 11",
+        "postcode": "BR6 6BG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1516985,
+          51.4456686
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Balham High Road 134-152",
+        "postcode": "SW12 9BN"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.167029,
+          51.4886353
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "King's Road 196-198",
+        "postcode": "SW3 5XP"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0366742,
+          51.3090316
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Main Road 168",
+        "postcode": "TN16 3BB"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.268792,
+          51.4647294
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Upper Richmond Road West 292",
+        "postcode": "SW14 7JG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.107434,
+          51.5338335
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Liverpool Road 21",
+        "postcode": "N1 0RW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2000693,
+          51.5837715
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Temple Fortune Parade 32-39",
+        "postcode": "NW11 0QS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1994,
+          51.4802014
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "North End Road 402",
+        "postcode": "SW6 1LX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2090457,
+          51.6072399
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3948225,
+          51.681027
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "St Albans Road",
+        "postcode": "WD24 7RU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4123757,
+          51.3298573
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Between Streets 16",
+        "postcode": "KT11 1AF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1657751,
+          51.5175713
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Edgware Road 168-176",
+        "postcode": "W2 2DS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0747943,
+          51.3319257
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Limpsfield Road 87",
+        "postcode": "CR2 9LE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2630791,
+          51.492766
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Chiswick High Road 356-362",
+        "postcode": "W4 5TA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1387292,
+          51.4619424
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "The Pavement 5",
+        "postcode": "SW4 0HY"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3395671,
+          51.6053469
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "High Road 350",
+        "postcode": "HA3 6HF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1424339,
+          51.5917716
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Muswell Hill Broadway 390-392",
+        "postcode": "N10 1DJ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3502369,
+          51.5672663
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Northolt Road",
+        "postcode": "HA2 0EG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0924662,
+          51.6534088
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Windmill Hill 38-40",
+        "postcode": "EN2 7AS"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0450879,
+          51.6254727
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "",
+        "postcode": "IG9 5EP"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1568362,
+          51.4990007
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Motcomb Street 27",
+        "postcode": "SW1X 8GG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0781199,
+          51.2824183
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Station Avenue 2-10",
+        "postcode": "CR3 6LB"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3670015,
+          51.3678934
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "High Street 105",
+        "postcode": "KT10 9QE"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3385676,
+          51.3734458
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2530892,
+          51.5562291
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "St Mary's Lane 218",
+        "postcode": "RM14 3BT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1237975,
+          51.4853451
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "Bondway 3",
+        "postcode": "SW8 1SJ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3214027,
+          51.5130086
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Alexandria Road 2",
+        "postcode": "W13 0NL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3985231,
+          51.3653514
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Molesey Road",
+        "postcode": "KT12 4HL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1371753,
+          51.3219842
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Brighton Road 110-112",
+        "postcode": "CR5 2NB"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1394965,
+          51.4924871
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "Warwick Way 19-21",
+        "postcode": "SW1V 1QT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3736618,
+          51.4155866
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Oldfield Road 72",
+        "postcode": "TW12 2HQ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.205264,
+          51.4886588
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "North End Road 116 - 128",
+        "postcode": "W14 9PP"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1238117,
+          51.5318857
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1056425,
+          51.4252285
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "High Street 1",
+        "postcode": "DA14 6EN"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2199239,
+          51.3064215
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "Brighton Road",
+        "postcode": "KT20 6AA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4243172,
+          51.6111681
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Green Lane 52",
+        "postcode": "HA6 2XW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1979728,
+          51.4987883
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Kensington High Street 243",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0773863,
+          51.3042634
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1839139,
+          51.4945866
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Gloucester Road 128",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1454772,
+          51.5953737
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "Colney Hatch Lane 11",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1163272,
+          51.4477404
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5003754,
+          51.5813292
+        ]
+      },
+      "properties": {
+        "name": "Shell Little Waitrose",
+        "address": "North Orbital Road",
+        "postcode": "UB9 5EY"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.238101,
+          51.4494342
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "Roehampton Lane 237-239",
+        "postcode": "SW15 4LB"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2166998,
+          51.4640379
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Putney High Street",
+        "postcode": "SW15 1TW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0747345,
+          51.3877728
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "Queensway 52",
+        "postcode": "BR5 1EA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1937969,
+          51.4542356
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "66-67",
+        "postcode": "SW18 4TG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2881867,
+          51.4135659
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "London Road",
+        "postcode": "KT2 6PQ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3016115,
+          51.4194847
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "",
+        "postcode": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4693797,
+          51.4279252
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "Fordbridge Road 102",
+        "postcode": "TW15 3RX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0094938,
+          51.5436497
+        ]
+      },
+      "properties": {
+        "name": "Waitrose",
+        "address": "Montfichet Road",
+        "postcode": "E20 1EH"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.3316833,
+          51.3052962
+        ]
+      },
+      "properties": {
+        "name": "Little Waitrose",
+        "address": "London Road",
+        "postcode": "TN15 7RR"
+      }
+    }
+  ]
+}
