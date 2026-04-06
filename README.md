@@ -15,10 +15,10 @@ https://loclocloc.netlify.app
 ## What you can do
 
 - **Search postcodes** — jump to an area and keep a shortlist of places you care about.
-- **Point layers** — tube and rail, groceries, coffee, libraries, pubs, parks, gyms, cinemas, bike parking, and more. Each layer can be switched on or off. POIs show as emoji markers on the map.
-- **Area layers** — choropleths for crime, air quality (NO₂), estimated rent, and Index of Multiple Deprivation dimensions, so you can read "how this patch of the city feels" next to the map.
+- **Point layers** — tube and rail, groceries, coffee, libraries, pubs, parks, restaurants, GP surgeries, coworking, gyms, cinemas, bike parking, and more. Each layer can be switched on or off. POIs show as emoji markers on the map.
+- **Area layers** — choropleths for crime, air quality (NO₂), estimated rent, IMD domains, population density, transport access (TfL PTAL / access index), green space score, and modelled noise (Lden), so you can read "how this patch of the city feels" next to the map.
 - **Scorecards** — blended scores for each pinned postcode (proximity + area signals), with short explanations on what each metric means. Disable dimensions you don't care about.
-- **Filters** — set thresholds on crime, air quality, rent, and deprivation to grey out areas that don't pass.
+- **Filters** — set thresholds on crime, air quality, rent, deprivation, population density, noise, minimum transport access index, and minimum green-space score to grey out areas that don't pass.
 - **Compare** — pin multiple postcodes and see a side-by-side comparison across all dimensions.
 - **Walking rings** — concentric distance rings around pinned postcodes (5/10/15/20 min walk).
 - **Optional transit isochrones** — public-transit reach from pinned postcodes when the app has a TfL API key configured.
@@ -56,21 +56,27 @@ npm install
 |------|-------------------|
 | `public/data/_lsoa-boundaries.geojson` | You want to **re-download London LSOA polygons** from the ONS ArcGIS services (e.g. after a boundary release). The next area scraper that needs boundaries will fetch again. |
 | `public/data/_imd_scores.xlsx` | You want to **re-download** the government IMD 2019 scores spreadsheet from the URL in `scrapers/imd.js` (e.g. if the file on gov.uk is replaced). |
+| `public/data/_population-density-ts006.xlsx` | You want to **re-fetch** Census 2021 TS006 LSOA population density from the URL in `scrapers/population-density.js`. |
+| `public/data/_ptal-lsoa-2023.csv` | You want to **re-fetch** TfL LSOA PTAL / access stats from the URL in `scrapers/ptal.js`. |
 
 ### Area layers (LSOA) — run after `npm install`
 
 These join or aggregate to LSOA boundaries (cached as above). **`crime.js` is slow**: it hits [data.police.uk](https://data.police.uk/) for many grid points with delays between batches — expect several minutes and be gentle on their service.
 
 ```bash
-node scrapers/imd.js          # IMD 2019 → imd.geojson (+ may cache _imd_scores.xlsx)
-node scrapers/air-quality.js   # NO₂ interpolation → air-quality.geojson
-node scrapers/rent.js          # Modelled est. rent → rent.geojson (uses IMD cache + LSOA boundaries)
-node scrapers/crime.js         # Latest police month → crime.geojson (slow)
+node scrapers/imd.js                 # IMD 2019 → imd.geojson (+ may cache _imd_scores.xlsx)
+node scrapers/air-quality.js         # NO₂ interpolation → air-quality.geojson
+node scrapers/rent.js                # Modelled est. rent → rent.geojson (uses IMD cache + LSOA boundaries)
+node scrapers/population-density.js # Census 2021 TS006 → population-density.geojson (may cache _population-density-ts006.xlsx)
+node scrapers/ptal.js                # TfL LSOA access index → ptal.geojson (may cache _ptal-lsoa-2023.csv)
+node scrapers/noise.js               # IDW from curated Lden points → noise.geojson
+node scrapers/green-space.js         # OSM greenspace → green-space.geojson (Overpass, multi-bbox; slow)
+node scrapers/crime.js               # Latest police month → crime.geojson (slow)
 ```
 
 ### Point layers (OpenStreetMap / Overpass)
 
-Each script overwrites its GeoJSON. Respect [Overpass usage](https://wiki.openstreetmap.org/wiki/Overpass_API) (no hammering; try off-peak if a query times out).
+Each script overwrites its GeoJSON. Respect [Overpass usage](https://wiki.openstreetmap.org/wiki/Overpass_API) (no hammering; try off-peak if a query times out). Several scrapers use `scrapers/lib/overpass.js`, which rotates public instances (e.g. kumi.systems, openstreetmap.fr, overpass-api.de) with retries. **`restaurants.js` and `green-space.js` are the heaviest** (many nodes / ways; sharded queries; expect long runs).
 
 ```bash
 node scrapers/tube-rail.js
@@ -84,17 +90,24 @@ node scrapers/gyms.js
 node scrapers/cinemas.js
 node scrapers/bike-parking.js
 node scrapers/betting.js
+node scrapers/restaurants.js    # sharded; slow
+node scrapers/gp-surgeries.js
+node scrapers/coworking.js
 ```
 
 ### Refresh everything used by the map (copy-paste)
 
-POI scripts first (fast), then area layers (crime last if you want coffee while it runs):
+POI scripts first, then area layers. Run **`crime.js` last** if you want lighter jobs first; run **`restaurants.js` / `green-space.js` when you can wait** (Overpass-heavy).
 
 ```bash
-for f in tube-rail waitrose coffee libraries pubs parks yoga gyms cinemas bike-parking betting; do node scrapers/$f.js; done
+for f in tube-rail waitrose coffee libraries pubs parks yoga gyms cinemas bike-parking betting gp-surgeries coworking restaurants; do node scrapers/$f.js; done
 node scrapers/imd.js
 node scrapers/air-quality.js
 node scrapers/rent.js
+node scrapers/population-density.js
+node scrapers/ptal.js
+node scrapers/noise.js
+node scrapers/green-space.js
 node scrapers/crime.js
 ```
 
@@ -112,7 +125,7 @@ Bundled layers are static GeoJSON under `public/data/`, produced or refreshed by
 
 ### Point layers (POIs)
 
-All of the following are queried from **OpenStreetMap** via the **[Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API)** (community-mapped data; completeness varies by area). Typical endpoint in this repo: `overpass-api.de`; some scrapers use `overpass.kumi.systems`.
+All of the following are queried from **OpenStreetMap** via the **[Overpass API](https://wiki.openstreetmap.org/wiki/Overpass_API)** (community-mapped data; completeness varies by area). This repo posts through `scrapers/lib/overpass.js`, which tries several public Overpass endpoints.
 
 | Layer | OSM tags / notes | Output file |
 |-------|------------------|-------------|
@@ -122,6 +135,9 @@ All of the following are queried from **OpenStreetMap** via the **[Overpass API]
 | Libraries | `amenity=library` | `libraries.geojson` |
 | Pubs | `amenity=pub` | `pubs.geojson` |
 | Parks & green space | `leisure=park`, `garden`, `nature_reserve` (non-private where tagged) | `parks.geojson` |
+| Restaurants | `amenity=restaurant` (named only; London split into bbox shards in scraper) | `restaurants.geojson` |
+| GP surgeries | `amenity=doctors`, `healthcare=doctor` | `gp-surgeries.geojson` |
+| Coworking | `amenity=coworking_space`, `office=coworking` | `coworking.geojson` |
 | Yoga studios | `leisure=fitness_centre` + `sport=yoga` / name patterns, `sport=yoga`, etc. | `yoga.geojson` |
 | Gyms | `leisure=fitness_centre` | `gyms.geojson` |
 | Cinemas | `amenity=cinema` | `cinemas.geojson` |
@@ -137,6 +153,10 @@ All of the following are queried from **OpenStreetMap** via the **[Overpass API]
 | **Air quality (NO₂)** | Published annual mean NO₂ at monitoring sites (London Air / AURN-style figures in `scrapers/air-quality.js`), **inverse-distance interpolated** to LSOA centroids — modelled surface, not a regulatory map | `air-quality.geojson` |
 | **Est. rent (£/mo)** | **Modelled** in `scrapers/rent.js`: IMD 2019 income / housing-barriers signals + hand-tuned borough median anchors → indicative monthly £ per LSOA. **Not** official rents or listings — exploration only | `rent.geojson` |
 | **Deprivation (IMD 2019)** | [UK government IMD 2019 scores](https://www.gov.uk/government/statistics/english-indices-of-deprivation-2019) (spreadsheet), joined to LSOA boundaries | `imd.geojson` |
+| **Population density** | [ONS Census 2021 TS006](https://www.ons.gov.uk/datasets/TS006/editions/2021) — usual residents per km² at LSOA; table pulled in `scrapers/population-density.js` via the [UK Data Service CKAN-hosted XLSX](https://statistics.ukdataservice.ac.uk/dataset/ons_2021_demography_population_density) | `population-density.geojson` |
+| **Transport access (PTAL)** | [TfL — LSOA aggregated PTAL stats 2023](https://gis-tfl.opendata.arcgis.com/datasets/3eb38b75667a49df9ef1240e9a197615) (CSV on ArcGIS Hub). Choropleth uses **mean access index (`mean_AI`)**; banded PTAL categories are in the source file | `ptal.geojson` |
+| **Green space score** | **OpenStreetMap** (Overpass): parks, gardens, nature reserves, recreation grounds, village greens — proximity-weighted count near LSOA centroids, then percentile score (exploratory proxy, not official greenspace %). See `scrapers/green-space.js` | `green-space.geojson` |
+| **Noise (Lden)** | **Modelled** in `scrapers/noise.js`: inverse-distance interpolation from hand-picked representative **Lden** (dB) points informed by [Defra strategic noise mapping](https://www.gov.uk/government/collections/strategic-noise-mapping) / London context — not a downloaded Defra raster | `noise.geojson` |
 
 ### Live services (not stored in the repo)
 
