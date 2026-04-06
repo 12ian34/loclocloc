@@ -227,9 +227,183 @@
   line-height: 1.5;
 }
 
-.map {
+.map-shell {
   flex: 1;
+  min-width: 0;
   height: 100vh;
+  position: relative;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+/* Mobile drawer + menu */
+.mobile-menu-btn,
+.mobile-scrim {
+  display: none;
+}
+
+.sidebar-footer {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-actions-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sidebar-link-btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+  color: #e0e0e0;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sidebar-link-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-source-link {
+  font-size: 12px;
+  color: #7dd3fc;
+  text-decoration: none;
+}
+
+.sidebar-source-link:hover {
+  text-decoration: underline;
+}
+
+.sidebar-toast {
+  font-size: 11px;
+  color: #86efac;
+  margin: 0;
+}
+
+/* Data modal */
+.modal-root {
+  position: fixed;
+  inset: 0;
+  z-index: 4000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.modal-panel {
+  position: relative;
+  z-index: 1;
+  width: min(520px, 100%);
+  max-height: min(88vh, 720px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #1e1e32;
+  color: #e8e8e8;
+  border-radius: 12px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.modal-close {
+  border: none;
+  background: transparent;
+  color: #888;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+.modal-close:hover {
+  color: #fff;
+}
+
+.modal-body {
+  padding: 14px 18px 18px;
+  overflow-y: auto;
+}
+
+.modal-intro,
+.modal-build,
+.modal-foot {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #b8b8c8;
+  margin: 0 0 12px 0;
+}
+
+.modal-build strong {
+  color: #e0e0e0;
+}
+
+.modal-data-list {
+  list-style: none;
+  margin: 0 0 12px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-data-list li {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.modal-data-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.modal-data-title {
+  font-weight: 600;
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.modal-data-meta {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.modal-data-vintage {
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 2px;
 }
 
 /* Pinned postcodes */
@@ -859,29 +1033,91 @@
 }
 
 @media (max-width: 768px) {
-  .app {
-    flex-direction: column;
+  .mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 3001;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: #fff;
+    color: #1a1a2e;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .mobile-scrim {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 2998;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+
+  .app--menu-open .mobile-scrim {
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .sidebar {
-    width: 100%;
-    min-width: 100%;
-    max-height: 50vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: min(320px, 92vw);
+    max-height: none;
+    min-width: unset;
     padding: 16px;
+    padding-top: 56px;
+    z-index: 3000;
+    transform: translateX(-100%);
+    transition: transform 0.22s ease;
+    box-shadow: none;
+  }
+
+  .app--menu-open .sidebar {
+    transform: translateX(0);
+    box-shadow: 8px 0 24px rgba(0, 0, 0, 0.35);
+  }
+
+  .sidebar-wide {
+    width: min(320px, 92vw);
+    min-width: unset;
+    max-width: none;
+    max-height: none;
+  }
+
+  .map-shell {
+    flex: 1;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
   }
 
   .map {
-    height: 50vh;
+    height: 100%;
+    min-height: 100%;
   }
 
   .info {
     display: none;
   }
 
-  .sidebar-wide {
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
-    max-height: 60vh;
+  .leaflet-control-container .leaflet-top.leaflet-left {
+    margin-top: 56px;
   }
 }

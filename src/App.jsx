@@ -13,6 +13,9 @@ import {
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "./App.css";
+import { BUILD_DATE, DATA_INTRO, DATA_ROWS } from "./dataSources.js";
+
+const GITHUB_REPO_URL = "https://github.com/12ian34/loclocloc";
 
 const LONDON_CENTER = [51.505, -0.09];
 const LONDON_ZOOM = 11;
@@ -21,6 +24,7 @@ const POINT_LAYERS = [
   { id: "tube", name: "Tube & Rail", file: "/data/tube-rail.geojson", color: "#003688", emoji: "🚇" },
   { id: "waitrose", name: "Waitrose", file: "/data/waitrose.geojson", color: "#4a7c59", emoji: "🛒" },
   { id: "coffee", name: "Coffee Shops", file: "/data/coffee.geojson", color: "#6f4e37", emoji: "☕" },
+  { id: "libraries", name: "Libraries", file: "/data/libraries.geojson", color: "#6366f1", emoji: "📚" },
   { id: "pubs", name: "Pubs", file: "/data/pubs.geojson", color: "#c9a227", emoji: "🍺" },
   { id: "parks", name: "Parks", file: "/data/parks.geojson", color: "#2d8c3c", emoji: "🌳" },
   { id: "yoga", name: "Yoga Studios", file: "/data/yoga.geojson", color: "#c06cba", emoji: "🧘" },
@@ -51,6 +55,17 @@ const CHOROPLETH_LAYERS = [
     unit: "µg/m³",
     colorStops: ["#f0f9e8", "#bae4bc", "#7bccc4", "#f4a460", "#d95f0e", "#8b4513"],
     format: (v) => `${v}`,
+    inverse: true,
+  },
+  {
+    id: "rent-est",
+    name: "Est. rent (£/mo)",
+    file: "/data/rent.geojson",
+    property: "value",
+    emoji: "🏘️",
+    unit: "modelled £/mo",
+    colorStops: ["#f7fcf0", "#e0f3db", "#ccebc5", "#a8ddb5", "#4eb3d3", "#2b8cbe", "#08589e"],
+    format: (v) => `£${v}`,
     inverse: true,
   },
   {
@@ -167,6 +182,7 @@ const WALK_RINGS = [
 const SCORE_AREA_DIMS = [
   { id: "crime-current", label: "Low Crime", property: "value", choroplethFile: "/data/crime.geojson", tip: "Monthly street-level crimes from data.police.uk. Scored by inverse percentile across all London LSOAs — fewer crimes = higher score." },
   { id: "air", label: "Clean Air", property: "value", choroplethFile: "/data/air-quality.geojson", tip: "NO\u2082 concentration (\u00b5g/m\u00b3) interpolated from London Air Quality Network monitoring stations. Lower pollution = higher score." },
+  { id: "rent-est", label: "Affordable rent", property: "value", choroplethFile: "/data/rent.geojson", tip: "Indicative 1-bed-style monthly rent (\u00a3), modelled from IMD 2019 + borough anchor rents in scrapers/rent.js \u2014 not official market data. Lower \u00a3 = higher score." },
   { id: "imd", label: "Low Deprivation", property: "imd", choroplethFile: "/data/imd.geojson", tip: "Overall Index of Multiple Deprivation (IMD 2019) from ONS. Combines income, employment, education, health, crime, housing & environment. Lower deprivation = higher score." },
   { id: "imd-income", label: "Income", property: "income", choroplethFile: "/data/imd.geojson", tip: "IMD Income Deprivation rate — proportion of the population experiencing deprivation relating to low income. Lower rate = higher score." },
   { id: "imd-education", label: "Education", property: "education", choroplethFile: "/data/imd.geojson", tip: "IMD Education, Skills & Training score. Measures lack of attainment and skills in the local population. Lower deprivation = higher score." },
@@ -180,6 +196,7 @@ const SCORE_PROX_DIMS = [
   { id: "tube", label: "Tube/Rail", pointLayer: "tube", cap: 8, tip: "Density-weighted score for nearby Tube/Rail stations. Rewards multiple stations within walking distance. More stations closer = higher score." },
   { id: "waitrose", label: "Waitrose", pointLayer: "waitrose", cap: 3, tip: "Density-weighted score for nearby Waitrose stores. Rewards having options, not just one far away." },
   { id: "coffee", label: "Coffee", pointLayer: "coffee", cap: 12, tip: "Density-weighted score for nearby coffee shops. Rewards areas with a good selection within walking distance." },
+  { id: "libraries", label: "Libraries", pointLayer: "libraries", cap: 6, tip: "Density-weighted score for nearby public libraries (OpenStreetMap). More branches within walking distance = higher score." },
   { id: "pubs", label: "Pubs", pointLayer: "pubs", cap: 15, tip: "Density-weighted score for nearby pubs. Rewards areas with good pub density." },
   { id: "parks", label: "Parks", pointLayer: "parks", cap: 5, tip: "Density-weighted score for nearby parks and gardens. Multiple green spaces nearby = higher score." },
   { id: "yoga", label: "Yoga", pointLayer: "yoga", cap: 4, tip: "Density-weighted score for nearby yoga studios. Rewards areas with good studio density." },
@@ -296,17 +313,6 @@ function featureCentroid(f) {
     lat: coords.reduce((s, c) => s + c[1], 0) / coords.length,
     lng: coords.reduce((s, c) => s + c[0], 0) / coords.length,
   };
-}
-
-// Distance to nearest point feature (returns meters)
-function nearestPointDistance(lat, lng, features) {
-  let best = Infinity;
-  for (const f of features) {
-    const [fLng, fLat] = f.geometry.coordinates;
-    const d = haversine(lat, lng, fLat, fLng);
-    if (d < best) best = d;
-  }
-  return best;
 }
 
 // Compute percentile rank (0-100) of a value in a sorted array
@@ -876,10 +882,43 @@ function ComparisonTable({ postcodes, allScores }) {
   );
 }
 
-function FilterPanel({ filters, setFilters, choroplethData }) {
+function DataAboutModal({ onClose }) {
+  return (
+    <div className="modal-root" role="dialog" aria-modal="true" aria-labelledby="data-modal-title">
+      <div className="modal-backdrop" onClick={onClose} aria-hidden="true" />
+      <div className="modal-panel">
+        <div className="modal-header">
+          <h2 id="data-modal-title">Data & freshness</h2>
+          <button type="button" className="modal-close" onClick={onClose} aria-label="Close">
+            ×
+          </button>
+        </div>
+        <div className="modal-body">
+          <p className="modal-intro">{DATA_INTRO}</p>
+          <p className="modal-build">
+            <strong>Site build date:</strong> {BUILD_DATE} (from when this version was built; redeploy updates it.)
+          </p>
+          <ul className="modal-data-list">
+            {DATA_ROWS.map((row) => (
+              <li key={row.id}>
+                <div className="modal-data-title">{row.title}</div>
+                <div className="modal-data-meta">{row.source}</div>
+                <div className="modal-data-vintage">{row.vintage}</div>
+              </li>
+            ))}
+          </ul>
+          <p className="modal-foot">For exploration only — not planning, legal, or financial advice.</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function FilterPanel({ filters, setFilters }) {
   const FILTER_DIMS = [
     { id: "crime-current", label: "Max Crime Score", property: "value", max: 200 },
     { id: "air", label: "Max NO₂ (µg/m³)", property: "value", max: 80 },
+    { id: "rent-est", label: "Max est. rent (£/mo)", property: "value", max: 3500 },
     { id: "imd", label: "Max Deprivation", property: "imd", max: 60 },
   ];
 
@@ -946,6 +985,44 @@ function App() {
   const [transitData, setTransitData] = useState({});
   const [showTransit, setShowTransit] = useState(false);
   const [disabledScoreDims, setDisabledScoreDims] = useState(new Set());
+  const [showDataModal, setShowDataModal] = useState(false);
+  const [shareTip, setShareTip] = useState("");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === "Escape") {
+        setShowDataModal(false);
+        setMobileMenuOpen(false);
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
+  const copyShareUrl = useCallback(async () => {
+    const url = window.location.href;
+    try {
+      await navigator.clipboard.writeText(url);
+      setShareTip("Link copied");
+    } catch {
+      try {
+        const ta = document.createElement("textarea");
+        ta.value = url;
+        ta.style.position = "fixed";
+        ta.style.left = "-9999px";
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        document.body.removeChild(ta);
+        setShareTip("Link copied");
+      } catch {
+        setShareTip("Copy blocked — copy the URL from the bar");
+      }
+    }
+    window.setTimeout(() => setShareTip(""), 2800);
+    setMobileMenuOpen(false);
+  }, []);
 
   // Track if initial URL postcodes have been resolved
   const initialPostcodesRef = useRef(initialState.postcodes);
@@ -1189,7 +1266,24 @@ function App() {
   const filterMatchCount = filterPassSet ? filterPassSet.size : null;
 
   return (
-    <div className="app">
+    <div className={`app ${mobileMenuOpen ? "app--menu-open" : ""}`}>
+      <button
+        type="button"
+        className="mobile-menu-btn"
+        aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+        aria-expanded={mobileMenuOpen}
+        onClick={() => setMobileMenuOpen((o) => !o)}
+      >
+        {mobileMenuOpen ? "✕" : "☰"}
+      </button>
+      <button
+        type="button"
+        className="mobile-scrim"
+        aria-label="Close menu"
+        tabIndex={-1}
+        onClick={() => setMobileMenuOpen(false)}
+      />
+
       <div className={`sidebar ${showComparison && pinnedPostcodes.length >= 2 ? "sidebar-wide" : ""}`}>
         <h1 className="logo">loclocloc</h1>
         <p className="subtitle">find your spot in London</p>
@@ -1375,12 +1469,23 @@ function App() {
             <span className="filter-chevron">{showFilters ? "▾" : "▸"}</span>
           </h2>
           {showFilters && (
-            <FilterPanel
-              filters={filters}
-              setFilters={setFilters}
-              choroplethData={choroplethData}
-            />
+            <FilterPanel filters={filters} setFilters={setFilters} />
           )}
+        </div>
+
+        <div className="sidebar-footer">
+          <div className="sidebar-actions-row">
+            <button type="button" className="sidebar-link-btn" onClick={copyShareUrl}>
+              Copy share link
+            </button>
+            <button type="button" className="sidebar-link-btn" onClick={() => setShowDataModal(true)}>
+              Data & freshness
+            </button>
+          </div>
+          <a className="sidebar-source-link" href={GITHUB_REPO_URL} target="_blank" rel="noreferrer">
+            Source code on GitHub
+          </a>
+          {shareTip ? <p className="sidebar-toast">{shareTip}</p> : null}
         </div>
 
         <div className="info">
@@ -1388,6 +1493,9 @@ function App() {
         </div>
       </div>
 
+      {showDataModal && <DataAboutModal onClose={() => setShowDataModal(false)} />}
+
+      <div className="map-shell">
       <MapContainer
         center={LONDON_CENTER}
         zoom={LONDON_ZOOM}
@@ -1457,6 +1565,7 @@ function App() {
           </Marker>
         ))}
       </MapContainer>
+      </div>
     </div>
   );
 }

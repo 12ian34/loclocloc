@@ -1,0 +1,2965 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1156142,
+          51.5210756
+        ]
+      },
+      "properties": {
+        "name": "Holborn Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0212195,
+          51.4461634
+        ]
+      },
+      "properties": {
+        "name": "Catford Library",
+        "address": "Winslade Way 23-24",
+        "postcode": "SE6 4JU",
+        "website": "https://www.lewisham.gov.uk/myservices/libraries/branches/Pages/Catford-Library.aspx"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3563662,
+          51.5625561
+        ]
+      },
+      "properties": {
+        "name": "Roxeth Library",
+        "address": "Northolt Road",
+        "postcode": "HA2 8EQ",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2166396,
+          51.3601417
+        ]
+      },
+      "properties": {
+        "name": "Cheam Library",
+        "address": "",
+        "postcode": "SM3 8QH",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3349034,
+          51.5942225
+        ]
+      },
+      "properties": {
+        "name": "Wealdstone Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2243572,
+          51.50587
+        ]
+      },
+      "properties": {
+        "name": "Shepherd's Bush Library",
+        "address": "Wood Lane 6",
+        "postcode": "",
+        "website": "https://www.lbhf.gov.uk/libraries/find-your-library/shepherds-bush-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1332357,
+          51.353377
+        ]
+      },
+      "properties": {
+        "name": "The Library @ The Phoenix Centre",
+        "address": "Mollison Drive",
+        "postcode": "SM6 9NZ",
+        "website": "https://arena.yourlondonlibrary.net/web/sutton/phoenix-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0210473,
+          51.5843808
+        ]
+      },
+      "properties": {
+        "name": "Walthamstow Central Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0070943,
+          51.3997112
+        ]
+      },
+      "properties": {
+        "name": "Shortlands Library",
+        "address": "Shortlands Road 110",
+        "postcode": "BR2 0JP",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.311549,
+          51.6184394
+        ]
+      },
+      "properties": {
+        "name": "Stanmore public library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3245923,
+          51.5093573
+        ]
+      },
+      "properties": {
+        "name": "West Ealing Community Library",
+        "address": "Melbourne Avenue",
+        "postcode": "W13 9BA",
+        "website": "https://wecl.org.uk/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.080093,
+          51.2831443
+        ]
+      },
+      "properties": {
+        "name": "Caterham Valley Library",
+        "address": "Stafford Road",
+        "postcode": "CR3 6JG",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0800915,
+          51.5301768
+        ]
+      },
+      "properties": {
+        "name": "Shoreditch Library",
+        "address": "Hoxton Street 80",
+        "postcode": "N1 6LP",
+        "website": "https://www.hackney.gov.uk/shoreditch-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3954965,
+          51.3690637
+        ]
+      },
+      "properties": {
+        "name": "Hersham Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2662748,
+          51.3343457
+        ]
+      },
+      "properties": {
+        "name": "Epsom Library",
+        "address": "Epsom Square 6",
+        "postcode": "KT19 8AG",
+        "website": "https://www.surreycc.gov.uk/libraries/your-library/find-your-nearest/epsom"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1895813,
+          51.5184638
+        ]
+      },
+      "properties": {
+        "name": "Paddington Children’s Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0744988,
+          51.448832
+        ]
+      },
+      "properties": {
+        "name": "Dulwich Library",
+        "address": "Lordship Lane 368",
+        "postcode": "SE22 8NB",
+        "website": "https://www.southwark.gov.uk/culture-and-sport/libraries/find-library/dulwich-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0332309,
+          51.6998742
+        ]
+      },
+      "properties": {
+        "name": "Cheshunt Library",
+        "address": "Turners Hill",
+        "postcode": "EN8 8LB",
+        "website": "https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/cheshunt-library.aspx"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2477696,
+          51.3634817
+        ]
+      },
+      "properties": {
+        "name": "Stoneleigh Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2199633,
+          51.3881527
+        ]
+      },
+      "properties": {
+        "name": "Aragon Public Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2610858,
+          51.4917562
+        ]
+      },
+      "properties": {
+        "name": "Chiswick Area Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3286471,
+          51.2934028
+        ]
+      },
+      "properties": {
+        "name": "Leatherhead Library",
+        "address": "Church Street",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1116142,
+          51.444615
+        ]
+      },
+      "properties": {
+        "name": "St Martins Library Centre",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.137889,
+          51.487979
+        ]
+      },
+      "properties": {
+        "name": "Pimlico Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1746541,
+          51.3855897
+        ]
+      },
+      "properties": {
+        "name": "Middleton Circle Library",
+        "address": "",
+        "postcode": "SM5 1JJ",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0063876,
+          51.5581169
+        ]
+      },
+      "properties": {
+        "name": "Harrow Green Community Library",
+        "address": "Cathall Road 2-4",
+        "postcode": "E11 4LF",
+        "website": "https://harrowgreenlibrary.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3024731,
+          51.5123207
+        ]
+      },
+      "properties": {
+        "name": "Ealing Central Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1724301,
+          51.5336505
+        ]
+      },
+      "properties": {
+        "name": "St. John's Wood Library",
+        "address": "Circus Road 20-24",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1882974,
+          51.4900365
+        ]
+      },
+      "properties": {
+        "name": "Brompton Library",
+        "address": "Old Brompton Road 208",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.029746,
+          51.5327503
+        ]
+      },
+      "properties": {
+        "name": "Idea Store, Bow",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.ideastore.co.uk/idea-store-bow"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3894493,
+          51.6258376
+        ]
+      },
+      "properties": {
+        "name": "Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2975396,
+          51.4263456
+        ]
+      },
+      "properties": {
+        "name": "Tudor Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0665088,
+          51.6453233
+        ]
+      },
+      "properties": {
+        "name": "Bush Hill Park Library",
+        "address": "Agricola Place",
+        "postcode": "EN1 1DW",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1282901,
+          51.6303732
+        ]
+      },
+      "properties": {
+        "name": "Southgate Public Library",
+        "address": "High Street",
+        "postcode": "N14 6BP",
+        "website": "https://libraries.enfield.gov.uk/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0861323,
+          51.6517022
+        ]
+      },
+      "properties": {
+        "name": "Enfield Library",
+        "address": "Church Street 66",
+        "postcode": "EN2 6AX",
+        "website": "https://mylife.enfield.gov.uk/directory/providerdetails/210976"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.428254,
+          51.5780239
+        ]
+      },
+      "properties": {
+        "name": "Manor Farm Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1064782,
+          51.5154661
+        ]
+      },
+      "properties": {
+        "name": "Shoe Lane Library",
+        "address": "Little New Street",
+        "postcode": "EC4A 3JR",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0146503,
+          51.4036103
+        ]
+      },
+      "properties": {
+        "name": "Bromley Central Library",
+        "address": "High Street",
+        "postcode": "BR1 1EX",
+        "website": "https://www.better.org.uk/library/london/bromley/bromley-central-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2194912,
+          51.2889026
+        ]
+      },
+      "properties": {
+        "name": "Seal Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1032603,
+          51.4045695
+        ]
+      },
+      "properties": {
+        "name": "St Paul's Cray Library",
+        "address": "Mickleham Road",
+        "postcode": "BR5 2RW",
+        "website": "https://www.better.org.uk/library/london/bromley/st-paul-s-cray-library-community-support-centre"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1189539,
+          51.537135
+        ]
+      },
+      "properties": {
+        "name": "Lewis Carroll Children's Library",
+        "address": "Copenhagen Street",
+        "postcode": "N1 0ST",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0819676,
+          51.6361231
+        ]
+      },
+      "properties": {
+        "name": "Ridge Avenue Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0556753,
+          51.5446215
+        ]
+      },
+      "properties": {
+        "name": "Hackney Central Library",
+        "address": "",
+        "postcode": "",
+        "website": "https://hackney.gov.uk/hackney-central-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0133588,
+          51.3402031
+        ]
+      },
+      "properties": {
+        "name": "New Addington Library",
+        "address": "Central Parade 61",
+        "postcode": "CR0 0JD",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2609051,
+          51.3616665
+        ]
+      },
+      "properties": {
+        "name": "Ewell Court House",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1052039,
+          51.4713817
+        ]
+      },
+      "properties": {
+        "name": "Lambeth Archives & Minet Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4041044,
+          51.5208361
+        ]
+      },
+      "properties": {
+        "name": "Yeading Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0363675,
+          51.4554165
+        ]
+      },
+      "properties": {
+        "name": "Crofton Park Library",
+        "address": "Brockley Road 375",
+        "postcode": "SE4 2AG",
+        "website": "https://www.lewisham.gov.uk/myservices/libraries/branches/Pages/Crofton-Park-community-library-service.aspx"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1479538,
+          51.4927856
+        ]
+      },
+      "properties": {
+        "name": "Victoria Library",
+        "address": "Buckingham Palace Road 160",
+        "postcode": "SW1W 9UD",
+        "website": "https://www.westminster.gov.uk/leisure-libraries-and-community/library-opening-times-and-contact-details/victoria-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3002155,
+          51.4093452
+        ]
+      },
+      "properties": {
+        "name": "Kingston Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.129873,
+          51.5096404
+        ]
+      },
+      "properties": {
+        "name": "Westminster Reference Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1239307,
+          51.307569
+        ]
+      },
+      "properties": {
+        "name": "Bradmore Green Library",
+        "address": "Bradmore Way",
+        "postcode": "CR5 1PE",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1148482,
+          51.4609462
+        ]
+      },
+      "properties": {
+        "name": "Brixton Library",
+        "address": "Brixton Oval",
+        "postcode": "SW2 1JQ",
+        "website": "https://www.lambeth.gov.uk/libraries-0/brixton-tate-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2026887,
+          51.477164
+        ]
+      },
+      "properties": {
+        "name": "Fulham Library",
+        "address": "Fulham Road 598",
+        "postcode": "SW6 5NX",
+        "website": "https://www.lbhf.gov.uk/Directory/Leisure_and_Culture/Libraries/Fulham_library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2043132,
+          51.4842751
+        ]
+      },
+      "properties": {
+        "name": "Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2288779,
+          51.5885771
+        ]
+      },
+      "properties": {
+        "name": "Hendon Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0406474,
+          51.4269182
+        ]
+      },
+      "properties": {
+        "name": "Sydenham Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1478834,
+          51.4928935
+        ]
+      },
+      "properties": {
+        "name": "Victoria Music Library",
+        "address": "Buckingham Palace Road 160",
+        "postcode": "SW1W 9UD",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2515019,
+          51.5598343
+        ]
+      },
+      "properties": {
+        "name": "Neasden Library Plus",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3060649,
+          51.368091
+        ]
+      },
+      "properties": {
+        "name": "Hook and Chessington Library",
+        "address": "Hook Road",
+        "postcode": "KT9 1EJ",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1045101,
+          51.5279969
+        ]
+      },
+      "properties": {
+        "name": "Thames View Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0364038,
+          51.6261899
+        ]
+      },
+      "properties": {
+        "name": "Buckhurst Hill Library",
+        "address": "Queens Road",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0584635,
+          51.6239502
+        ]
+      },
+      "properties": {
+        "name": "Edmonton Green Library",
+        "address": "South Mall 36-44",
+        "postcode": "",
+        "website": "https://mylife.enfield.gov.uk/directory/providerdetails/216435"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1685063,
+          51.4873496
+        ]
+      },
+      "properties": {
+        "name": "Chelsea Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3806167,
+          51.5913231
+        ]
+      },
+      "properties": {
+        "name": "Pinner Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1292409,
+          51.6488987
+        ]
+      },
+      "properties": {
+        "name": "Oakwood Library",
+        "address": "Bramley Road 185-187",
+        "postcode": "N14 4XA",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4004631,
+          51.5804275
+        ]
+      },
+      "properties": {
+        "name": "Eastcote Library",
+        "address": "Field End Road 88",
+        "postcode": "HA5 1RL",
+        "website": "https://www.hillingdon.gov.uk/article/2881/Eastcote-Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0730494,
+          51.477948
+        ]
+      },
+      "properties": {
+        "name": "The Feminist Library",
+        "address": "",
+        "postcode": "",
+        "website": "https://feministlibrary.co.uk/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0739276,
+          51.5880051
+        ]
+      },
+      "properties": {
+        "name": "Marcus Garvey Library",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.haringey.gov.uk/libraries-sport-and-leisure/libraries/marcus-garvey-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0683107,
+          51.603556
+        ]
+      },
+      "properties": {
+        "name": "Coombes Croft Library",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.haringey.gov.uk/index/community_and_leisure/libraries/findalibrary/coombescroft.htm"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.3005332,
+          51.3989746
+        ]
+      },
+      "properties": {
+        "name": "Longfield Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0257528,
+          51.5469131
+        ]
+      },
+      "properties": {
+        "name": "The Gate Forest Gate Community Neighbourhood",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1045059,
+          51.5262413
+        ]
+      },
+      "properties": {
+        "name": "Islington Local History Centre",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.islington.gov.uk/islington/history-heritage/heritage_lhc/Pages/default.aspx"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2202562,
+          51.4909721
+        ]
+      },
+      "properties": {
+        "name": "Hammersmith and Fulham Archives and Local History Centre",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.lbhf.gov.uk/Directory/Leisure_and_Culture/Libraries/Archives/17430_Archives_and_Local_History.asp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2129539,
+          51.4961432
+        ]
+      },
+      "properties": {
+        "name": "Blythe House Archive and Library Reading Room",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1626938,
+          51.4086315
+        ]
+      },
+      "properties": {
+        "name": "Mitcham Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0385962,
+          51.4754834
+        ]
+      },
+      "properties": {
+        "name": "New Cross Learning Centre",
+        "address": "New Cross Road 283;285",
+        "postcode": "SE14 6AS",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0356002,
+          51.4749647
+        ]
+      },
+      "properties": {
+        "name": "Rutherford Building(Library and IT Services)",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0560486,
+          51.4357589
+        ]
+      },
+      "properties": {
+        "name": "Forest Hill Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.057393,
+          51.4512635
+        ]
+      },
+      "properties": {
+        "name": "Eltham Library",
+        "address": "Archery Road",
+        "postcode": "SE9 1HA",
+        "website": "https://www.better.org.uk/library/london/greenwich/eltham-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0306948,
+          51.4899706
+        ]
+      },
+      "properties": {
+        "name": "Pepys Resource Centre",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3629707,
+          51.4021382
+        ]
+      },
+      "properties": {
+        "name": "Molesey Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0794107,
+          51.5264741
+        ]
+      },
+      "properties": {
+        "name": "Stuart Hall Library",
+        "address": "",
+        "postcode": "",
+        "website": "http://www.rivingtonplace.org/Stuart-Hall-Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.073831,
+          51.5723472
+        ]
+      },
+      "properties": {
+        "name": "Lubavitch Lending Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0146933,
+          51.5045285
+        ]
+      },
+      "properties": {
+        "name": "Idea Store",
+        "address": "Churchill Place 2",
+        "postcode": "E14 5RB",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2895229,
+          51.4503366
+        ]
+      },
+      "properties": {
+        "name": "Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.061829,
+          51.5073128
+        ]
+      },
+      "properties": {
+        "name": "Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0941693,
+          51.5199273
+        ]
+      },
+      "properties": {
+        "name": "Barbican Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4751559,
+          51.3393527
+        ]
+      },
+      "properties": {
+        "name": "Byfleet Community Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4908648,
+          51.370925
+        ]
+      },
+      "properties": {
+        "name": "Addlestone Library",
+        "address": "Station Road",
+        "postcode": "KT15 2AF",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1102572,
+          51.4936868
+        ]
+      },
+      "properties": {
+        "name": "Abbey Wood Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0625652,
+          51.3425402
+        ]
+      },
+      "properties": {
+        "name": "Selsdon Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.3174456,
+          51.6924825
+        ]
+      },
+      "properties": {
+        "name": "Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3675595,
+          51.5489936
+        ]
+      },
+      "properties": {
+        "name": "Northolt Leisure Centre Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3240967,
+          51.5405765
+        ]
+      },
+      "properties": {
+        "name": "Perivale Library",
+        "address": "Horsenden Lane South",
+        "postcode": "UB6 7NT",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3550859,
+          51.5298234
+        ]
+      },
+      "properties": {
+        "name": "Greenford Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0917292,
+          51.5017274
+        ]
+      },
+      "properties": {
+        "name": "Local History Library",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.southwark.gov.uk/info/200161/local_history_library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3066298,
+          51.458887
+        ]
+      },
+      "properties": {
+        "name": "Richmond Reference Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1346948,
+          51.4944304
+        ]
+      },
+      "properties": {
+        "name": "RHS Lindley Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.382298,
+          51.5026858
+        ]
+      },
+      "properties": {
+        "name": "Southall Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0753621,
+          51.5580614
+        ]
+      },
+      "properties": {
+        "name": "Redbridge Central Library",
+        "address": "Clements Road",
+        "postcode": "IG1 1EA",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1960588,
+          51.4015082
+        ]
+      },
+      "properties": {
+        "name": "Morden Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1377417,
+          51.534345
+        ]
+      },
+      "properties": {
+        "name": "Camden Town Library",
+        "address": "Eversholt Street 218",
+        "postcode": "NW1 1BD",
+        "website": "https://www.camden.gov.uk/camdentownlibrary"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0651754,
+          51.6122387
+        ]
+      },
+      "properties": {
+        "name": "Fore Street Library",
+        "address": "Fore Street 109-111",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0042126,
+          51.5427088
+        ]
+      },
+      "properties": {
+        "name": "Stratford Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4181891,
+          51.5083967
+        ]
+      },
+      "properties": {
+        "name": "Botwell Green Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4361979,
+          51.525854
+        ]
+      },
+      "properties": {
+        "name": "Hayes End Library",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.hillingdon.gov.uk/article/8711/Hayes-End-Library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0925982,
+          51.5161758
+        ]
+      },
+      "properties": {
+        "name": "Guildhall Library",
+        "address": "Aldermanbury",
+        "postcode": "EC2V 7HH",
+        "website": "https://www.cityoflondon.gov.uk/things-to-do/visiting-the-city/archives-and-city-history/guildhall-library/Pages/default.aspx"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1339659,
+          51.5259772
+        ]
+      },
+      "properties": {
+        "name": "The Wellcome Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4768028,
+          51.4526041
+        ]
+      },
+      "properties": {
+        "name": "Stanwell Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1290913,
+          51.4315839
+        ]
+      },
+      "properties": {
+        "name": "Streatham Tate Library",
+        "address": "Streatham High Road 63",
+        "postcode": "SW16 1PN",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3360454,
+          51.5098799
+        ]
+      },
+      "properties": {
+        "name": "Hanwell Library",
+        "address": "Cherington Road",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1051991,
+          51.5134457
+        ]
+      },
+      "properties": {
+        "name": "St Bride Library",
+        "address": "Bride Lane",
+        "postcode": "EC4Y 8EQ",
+        "website": "https://www.stbride.org/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1266573,
+          51.5338565
+        ]
+      },
+      "properties": {
+        "name": "Pancras Square Library",
+        "address": "Pancras Square 5",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2810964,
+          51.5588361
+        ]
+      },
+      "properties": {
+        "name": "Wembley Library",
+        "address": "Engineers Way",
+        "postcode": "HA9 0FJ",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1726887,
+          51.3973188
+        ]
+      },
+      "properties": {
+        "name": "Swanley Library",
+        "address": "London Road",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0394306,
+          51.6719587
+        ]
+      },
+      "properties": {
+        "name": "Ordnance Unity Centre Library",
+        "address": "",
+        "postcode": "",
+        "website": "https://mylife.enfield.gov.uk/directory/providerdetails/210991"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0084176,
+          51.4802572
+        ]
+      },
+      "properties": {
+        "name": "Stockwell Street Library",
+        "address": "Stockwell Street 10",
+        "postcode": "SE10 9BD",
+        "website": "https://www.gre.ac.uk/it-and-library/library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0794438,
+          51.5359687
+        ]
+      },
+      "properties": {
+        "name": "Barking Learning Centre",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1329797,
+          51.4629946
+        ]
+      },
+      "properties": {
+        "name": "Clapham Library",
+        "address": "Clapham High Street 91",
+        "postcode": "SW4 7DB",
+        "website": "https://www.lambeth.gov.uk/libraries-0/clapham-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0534605,
+          51.5015038
+        ]
+      },
+      "properties": {
+        "name": "The Rotherhithe Picture Research Library",
+        "address": "St Marychurch Street 82",
+        "postcode": "SE16 4HZ",
+        "website": "https://www.sandsfilms.co.uk/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2421528,
+          51.4497802
+        ]
+      },
+      "properties": {
+        "name": "Roehampton Library",
+        "address": "Danebury Avenue",
+        "postcode": "SW15 4HD",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3674686,
+          51.4684928
+        ]
+      },
+      "properties": {
+        "name": "Hounslow Library",
+        "address": "Bath Road",
+        "postcode": "TW3 3EB",
+        "website": "https://www.hounslowlibraries.org"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0472934,
+          51.5508178
+        ]
+      },
+      "properties": {
+        "name": "Manor Park Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0791297,
+          51.2820355
+        ]
+      },
+      "properties": {
+        "name": "Caterham Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.276464,
+          51.5859819
+        ]
+      },
+      "properties": {
+        "name": "Kingsbury Library Plus",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1950956,
+          51.5999559
+        ]
+      },
+      "properties": {
+        "name": "Church End Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4100452,
+          51.3288573
+        ]
+      },
+      "properties": {
+        "name": "Cobham Library",
+        "address": "Cedar Road",
+        "postcode": "KT11 2AE",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0112951,
+          51.5168183
+        ]
+      },
+      "properties": {
+        "name": "Custom House and Canning Town Community Neighbourhood Centre and Library",
+        "address": "Rathbone Market 18",
+        "postcode": "E16 1EH",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0569256,
+          51.3665005
+        ]
+      },
+      "properties": {
+        "name": "Education Centre Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1784897,
+          51.5001094
+        ]
+      },
+      "properties": {
+        "name": "ICSF Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.177297,
+          51.4188165
+        ]
+      },
+      "properties": {
+        "name": "Colliers Wood Library",
+        "address": "High Street Colliers Wood 105-109",
+        "postcode": "SW19 2HR",
+        "website": "https://arena.yourlondonlibrary.net/web/merton/colliers-wood-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0642003,
+          51.3829409
+        ]
+      },
+      "properties": {
+        "name": "Ashburton Library",
+        "address": "Shirley Road",
+        "postcode": "CR9 7AL",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0451209,
+          51.3752604
+        ]
+      },
+      "properties": {
+        "name": "Shirley Library",
+        "address": "Wickham Road",
+        "postcode": "CR0 8BH",
+        "website": "https://www.croydon.gov.uk/leisure/libraries/find-your-library/shirley-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0802285,
+          51.4612305
+        ]
+      },
+      "properties": {
+        "name": "Grove Vale Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1507229,
+          51.5188463
+        ]
+      },
+      "properties": {
+        "name": "Marylebone Library",
+        "address": "New Cavendish Street 9-11",
+        "postcode": "W1G 9UQ",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0658797,
+          51.4895387
+        ]
+      },
+      "properties": {
+        "name": "The Woolwich Centre",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1452899,
+          51.5258422
+        ]
+      },
+      "properties": {
+        "name": "Royal College of Physicians Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1515633,
+          51.5237438
+        ]
+      },
+      "properties": {
+        "name": "Royal Academy of Music Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1031212,
+          51.4332267
+        ]
+      },
+      "properties": {
+        "name": "West Norwood Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4111813,
+          51.4463667
+        ]
+      },
+      "properties": {
+        "name": "Feltham Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1878899,
+          51.5149447
+        ]
+      },
+      "properties": {
+        "name": "Paddington Children's Library",
+        "address": "Queensway 150",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1886781,
+          51.5175162
+        ]
+      },
+      "properties": {
+        "name": "Paddington Library",
+        "address": "Porchester Road",
+        "postcode": "",
+        "website": "https://www.westminster.gov.uk/library-opening-hours-and-contact-details#paddington-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1974346,
+          51.5113479
+        ]
+      },
+      "properties": {
+        "name": "Notting Hill Gate Library",
+        "address": "Pembridge Square 1",
+        "postcode": "",
+        "website": "https://www.rbkc.gov.uk/libraries/your-library/find-library/notting-hill-gate-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2068063,
+          51.5238653
+        ]
+      },
+      "properties": {
+        "name": "Kensal Library",
+        "address": "Golborne Road 20",
+        "postcode": "",
+        "website": "https://www.rbkc.gov.uk/libraries/your-library/find-library/kensal-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1835532,
+          51.5807681
+        ]
+      },
+      "properties": {
+        "name": "Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.133408,
+          51.5247805
+        ]
+      },
+      "properties": {
+        "name": "Main Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1773004,
+          51.4945387
+        ]
+      },
+      "properties": {
+        "name": "La Médiathèque",
+        "address": "Queensberry Place 17",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0468448,
+          51.6588385
+        ]
+      },
+      "properties": {
+        "name": "Enfield Highway Library",
+        "address": "Hertford Road 201",
+        "postcode": "EN3 5JH",
+        "website": "https://mylife.enfield.gov.uk/directory/providerdetails/210974"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.125077,
+          51.5526724
+        ]
+      },
+      "properties": {
+        "name": "Cat and Mouse Library",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.islington.gov.uk/libraries-arts-and-heritage/libraries/your-local-libraries/cat-and-mouse-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0556199,
+          51.5149305
+        ]
+      },
+      "properties": {
+        "name": "Beckton Globe Library",
+        "address": "Kingsford Way 1",
+        "postcode": "E6 5JQ",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0627641,
+          51.5010683
+        ]
+      },
+      "properties": {
+        "name": "North Woolwich Library",
+        "address": "Pier Road 5",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2432748,
+          51.5035837
+        ]
+      },
+      "properties": {
+        "name": "Askew Road Library",
+        "address": "Askew Road 87/91",
+        "postcode": "",
+        "website": "https://www.lbhf.gov.uk/libraries/find-your-library/askew-road-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3607028,
+          51.5853511
+        ]
+      },
+      "properties": {
+        "name": "North Harrow Community Library",
+        "address": "Pinner Road 429-433",
+        "postcode": "HA1 4HN",
+        "website": "https://northharrowlibrary.org/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2606713,
+          51.3993078
+        ]
+      },
+      "properties": {
+        "name": "New Malden Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4744094,
+          51.3112565
+        ]
+      },
+      "properties": {
+        "name": "Wisley Garden Library",
+        "address": "Wisley Lane RHS",
+        "postcode": "GU23 6QB",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2391256,
+          51.3950807
+        ]
+      },
+      "properties": {
+        "name": "West Barnes Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0923936,
+          51.5017779
+        ]
+      },
+      "properties": {
+        "name": "John Harvard Library",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.southwark.gov.uk/libraries/find-a-library?chapter=9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0080731,
+          51.4857294
+        ]
+      },
+      "properties": {
+        "name": "Greenwich Centre Library",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.better.org.uk/library/london/greenwich/greenwich-centre-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.046611,
+          51.6461581
+        ]
+      },
+      "properties": {
+        "name": "Library",
+        "address": "High Street 198-200",
+        "postcode": "EN3 4EZ",
+        "website": "https://mylife.enfield.gov.uk/directory/providerdetails/210993"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1298768,
+          51.5096795
+        ]
+      },
+      "properties": {
+        "name": "Westminster Music Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0494812,
+          51.5903062
+        ]
+      },
+      "properties": {
+        "name": "The Library @ Clayhall",
+        "address": "Claybury Broadway 1",
+        "postcode": "IG5 0LQ",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1293135,
+          51.4904254
+        ]
+      },
+      "properties": {
+        "name": "Stuart Hall Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3360332,
+          51.5795748
+        ]
+      },
+      "properties": {
+        "name": "Greenhill Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1917779,
+          51.4559503
+        ]
+      },
+      "properties": {
+        "name": "Wandsworth Town Library",
+        "address": "Courthouse Way 9",
+        "postcode": "SW18 4QG",
+        "website": "https://www.better.org.uk/library/london/wandsworth/wandsworth-town-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0122148,
+          51.4260434
+        ]
+      },
+      "properties": {
+        "name": "Downham Library",
+        "address": "Moorside Road 7-9",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0799382,
+          51.4460132
+        ]
+      },
+      "properties": {
+        "name": "Avery Hill Campus Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2260244,
+          51.5338209
+        ]
+      },
+      "properties": {
+        "name": "Kensal Rise Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.129594,
+          51.5269488
+        ]
+      },
+      "properties": {
+        "name": "Bartlett Library",
+        "address": "Upper Woburn Place 14",
+        "postcode": "WC1H 0NN",
+        "website": "https://www.ucl.ac.uk/library/using-library/libraries-and-study-spaces/bartlett-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1230077,
+          51.4975589
+        ]
+      },
+      "properties": {
+        "name": "Thamesmead Library",
+        "address": "Cygnet Square 3",
+        "postcode": "SE2 9FA",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0974662,
+          51.4915828
+        ]
+      },
+      "properties": {
+        "name": "Southwark Heritage Centre and Walworth Library",
+        "address": "Walworth Road 145-147",
+        "postcode": "SE17 1RW",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1448097,
+          51.5213771
+        ]
+      },
+      "properties": {
+        "name": "RIBA Library",
+        "address": "",
+        "postcode": "",
+        "website": "https://www.architecture.com/contact-and-visit/riba-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4158824,
+          51.6075001
+        ]
+      },
+      "properties": {
+        "name": "Northwood Library",
+        "address": "High Street",
+        "postcode": "HA6 1BL",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.311442,
+          51.55218
+        ]
+      },
+      "properties": {
+        "name": "Barham Park Library",
+        "address": "Harrow Road 666",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0114671,
+          51.4780956
+        ]
+      },
+      "properties": {
+        "name": "West Greenwich Library",
+        "address": "Greenwich High Road",
+        "postcode": "SE10 8NN",
+        "website": "https://www.better.org.uk/library/london/greenwich/west-greenwich-library"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2982184,
+          51.3927606
+        ]
+      },
+      "properties": {
+        "name": "Surbiton Library",
+        "address": "Ewell Road",
+        "postcode": "KT6 6AG",
+        "website": "https://libraries.kingston.gov.uk/digital-content/libraries/library-branches/surbiton"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0959357,
+          51.5316274
+        ]
+      },
+      "properties": {
+        "name": "Society of Genealogists",
+        "address": "Wharf Road 40",
+        "postcode": "N1 7GS",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1242626,
+          51.4986472
+        ]
+      },
+      "properties": {
+        "name": "Peers' Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1239986,
+          51.4999807
+        ]
+      },
+      "properties": {
+        "name": "Commons Libary",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1491344,
+          51.5099009
+        ]
+      },
+      "properties": {
+        "name": "Heythrop Library",
+        "address": "",
+        "postcode": "",
+        "website": "https://heythroplibrary.co.uk"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0860229,
+          51.4877397
+        ]
+      },
+      "properties": {
+        "name": "Una Marson Library",
+        "address": "Thurlow Street 62",
+        "postcode": "SE17 2GN",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3076614,
+          51.6318446
+        ]
+      },
+      "properties": {
+        "name": "UCL Institute of Orthopaedics Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1149447,
+          51.5064245
+        ]
+      },
+      "properties": {
+        "name": "BFI Reuben Library",
+        "address": "Belvedere Road",
+        "postcode": "SE1 8XT",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1151806,
+          51.5065319
+        ]
+      },
+      "properties": {
+        "name": "BFI Mediatheque",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4739006,
+          51.5327124
+        ]
+      },
+      "properties": {
+        "name": "Brunel University Library",
+        "address": "",
+        "postcode": "",
+        "website": ""
+      }
+    }
+  ]
+}
