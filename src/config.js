@@ -1,0 +1,185 @@
+export const GITHUB_REPO_URL = "https://github.com/12ian34/loclocloc";
+
+export const LONDON_CENTER = [51.505, -0.09];
+export const LONDON_ZOOM = 11;
+
+export const POINT_LAYERS = [
+  { id: "tube", name: "Tube & Rail", file: "/data/tube-rail.geojson", color: "#003688", emoji: "🚇" },
+  { id: "waitrose", name: "Waitrose", file: "/data/waitrose.geojson", color: "#4a7c59", emoji: "🛒" },
+  { id: "coffee", name: "Coffee Shops", file: "/data/coffee.geojson", color: "#6f4e37", emoji: "☕" },
+  { id: "libraries", name: "Libraries", file: "/data/libraries.geojson", color: "#6366f1", emoji: "📚" },
+  { id: "pubs", name: "Pubs", file: "/data/pubs.geojson", color: "#c9a227", emoji: "🍺" },
+  { id: "parks", name: "Parks", file: "/data/parks.geojson", color: "#2d8c3c", emoji: "🌳" },
+  { id: "yoga", name: "Yoga Studios", file: "/data/yoga.geojson", color: "#c06cba", emoji: "🧘" },
+  { id: "gyms", name: "Gyms", file: "/data/gyms.geojson", color: "#e05555", emoji: "💪" },
+  { id: "cinemas", name: "Cinemas", file: "/data/cinemas.geojson", color: "#8b5cf6", emoji: "🎬" },
+  { id: "bike-parking", name: "Bike Parking", file: "/data/bike-parking.geojson", color: "#0ea5e9", emoji: "🚲" },
+  { id: "betting", name: "Betting Shops", file: "/data/betting.geojson", color: "#ef4444", emoji: "🎰" },
+];
+
+export const CHOROPLETH_LAYERS = [
+  {
+    id: "crime-current",
+    name: "Crime (Current)",
+    file: "/data/crime.geojson",
+    property: "value",
+    emoji: "🚨",
+    unit: "monthly crimes",
+    colorStops: ["#fff5f0", "#fdcab5", "#fc8d6a", "#e7442e", "#a50f15", "#67000d"],
+    format: (v) => `${v}`,
+    inverse: true,
+  },
+  {
+    id: "air",
+    name: "Air Quality (NO₂)",
+    file: "/data/air-quality.geojson",
+    property: "value",
+    emoji: "🌫️",
+    unit: "µg/m³",
+    colorStops: ["#f0f9e8", "#bae4bc", "#7bccc4", "#f4a460", "#d95f0e", "#8b4513"],
+    format: (v) => `${v}`,
+    inverse: true,
+  },
+  {
+    id: "rent-est",
+    name: "Est. rent (£/mo)",
+    file: "/data/rent.geojson",
+    property: "value",
+    emoji: "🏘️",
+    unit: "modelled £/mo",
+    colorStops: ["#f7fcf0", "#e0f3db", "#ccebc5", "#a8ddb5", "#4eb3d3", "#2b8cbe", "#08589e"],
+    format: (v) => `£${v}`,
+    inverse: true,
+  },
+  {
+    id: "imd",
+    name: "Deprivation (Overall)",
+    file: "/data/imd.geojson",
+    property: "imd",
+    emoji: "📊",
+    unit: "IMD score",
+    colorStops: ["#f7fcf5", "#c7e9c0", "#74c476", "#fd8d3c", "#e6550d", "#a63603"],
+    format: (v) => `${v}`,
+    inverse: true,
+  },
+  {
+    id: "imd-income",
+    name: "Income Deprivation",
+    file: "/data/imd.geojson",
+    property: "income",
+    emoji: "💰",
+    unit: "rate",
+    colorStops: ["#f7fbff", "#c6dbef", "#6baed6", "#3182bd", "#08519c", "#08306b"],
+    format: (v) => `${(v * 100).toFixed(0)}%`,
+    inverse: true,
+  },
+  {
+    id: "imd-employment",
+    name: "Employment Deprivation",
+    file: "/data/imd.geojson",
+    property: "employment",
+    emoji: "💼",
+    unit: "rate",
+    colorStops: ["#fff5eb", "#fdd0a2", "#fdae6b", "#f16913", "#d94801", "#8c2d04"],
+    format: (v) => `${(v * 100).toFixed(0)}%`,
+    inverse: true,
+  },
+  {
+    id: "imd-education",
+    name: "Education Deprivation",
+    file: "/data/imd.geojson",
+    property: "education",
+    emoji: "🎓",
+    unit: "score",
+    colorStops: ["#f7fcfd", "#ccece6", "#66c2a4", "#41ae76", "#238b45", "#005824"],
+    format: (v) => `${v.toFixed(1)}`,
+    inverse: true,
+  },
+  {
+    id: "imd-health",
+    name: "Health Deprivation",
+    file: "/data/imd.geojson",
+    property: "health",
+    emoji: "🏥",
+    unit: "score",
+    colorStops: ["#f7fcfd", "#d0d1e6", "#a6bddb", "#74a9cf", "#2b8cbe", "#045a8d"],
+    format: (v) => `${v.toFixed(1)}`,
+    inverse: true,
+  },
+  {
+    id: "imd-crime",
+    name: "Crime (IMD 2019)",
+    file: "/data/imd.geojson",
+    property: "crime",
+    emoji: "🔒",
+    unit: "score",
+    colorStops: ["#fff5f0", "#fdcab5", "#fc8d6a", "#e7442e", "#a50f15", "#67000d"],
+    format: (v) => `${v.toFixed(1)}`,
+    inverse: true,
+  },
+  {
+    id: "imd-barriers",
+    name: "Housing Barriers",
+    file: "/data/imd.geojson",
+    property: "barriers",
+    emoji: "🏠",
+    unit: "score",
+    colorStops: ["#f2f0f7", "#cbc9e2", "#9e9ac8", "#756bb1", "#54278f", "#3f007d"],
+    format: (v) => `${v.toFixed(1)}`,
+    inverse: true,
+  },
+  {
+    id: "imd-living",
+    name: "Living Environment",
+    file: "/data/imd.geojson",
+    property: "living",
+    emoji: "🌍",
+    unit: "score",
+    colorStops: ["#ffffcc", "#d9f0a3", "#addd8e", "#78c679", "#31a354", "#006837"],
+    format: (v) => `${v.toFixed(1)}`,
+    inverse: true,
+  },
+];
+
+export const TRANSIT_RINGS = [
+  { mins: 15, opacity: 0.20 },
+  { mins: 30, opacity: 0.12 },
+  { mins: 45, opacity: 0.06 },
+];
+
+export const TRANSIT_COLORS = [
+  "#3b82f6", "#e040fb", "#00bcd4", "#ff9800", "#8bc34a", "#f44336",
+];
+
+export const WALK_RINGS = [
+  { mins: 5, meters: 400, color: "#ff3366", opacity: 0.18 },
+  { mins: 10, meters: 800, color: "#ff3366", opacity: 0.12 },
+  { mins: 15, meters: 1200, color: "#ff3366", opacity: 0.08 },
+  { mins: 20, meters: 1600, color: "#ff3366", opacity: 0.05 },
+];
+
+export const SCORE_AREA_DIMS = [
+  { id: "crime-current", label: "Low Crime", property: "value", choroplethFile: "/data/crime.geojson", tip: "Monthly street-level crimes from data.police.uk. Scored by inverse percentile across all London LSOAs \u2014 fewer crimes = higher score." },
+  { id: "air", label: "Clean Air", property: "value", choroplethFile: "/data/air-quality.geojson", tip: "NO\u2082 concentration (\u00b5g/m\u00b3) interpolated from London Air Quality Network monitoring stations. Lower pollution = higher score." },
+  { id: "rent-est", label: "Affordable rent", property: "value", choroplethFile: "/data/rent.geojson", tip: "Indicative 1-bed-style monthly rent (\u00a3), modelled from IMD 2019 + borough anchor rents in scrapers/rent.js \u2014 not official market data. Lower \u00a3 = higher score." },
+  { id: "imd", label: "Low Deprivation", property: "imd", choroplethFile: "/data/imd.geojson", tip: "Overall Index of Multiple Deprivation (IMD 2019) from ONS. Combines income, employment, education, health, crime, housing & environment. Lower deprivation = higher score." },
+  { id: "imd-income", label: "Income", property: "income", choroplethFile: "/data/imd.geojson", tip: "IMD Income Deprivation rate \u2014 proportion of the population experiencing deprivation relating to low income. Lower rate = higher score." },
+  { id: "imd-education", label: "Education", property: "education", choroplethFile: "/data/imd.geojson", tip: "IMD Education, Skills & Training score. Measures lack of attainment and skills in the local population. Lower deprivation = higher score." },
+  { id: "imd-health", label: "Health", property: "health", choroplethFile: "/data/imd.geojson", tip: "IMD Health Deprivation & Disability score. Measures risk of premature death and impairment of quality of life through poor health. Lower = higher score." },
+  { id: "imd-barriers", label: "Housing Access", property: "barriers", choroplethFile: "/data/imd.geojson", tip: "IMD Barriers to Housing & Services score. Measures physical and financial accessibility of housing and local services. Lower barriers = higher score." },
+  { id: "imd-living", label: "Living Env.", property: "living", choroplethFile: "/data/imd.geojson", tip: "IMD Living Environment score. Measures quality of the indoor and outdoor local environment (housing condition, air quality, road traffic accidents). Lower = higher score." },
+];
+
+export const SCORE_PROX_DIMS = [
+  { id: "tube", label: "Tube/Rail", pointLayer: "tube", cap: 8, tip: "Density-weighted score for nearby Tube/Rail stations. Rewards multiple stations within walking distance. More stations closer = higher score." },
+  { id: "waitrose", label: "Waitrose", pointLayer: "waitrose", cap: 3, tip: "Density-weighted score for nearby Waitrose stores. Rewards having options, not just one far away." },
+  { id: "coffee", label: "Coffee", pointLayer: "coffee", cap: 12, tip: "Density-weighted score for nearby coffee shops. Rewards areas with a good selection within walking distance." },
+  { id: "libraries", label: "Libraries", pointLayer: "libraries", cap: 6, tip: "Density-weighted score for nearby public libraries (OpenStreetMap). More branches within walking distance = higher score." },
+  { id: "pubs", label: "Pubs", pointLayer: "pubs", cap: 15, tip: "Density-weighted score for nearby pubs. Rewards areas with good pub density." },
+  { id: "parks", label: "Parks", pointLayer: "parks", cap: 5, tip: "Density-weighted score for nearby parks and gardens. Multiple green spaces nearby = higher score." },
+  { id: "yoga", label: "Yoga", pointLayer: "yoga", cap: 4, tip: "Density-weighted score for nearby yoga studios. Rewards areas with good studio density." },
+  { id: "gyms", label: "Gym", pointLayer: "gyms", cap: 6, tip: "Density-weighted score for nearby gyms/fitness centres. Rewards having several options to choose from." },
+  { id: "cinemas", label: "Cinemas", pointLayer: "cinemas", cap: 3, tip: "Density-weighted score for nearby cinemas. Rewards having options within reach." },
+  { id: "bike-parking", label: "Bike Parking", pointLayer: "bike-parking", cap: 30, tip: "Density-weighted score for nearby bicycle parking. Very abundant in London; needs high density to score well." },
+  { id: "betting", label: "No Betting", pointLayer: "betting", inverse: true, cap: 4, tip: "Inverse density score \u2014 more betting shops nearby = lower score. Areas with none nearby score 100." },
+];
