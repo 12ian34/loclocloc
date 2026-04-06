@@ -7,7 +7,7 @@ Vite + React + Leaflet app for location/scoring exploration.
 
 ## Repo hygiene
 
-- **`scrapers/`** is listed in `.gitignore` so it is not pushed to the public GitHub repo (`12ian34/loclocloc`). Keep one-off or site-specific collection scripts local; published data used by the app should live under paths that *are* tracked (e.g. `public/` assets) if you want them in the repo.
+- **`scrapers/`** — Node scripts to refresh GeoJSON under `public/data/` (Overpass, open data, etc.). Respect each source’s terms and rate limits when you run them.
 - **`.env`** is gitignored (secrets / API keys).
 
 ## Commands
@@ -20,6 +20,13 @@ Vite + React + Leaflet app for location/scoring exploration.
 
 - Default: no POI layers, no area choropleth; **Filter Areas** expanded; POI / Area Data sections can collapse via their headers.
 - Re-clicking the active area overlay row clears it (same as **Clear overlay**).
+- Footer: **Copy share link**, **Data & freshness** modal, **Source code on GitHub**. On narrow viewports the sidebar is a drawer (☰); map is full viewport.
+
+## Data / legal
+
+- **`LICENSE`** — MIT.
+- **`src/dataSources.js`** — copy for the data/freshness modal; **`__BUILD_DATE__`** injected in `vite.config.js` at build time.
+- **Libraries POI:** `public/data/libraries.geojson` — regen: `node scrapers/libraries.js` (Overpass).
 
 ## Docs
 

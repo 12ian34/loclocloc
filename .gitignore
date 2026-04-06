@@ -9,9 +9,6 @@ lerna-debug.log*
 
 node_modules
 dist
-
-# Local data collection scripts — kept out of public repo (site ToS / sensitivity)
-scrapers/
 .env
 dist-ssr
 *.local
