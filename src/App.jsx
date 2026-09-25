@@ -40,6 +40,9 @@ function onKeyActivate(callback) {
   };
 }
 
+// CARTO basemaps require a key since 2026-09-23 (free tier); baked in at build time like the TfL key.
+const CARTO_API_KEY = import.meta.env.VITE_CARTO_API_KEY || "";
+
 function App() {
   const initialState = useMemo(() => decodeAppState(window.location.hash), []);
 
@@ -772,7 +775,7 @@ function App() {
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>'
-          url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+          url={`https://basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}{r}.png?key=${CARTO_API_KEY}`}
         />
         <MapSizeInvalidator />
 

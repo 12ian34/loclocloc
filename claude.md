@@ -62,8 +62,9 @@ This file is **safe for a public repo** — no secrets. API keys live only in lo
 
 ---
 
-## Optional TfL
+## API keys (build-time env)
 
+- `VITE_CARTO_API_KEY` — CARTO basemap key, read in `App.jsx` as `import.meta.env.VITE_CARTO_API_KEY` and appended as `?key=` to the `rastertiles/light_all` tile URL. **Required since 2026-09-23**: without it CARTO still serves tiles but watermarks them "API KEY REQUIRED". Free tier (non-commercial) via https://carto.com/basemaps/apikey/. Same handling as the TfL key: local `.env`, Netlify env var, never in git or README.
 - `VITE_TFL_API_KEY` — read in client as `import.meta.env.VITE_TFL_API_KEY`. If empty, transit isochrones still UI-visible but API calls won’t authenticate.
 - **Do not** document key setup in README (project choice); hosts inject at **build** time for production.
 
