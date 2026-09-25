@@ -9,7 +9,7 @@ import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const CACHE_PATH = resolve(__dirname, "../../public/data/_lsoa-boundaries.geojson");
+const CACHE_PATH = resolve(__dirname, "../../public/data/lsoa-boundaries.geojson");
 
 // LSOA-to-LAD lookup services
 const LOOKUP_SERVICES = [

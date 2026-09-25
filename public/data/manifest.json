@@ -1,0 +1,310 @@
+{
+  "generated": "2026-09-25",
+  "layers": {
+    "air-quality": {
+      "id": "air-quality",
+      "generated": "2026-04-05",
+      "count": 4994,
+      "properties": [
+        "value"
+      ],
+      "source": "London Air Quality Network / Defra AURN annual mean NO₂, inverse-distance interpolated to LSOA centroids",
+      "vintage": "2023 annual means (station list in scraper)",
+      "kind": "area",
+      "file": "/data/air-quality.json"
+    },
+    "betting": {
+      "id": "betting",
+      "generated": "2026-04-05",
+      "count": 932,
+      "source": "OpenStreetMap via Overpass API",
+      "vintage": "OSM snapshot at generation date",
+      "kind": "points",
+      "file": "/data/betting.geojson"
+    },
+    "bike-parking": {
+      "id": "bike-parking",
+      "generated": "2026-04-05",
+      "count": 26148,
+      "source": "OpenStreetMap via Overpass API",
+      "vintage": "OSM snapshot at generation date",
+      "kind": "points",
+      "file": "/data/bike-parking.geojson"
+    },
+    "broadband": {
+      "id": "broadband",
+      "generated": "2026-09-25",
+      "count": 4994,
+      "properties": [
+        "value",
+        "sfbb",
+        "ufbb"
+      ],
+      "source": "Ofcom Connected Nations 2025 fixed broadband coverage (output-area file, OGL) summed to LSOA 2021 via ONS OA21→LSOA21 lookup; value = % premises gigabit-capable",
+      "vintage": "Connected Nations 2025 (snapshot 1 July 2025)",
+      "kind": "area",
+      "file": "/data/broadband.json"
+    },
+    "cinemas": {
+      "id": "cinemas",
+      "generated": "2026-04-05",
+      "count": 89,
+      "source": "OpenStreetMap via Overpass API",
+      "vintage": "OSM snapshot at generation date",
+      "kind": "points",
+      "file": "/data/cinemas.geojson"
+    },
+    "coffee": {
+      "id": "coffee",
+      "generated": "2026-04-05",
+      "count": 751,
+      "source": "OpenStreetMap via Overpass API",
+      "vintage": "OSM snapshot at generation date",
+      "kind": "points",
+      "file": "/data/coffee.geojson"
+    },
+    "coworking": {
+      "id": "coworking",
+      "generated": "2026-04-06",
+      "count": 92,
+      "source": "OpenStreetMap via Overpass API",
+      "vintage": "OSM snapshot at generation date",
+      "kind": "points",
+      "file": "/data/coworking.geojson"
+    },
+    "crime": {
+      "id": "crime",
+      "generated": "2026-09-25",
+      "count": 4994,
+      "properties": [
+        "value"
+      ],
+      "source": "data.police.uk street-level crime, grid sampled and assigned to nearest LSOA centroid",
+      "vintage": "Police month 2026-07",
+      "kind": "area",
+      "file": "/data/crime.json"
+    },
+    "dentists": {
+      "id": "dentists",
+      "generated": "2026-09-25",
+      "count": 1319,
+      "source": "OpenStreetMap via Overpass API",
+      "vintage": "OSM snapshot at generation date",
+      "kind": "points",
+      "file": "/data/dentists.geojson"
+    },
+    "flood-risk": {
+      "id": "flood-risk",
+      "generated": "2026-09-25",
+      "count": 4994,
+      "properties": [
+        "value"
+      ],
+      "source": "Environment Agency Flood Map for Planning - Flood Zones (Flood Zone 3, undefended 1-in-100 river / 1-in-200 sea); % of LSOA area, grid-sampled",
+      "vintage": "EA dataset published 2025-03-25, data updated 2026-05-20",
+      "kind": "area",
+      "file": "/data/flood-risk.json"
+    },
+    "gp-surgeries": {
+      "id": "gp-surgeries",
+      "generated": "2026-04-06",
+      "count": 505,
+      "source": "OpenStreetMap via Overpass API",
+      "vintage": "OSM snapshot at generation date",
+      "kind": "points",
+      "file": "/data/gp-surgeries.geojson"
+    },
+    "green-space": {
+      "id": "green-space",
+      "generated": "2026-04-06",
+      "count": 4994,
+      "properties": [
+        "value"
+      ],
+      "source": "OpenStreetMap parks, gardens and greenspace via Overpass; proximity-weighted count per LSOA centroid, percentile scored",
+      "vintage": "OSM snapshot at generation date",
+      "kind": "area",
+      "file": "/data/green-space.json"
+    },
+    "gyms": {
+      "id": "gyms",
+      "generated": "2026-04-05",
+      "count": 651,
+      "source": "OpenStreetMap via Overpass API",
+      "vintage": "OSM snapshot at generation date",
+      "kind": "points",
+      "file": "/data/gyms.geojson"
+    },
+    "house-prices": {
+      "id": "house-prices",
+      "generated": "2026-09-25",
+      "count": 4994,
+      "properties": [
+        "value"
+      ],
+      "source": "ONS House Price Statistics for Small Areas, dataset 46 — median price paid by LSOA (HM Land Registry), mapped 2011→2021 LSOAs",
+      "vintage": "Year ending Mar 2023",
+      "kind": "area",
+      "file": "/data/house-prices.json"
+    },
+    "imd": {
+      "id": "imd",
+      "generated": "2026-09-25",
+      "count": 4994,
+      "properties": [
+        "imd",
+        "income",
+        "employment",
+        "education",
+        "health",
+        "crime",
+        "barriers",
+        "living",
+        "idaci",
+        "idaopi"
+      ],
+      "source": "MHCLG English Indices of Deprivation 2025 — File 5: scores for the Indices of Deprivation (LSOA 2021)",
+      "vintage": "IoD2025 (MHCLG, Oct 2025)",
+      "kind": "area",
+      "file": "/data/imd.json"
+    },
+    "libraries": {
+      "id": "libraries",
+      "generated": "2026-04-06",
+      "count": 185,
+      "source": "OpenStreetMap via Overpass API",
+      "vintage": "OSM snapshot at generation date",
+      "kind": "points",
+      "file": "/data/libraries.geojson"
+    },
+    "lsoa-boundaries": {
+      "id": "lsoa-boundaries",
+      "kind": "boundaries",
+      "count": 4994,
+      "generated": "2026-04-05",
+      "vintage": "ONS LSOA December 2021 (BSC generalised)",
+      "file": "/data/lsoa-boundaries.geojson"
+    },
+    "noise": {
+      "id": "noise",
+      "generated": "2026-04-06",
+      "count": 4994,
+      "properties": [
+        "value"
+      ],
+      "source": "Curated Lden points informed by Defra Strategic Noise Mapping Round 4, inverse-distance interpolated to LSOA",
+      "vintage": "Defra Round 4 (2022) contours",
+      "kind": "area",
+      "file": "/data/noise.json"
+    },
+    "parks": {
+      "id": "parks",
+      "generated": "2026-04-05",
+      "count": 2988,
+      "source": "OpenStreetMap via Overpass API",
+      "vintage": "OSM snapshot at generation date",
+      "kind": "points",
+      "file": "/data/parks.geojson"
+    },
+    "population-density": {
+      "id": "population-density",
+      "generated": "2026-04-06",
+      "count": 4994,
+      "properties": [
+        "value"
+      ],
+      "source": "ONS Census 2021 TS006 usual residents per km² (UK Data Service mirror)",
+      "vintage": "Census 2021",
+      "kind": "area",
+      "file": "/data/population-density.json"
+    },
+    "ptal": {
+      "id": "ptal",
+      "generated": "2026-04-06",
+      "count": 4994,
+      "properties": [
+        "value"
+      ],
+      "source": "TfL LSOA aggregated PTAL stats 2023 — mean access index (mean_AI)",
+      "vintage": "TfL 2023 release",
+      "kind": "area",
+      "file": "/data/ptal.json"
+    },
+    "pubs": {
+      "id": "pubs",
+      "generated": "2026-04-05",
+      "count": 1248,
+      "source": "OpenStreetMap via Overpass API",
+      "vintage": "OSM snapshot at generation date",
+      "kind": "points",
+      "file": "/data/pubs.geojson"
+    },
+    "rent": {
+      "id": "rent",
+      "generated": "2026-09-25",
+      "count": 4994,
+      "properties": [
+        "value"
+      ],
+      "source": "Modelled in scrapers/rent.js from IoD2025 income / housing-barriers scores (MHCLG, Oct 2025) + hand-tuned borough anchor rents — indicative £/month, not official rents",
+      "vintage": "IoD2025 (MHCLG, Oct 2025) + 2024 borough anchors",
+      "kind": "area",
+      "file": "/data/rent.json"
+    },
+    "restaurants": {
+      "id": "restaurants",
+      "generated": "2026-04-06",
+      "count": 5775,
+      "source": "OpenStreetMap via Overpass API",
+      "vintage": "OSM snapshot at generation date",
+      "kind": "points",
+      "file": "/data/restaurants.geojson"
+    },
+    "schools": {
+      "id": "schools",
+      "generated": "2026-09-25",
+      "count": 2787,
+      "source": "DfE Get Information about Schools (GIAS); Ofsted management information (state-funded schools)",
+      "vintage": "2026-09-25",
+      "ofstedVintage": "2026-08-31",
+      "kind": "points",
+      "file": "/data/schools.geojson"
+    },
+    "supermarkets": {
+      "id": "supermarkets",
+      "generated": "2026-09-25",
+      "count": 1386,
+      "source": "OpenStreetMap via Overpass API",
+      "vintage": "OSM snapshot at generation date",
+      "kind": "points",
+      "file": "/data/supermarkets.geojson"
+    },
+    "tube-rail": {
+      "id": "tube-rail",
+      "generated": "2026-04-05",
+      "count": 715,
+      "source": "OpenStreetMap via Overpass API",
+      "vintage": "OSM snapshot at generation date",
+      "kind": "points",
+      "file": "/data/tube-rail.geojson"
+    },
+    "waitrose": {
+      "id": "waitrose",
+      "generated": "2026-04-05",
+      "count": 122,
+      "source": "OpenStreetMap via Overpass API",
+      "vintage": "OSM snapshot at generation date",
+      "kind": "points",
+      "file": "/data/waitrose.geojson"
+    },
+    "yoga": {
+      "id": "yoga",
+      "generated": "2026-04-05",
+      "count": 132,
+      "source": "OpenStreetMap via Overpass API",
+      "vintage": "OSM snapshot at generation date",
+      "kind": "points",
+      "file": "/data/yoga.geojson"
+    }
+  }
+}

@@ -10,11 +10,12 @@ import { writeFileSync, readFileSync, existsSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
 import XLSX from "xlsx";
+import { writeAreaLayer } from "./lib/output.js";
 import { getLSOABoundaries } from "./lib/boundaries.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const OUTPUT_PATH = resolve(__dirname, "../public/data/population-density.geojson");
-const CACHE_PATH = resolve(__dirname, "../public/data/_population-density-ts006.xlsx");
+const OUTPUT_PATH = resolve(__dirname, "../public/data/population-density.json");
+const CACHE_PATH = resolve(__dirname, "./.cache/_population-density-ts006.xlsx");
 
 const DATA_URL =
   "https://ukds-ckan.s3.eu-west-1.amazonaws.com/2021/ONS/release1/Unrounded-Population-Estimates/Population-Density/TS006-Population-Density-2021-lsoa-ONS.xlsx";
@@ -76,7 +77,7 @@ async function main() {
 
   console.log(`Matched ${matched} / ${lsoas.features.length} LSOAs`);
 
-  writeFileSync(OUTPUT_PATH, JSON.stringify(lsoas));
+  writeAreaLayer(OUTPUT_PATH, lsoas, { properties: ["value"], source: "ONS Census 2021 TS006 usual residents per km² (UK Data Service mirror)", vintage: "Census 2021" });
   console.log(`Saved population density choropleth to ${OUTPUT_PATH}`);
 }
 

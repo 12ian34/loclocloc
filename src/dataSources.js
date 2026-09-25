@@ -1,96 +1,71 @@
 /**
- * Copy for the in-app “Data & freshness” panel.
- * Update vintage notes when you refresh bundled datasets.
+ * Copy for the in-app "Data & freshness" panel.
+ *
+ * Freshness (generated date, feature count, vintage label) comes from /data/manifest.json,
+ * which scripts/build-manifest.js assembles from the `meta` block every scraper writes.
+ * This file only holds the human-readable descriptions keyed by data-file id.
  */
+
+import { POINT_LAYERS, CHOROPLETH_LAYERS } from "./config.js";
 
 export const BUILD_DATE = __BUILD_DATE__;
 
 export const DATA_INTRO =
-  "This app ships static GeoJSON in the repo. Numbers are snapshots, not live feeds. Refresh files when you need newer upstream releases.";
+  "This app ships static data files in the repo. Numbers are snapshots, not live feeds; each layer below shows when its file was last generated.";
 
-export const DATA_ROWS = [
-  {
-    id: "poi",
-    title: "Points of interest (tube, shops, gyms, …)",
-    source: "OpenStreetMap via Overpass API",
-    vintage: "Snapshot — re-export when you update layers",
-  },
-  {
-    id: "libraries",
-    title: "Libraries",
-    source: "OpenStreetMap (amenity=library)",
-    vintage: "Snapshot — same as other OSM POI layers",
-  },
-  {
-    id: "crime",
-    title: "Crime (current layer)",
-    source: "data.police.uk street-level outcomes",
-    vintage: "Check export date in your pipeline when you regenerate",
-  },
-  {
-    id: "air",
-    title: "Air quality (NO₂)",
-    source: "London Air Quality Network — interpolated to LSOA",
-    vintage: "Depends on your last air-quality export",
-  },
-  {
-    id: "rent-est",
-    title: "Est. rent (£/mo)",
-    source: "Modelled from IMD 2019 + hand-tuned borough median anchors (see scrapers/rent.js)",
-    vintage: "Indicative only — not ONS or listing data",
-  },
-  {
-    id: "imd",
-    title: "Deprivation & IMD subdomains",
-    source: "ONS — Index of Multiple Deprivation 2019",
-    vintage: "IMD 2019 (next national update is infrequent)",
-  },
-  {
-    id: "restaurants",
-    title: "Restaurants",
-    source: "OpenStreetMap (amenity=restaurant)",
-    vintage: "Snapshot — same as other OSM POI layers",
-  },
-  {
-    id: "gp-surgeries",
-    title: "GP Surgeries",
-    source: "OpenStreetMap (amenity=doctors, healthcare=doctor)",
-    vintage: "Snapshot — same as other OSM POI layers",
-  },
-  {
-    id: "coworking",
-    title: "Coworking Spaces",
-    source: "OpenStreetMap (amenity=coworking_space, office=coworking)",
-    vintage: "Snapshot — same as other OSM POI layers",
-  },
-  {
-    id: "pop-density",
-    title: "Population Density",
-    source: "ONS Census 2021 — TS006 (LSOA, persons/km²); XLSX via [UK Data Service CKAN mirror](https://statistics.ukdataservice.ac.uk/dataset/ons_2021_demography_population_density)",
-    vintage: "Census 2021 (decennial)",
-  },
-  {
-    id: "ptal",
-    title: "PTAL / transport access",
-    source: "TfL — LSOA aggregated PTAL stats 2023 (mean access index); CSV via ArcGIS Hub gis-tfl.opendata.arcgis.com (dataset 3eb38b75667a49df9ef1240e9a197615)",
-    vintage: "2023 LSOA release (AI values; banded PTAL in source CSV)",
-  },
-  {
-    id: "green-space",
-    title: "Green Space",
-    source: "OpenStreetMap parks/gardens/greenspace — density scored per LSOA",
-    vintage: "Snapshot — re-export when you update layers",
-  },
-  {
-    id: "noise",
-    title: "Noise (Lden)",
-    source: "Curated from Defra Strategic Noise Mapping Round 4 (2022), IDW interpolated to LSOA",
-    vintage: "Based on 2022 Defra noise contour data",
-  },
-  {
-    id: "tiles",
-    title: "Basemap",
-    source: "CARTO light tiles + OpenStreetMap data",
-    vintage: "Live tiles; attribution on map",
-  },
+/** Descriptions by data-file id (the basename of the file under public/data). */
+export const DATA_SOURCES = {
+  "lsoa-boundaries": { title: "LSOA boundaries", source: "ONS Open Geography Portal — Lower layer Super Output Areas (December 2021), generalised, filtered to London boroughs" },
+  crime: { title: "Crime (current)", source: "data.police.uk street-level crime API, grid-sampled and assigned to nearest LSOA centroid" },
+  "air-quality": { title: "Air quality (NO₂)", source: "London Air Quality Network / Defra annual means, inverse-distance interpolated to LSOA" },
+  rent: { title: "Est. rent (£/mo)", source: "Modelled from deprivation signals + borough anchor rents (scrapers/rent.js) — indicative only, not listings" },
+  imd: { title: "Deprivation (IMD) & domains", source: "MHCLG English Indices of Deprivation, LSOA scores" },
+  "population-density": { title: "Population density", source: "ONS Census 2021 TS006 (usual residents per km²)" },
+  ptal: { title: "PTAL / transport access", source: "TfL LSOA aggregated PTAL stats 2023 — mean access index" },
+  "green-space": { title: "Green space", source: "OpenStreetMap parks, gardens and greenspace — proximity-weighted count per LSOA" },
+  noise: { title: "Noise (Lden)", source: "Curated points informed by Defra strategic noise mapping, interpolated to LSOA" },
+  "house-prices": { title: "House prices", source: "ONS HPSSA dataset 46 — median price paid by LSOA (HM Land Registry), 2011 codes mapped to 2021" },
+  "flood-risk": { title: "Flood risk (Zone 3)", source: "Environment Agency Flood Map for Planning — % of LSOA area inside Flood Zone 3 (undefended), by grid sampling" },
+  broadband: { title: "Gigabit broadband", source: "Ofcom Connected Nations 2025 — % premises with gigabit-capable availability, output areas summed to LSOA" },
+  schools: { title: "Schools", source: "DfE Get Information about Schools (GIAS) daily extract + Ofsted management information joined by URN" },
+  supermarkets: { title: "Supermarkets", source: "OpenStreetMap (shop=supermarket)" },
+  dentists: { title: "Dentists", source: "OpenStreetMap (amenity=dentist, healthcare=dentist)" },
+};
+
+/** Static rows for things that are not bundled files. */
+export const LIVE_ROWS = [
+  { id: "postcodes", title: "Postcode search", source: "postcodes.io (Ordnance Survey open data)", vintage: "Live" },
+  { id: "tfl", title: "Transit isochrones", source: "TfL Journey Planner API", vintage: "Live (optional key)" },
+  { id: "tiles", title: "Basemap", source: "CARTO Positron raster tiles + OpenStreetMap data", vintage: "Live tiles; attribution on map" },
 ];
+
+const fileId = (file) => file.replace(/^\/data\//, "").replace(/\.(geo)?json$/, "");
+
+/**
+ * Rows for the modal: every bundled file in sidebar order, joined with manifest freshness.
+ * Works without a manifest (shows "unknown" for generated date).
+ */
+export function buildDataRows(manifest) {
+  const layers = manifest?.layers ?? {};
+  const seen = new Set();
+  const rows = [];
+  const push = (id, fallbackTitle) => {
+    if (seen.has(id)) return;
+    seen.add(id);
+    const meta = layers[id];
+    const desc = DATA_SOURCES[id] ?? {};
+    rows.push({
+      id,
+      title: desc.title ?? fallbackTitle ?? id,
+      source: desc.source ?? meta?.source ?? "",
+      vintage: meta?.vintage ?? "",
+      generated: meta?.generated ?? null,
+      count: meta?.count ?? null,
+    });
+  };
+  push("lsoa-boundaries");
+  for (const l of CHOROPLETH_LAYERS) push(fileId(l.file), l.name);
+  for (const l of POINT_LAYERS) push(fileId(l.file), l.name);
+  for (const id of Object.keys(layers)) push(id);
+  return rows;
+}

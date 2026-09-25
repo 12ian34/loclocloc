@@ -6,13 +6,13 @@
  * then interpolates NO2 values to each LSOA centroid using inverse distance weighting.
  */
 
-import { writeFileSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
+import { writeAreaLayer } from "./lib/output.js";
 import { getLSOABoundaries, featureCentroid } from "./lib/boundaries.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const OUTPUT_PATH = resolve(__dirname, "../public/data/air-quality.geojson");
+const OUTPUT_PATH = resolve(__dirname, "../public/data/air-quality.json");
 
 // London air quality monitoring stations with latest annual mean NO2 (µg/m³)
 // Source: London Air Quality Network / DEFRA AURN — 2023 annual means
@@ -103,7 +103,7 @@ async function main() {
     f.properties.label = `${f.properties.name}: ${no2} µg/m³ NO₂`;
   }
 
-  writeFileSync(OUTPUT_PATH, JSON.stringify(lsoas));
+  writeAreaLayer(OUTPUT_PATH, lsoas, { properties: ["value"], source: "London Air Quality Network / Defra AURN annual mean NO₂, inverse-distance interpolated to LSOA centroids", vintage: "2023 annual means (station list in scraper)" });
   console.log(`\nSaved air quality choropleth (${lsoas.features.length} LSOAs) to ${OUTPUT_PATH}`);
 }
 

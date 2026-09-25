@@ -145,31 +145,31 @@ export function buildPercentileLookups(choroplethData) {
   return lookups;
 }
 
-export function computePostcodeScores(lat, lng, choroplethData, layerData, percentileLookups, disabledDims) {
+export function computePostcodeScores(lat, lng, choroplethData, layerData, percentileLookups, disabledDims, boundaries) {
   const scores = { area: {}, proximity: {}, overall: 0 };
   let total = 0;
   let count = 0;
 
-  const lsoaCache = {};
-  for (const dim of SCORE_AREA_DIMS) {
-    const data = choroplethData[dim.id];
-    if (!data) continue;
-    const cacheKey = dim.choroplethFile;
-    if (!lsoaCache[cacheKey]) {
-      lsoaCache[cacheKey] = findLSOAForPoint(lat, lng, data.features);
+  // All area layers share the boundary polygons, so resolve the LSOA once per postcode.
+  const polygons = boundaries?.features ?? Object.values(choroplethData)[0]?.features;
+  const lsoa = polygons ? findLSOAForPoint(lat, lng, polygons) : null;
+  if (lsoa) {
+    const code = lsoa.properties.code;
+    for (const dim of SCORE_AREA_DIMS) {
+      const data = choroplethData[dim.id];
+      if (!data) continue;
+      const props = data.byCode ? data.byCode.get(code) : data.features.find((f) => f.properties.code === code)?.properties;
+      const rawValue = props?.[dim.property];
+      if (rawValue == null) continue;
+      const sorted = percentileLookups[dim.id];
+      if (!sorted) continue;
+      const pct = percentileRank(rawValue, sorted);
+      // inverse: false means higher raw value = better (e.g. PTAL, green space)
+      const score = dim.inverse === false ? Math.round(pct) : Math.round(100 - pct);
+      const enabled = !disabledDims.has(dim.id);
+      scores.area[dim.id] = { score, raw: rawValue, label: dim.label, enabled, tip: dim.tip, lsoa: lsoa.properties.name };
+      if (enabled) { total += score; count++; }
     }
-    const lsoa = lsoaCache[cacheKey];
-    if (!lsoa) continue;
-    const rawValue = lsoa.properties[dim.property];
-    if (rawValue == null) continue;
-    const sorted = percentileLookups[dim.id];
-    if (!sorted) continue;
-    const pct = percentileRank(rawValue, sorted);
-    // inverse: false means higher raw value = better (e.g. PTAL, green space)
-    const score = dim.inverse === false ? Math.round(pct) : Math.round(100 - pct);
-    const enabled = !disabledDims.has(dim.id);
-    scores.area[dim.id] = { score, raw: rawValue, label: dim.label, enabled, tip: dim.tip };
-    if (enabled) { total += score; count++; }
   }
 
   for (const dim of SCORE_PROX_DIMS) {

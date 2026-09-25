@@ -10,13 +10,13 @@
  * and London noise survey data.
  */
 
-import { writeFileSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
+import { writeAreaLayer } from "./lib/output.js";
 import { getLSOABoundaries, featureCentroid } from "./lib/boundaries.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const OUTPUT_PATH = resolve(__dirname, "../public/data/noise.geojson");
+const OUTPUT_PATH = resolve(__dirname, "../public/data/noise.json");
 
 // Curated noise measurement points across London
 // Lden values (dB) from Defra noise contour maps and London Datastore noise data
@@ -139,7 +139,7 @@ async function main() {
     f.properties.label = `${f.properties.name}: ${lden} dB`;
   }
 
-  writeFileSync(OUTPUT_PATH, JSON.stringify(lsoas));
+  writeAreaLayer(OUTPUT_PATH, lsoas, { properties: ["value"], source: "Curated Lden points informed by Defra Strategic Noise Mapping Round 4, inverse-distance interpolated to LSOA", vintage: "Defra Round 4 (2022) contours" });
   console.log(`\nSaved noise choropleth (${lsoas.features.length} LSOAs) to ${OUTPUT_PATH}`);
 }
 

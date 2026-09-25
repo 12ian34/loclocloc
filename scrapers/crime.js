@@ -7,13 +7,13 @@
  * the police snap-point issue where strict point-in-polygon leaves gaps).
  */
 
-import { writeFileSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
+import { writeAreaLayer } from "./lib/output.js";
 import { getLSOABoundaries, featureCentroid } from "./lib/boundaries.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const OUTPUT_PATH = resolve(__dirname, "../public/data/crime.geojson");
+const OUTPUT_PATH = resolve(__dirname, "../public/data/crime.json");
 
 // Dense grid across London — 0.012° lat (~1.3km), 0.015° lng (~1km)
 // Each API call returns crimes within ~1 mile (~1.6km), so good overlap
@@ -143,7 +143,7 @@ async function main() {
     f.properties.label = `${f.properties.name}: ${count} crimes`;
   }
 
-  writeFileSync(OUTPUT_PATH, JSON.stringify(lsoas));
+  writeAreaLayer(OUTPUT_PATH, lsoas, { properties: ["value"], source: "data.police.uk street-level crime, grid sampled and assigned to nearest LSOA centroid", vintage: `Police month ${latestDate}` });
   console.log(`\nSaved crime choropleth (${lsoas.features.length} LSOAs) to ${OUTPUT_PATH}`);
 }
 

@@ -33,13 +33,13 @@ This file is **safe for a public repo** — no secrets. API keys live only in lo
 
 ## Layers (IDs matter for URL + scoring)
 
-**POIs** — `POINT_LAYERS`: each `{ id, name, file, color, emoji }` (`color` unused in sidebar UI; list shows emoji + name). Fetched on load into `layerData`. **Clear all POIs** turns off every active POI layer at once (same `.clear-choropleth` style as choropleth clear).
+**POIs** — `POINT_LAYERS`: each `{ id, name, file, color, emoji }` (`color` unused in sidebar UI; list shows emoji + name). Lazy-loaded into `layerData` (see **Loading strategy**); sidebar counts come from the manifest until then. Non-OSM layer: **`schools`** (DfE GIAS + Ofsted MI; popup shows phase / sector / latest Ofsted outcome via `PoiExtra` in `MapLayers.jsx`, which also shows supermarket `brand` and dentist `nhs`). **Clear all POIs** turns off every active POI layer at once (same `.clear-choropleth` style as choropleth clear).
 
 **Choropleths** — `CHOROPLETH_LAYERS`: each `{ id, name, file, property, emoji, unit, colorStops, format, inverse, tip? }`. Optional **`tip`** powers the **i** hover tooltip in the Area Data list (same `score-info` / `score-tooltip` pattern as score rows). Multiple entries can share one **file** (e.g. IMD domains); loader dedupes by `file` and fills `choroplethData[id]` per layer id.
 
 **Notable choropleth ids**
 
-- `crime-current`, `air`, `imd`, `imd-*` domains, **`rent-est`**, `pop-density`, **`ptal`** (TfL mean access index), **`green-space`**, **`noise`** (modelled Lden).
+- `crime-current`, `air`, **`house-prices`** (ONS HPSSA 46 real sale prices — drives the affordability score + filter), **`rent-est`** (modelled; choropleth only, dropped from scoring Sept 2026 to avoid double-counting affordability), `imd`, `imd-*` domains (IoD2025), `pop-density`, **`ptal`** (TfL mean access index), **`green-space`**, **`noise`** (modelled Lden), **`flood-risk`** (EA Flood Zone 3 area share, undefended), **`broadband`** (Ofcom gigabit availability, `inverse: false`).
 - Re-clicking the active choropleth row clears it (`toggleChoropleth`).
 
 **Defaults** — no POI layers on; no choropleth; Filter Areas section expanded; POI / Area sections collapsible.
@@ -57,8 +57,8 @@ This file is **safe for a public repo** — no secrets. API keys live only in lo
 
 ## Filters
 
-- `FILTER_CHOROPLETH_DIMS` in `config.js` drives `FilterPanel`: max-threshold dims (e.g. crime, air, rent, IMD, pop-density, noise) and min-threshold dims (`ptal`, `green-space`). `filterPassSet` in `App.jsx` applies **all** active rules by LSOA `code`.
-- Filter-only green/grey overlay uses IMD or crime geometry as reference when no choropleth is active.
+- `FILTER_CHOROPLETH_DIMS` in `config.js` drives `FilterPanel`: max-threshold dims (crime, air, house-prices, IMD, pop-density, noise, flood-risk) and min-threshold dims (`ptal`, `green-space`, `broadband`). `filterPassSet` in `App.jsx` applies **all** active rules by LSOA `code`.
+- Filter-only green/grey overlay draws the shared `boundaries` polygons when no choropleth is active.
 
 ---
 
@@ -72,7 +72,16 @@ This file is **safe for a public repo** — no secrets. API keys live only in lo
 
 ## Scrapers & data
 
-- **`scrapers/*.js`** — regenerate `public/data/*.geojson` (and caches e.g. `_lsoa-boundaries.geojson`, `_imd_scores.xlsx`, `_population-density-ts006.xlsx`, `_ptal-lsoa-2023.csv`). Full procedure: **`README.md`** **Updating bundled data** + **Data sources**.
+- **`scrapers/*.js`** — regenerate files under `public/data/`. Full procedure: **`README.md`** **Updating bundled data** + **Data sources**. Raw downloads (xlsx/csv/zip) are cached under **`scrapers/.cache/`** (gitignored), never under `public/data`.
+- **Data shapes** (enforced by **`scrapers/lib/output.js`** — every scraper must end with one of its writers):
+  - **`/data/lsoa-boundaries.geojson`** — the 4,994 London LSOA 2021 polygons (`code`, `name`, `borough`). Fetched **once** by the client; produced/cached by `scrapers/lib/boundaries.js`.
+  - **Area layers `/data/<id>.json`** — `{ meta, values: { [code]: number | object } }` written by **`writeAreaLayer`**. No geometry; the client joins onto the boundaries with `mergeAreaLayer` (`src/utils/data.js`), which also builds a `byCode` map used by scoring and filters. One property → bare number; several (IMD) → object.
+  - **POI layers `/data/<id>.geojson`** — minified FeatureCollection with a top-level `meta` block, coords rounded to 5 dp, written by **`writePointLayer`**.
+  - **`meta`** = `{ id, source, vintage, generated (YYYY-MM-DD), count, properties? }`. **`scripts/build-manifest.js`** (runs on `prebuild`, or `npm run manifest`) collects all meta into **`/data/manifest.json`**, which the client uses for sidebar POI counts before a layer is loaded and for the **Data & freshness** modal (`buildDataRows` in `dataSources.js`).
+- **Loading strategy** (`App.jsx`): startup fetches manifest + boundaries + all area tables (~3 MB raw). **POI files are lazy**: `ensurePointLayers` fetches a layer on first toggle, all layers on the first pinned postcode (proximity scoring needs them), and any layers named in the URL hash on mount. `poiLoading` drives the loading banner.
+- **Caching:** `netlify.toml` sets long immutable caching for `/assets/*` and a one-day `stale-while-revalidate` policy for `/data/*`.
+- **Monthly refresh:** `.github/workflows/refresh-data.yml` reruns the scrapers on a schedule (or `workflow_dispatch`) and opens a PR on branch `data/monthly-refresh`; Overpass-heavy scrapers are allowed to fail individually.
+- **Tests:** `npm test` (vitest) covers `utils/url.js`, `utils/data.js` and scoring in `utils/geo.js` (`src/utils/__tests__/`). Lint covers scrapers too (Node globals block in `eslint.config.js`).
 
 ### SheetJS `xlsx` (spreadsheet parsing)
 
@@ -84,9 +93,9 @@ This file is **safe for a public repo** — no secrets. API keys live only in lo
 - **CI / Netlify:** `npm install` needs network access to fetch the tarball the first time (or when the lockfile changes). **Optional supply-chain hardening:** vendor the `.tgz` (e.g. under `vendor/`) and depend on `xlsx@file:vendor/xlsx-0.20.3.tgz` per SheetJS vendoring instructions — enables offline / pinned installs without hitting the CDN each time.
 - **User-facing note:** `README.md` explains that spreadsheet support uses the CDN tarball, not registry `xlsx`.
 
-- **`scrapers/lib/boundaries.js`** — ONS ArcGIS LSOA 2021 for London; shared by IMD, crime, air, rent, population-density, ptal, noise, green-space, etc.
+- **`scrapers/lib/boundaries.js`** — ONS ArcGIS LSOA 2021 for London; shared by every area scraper.
 - **`scrapers/lib/overpass.js`** — rotates public Overpass endpoints + retries (used by heavy POI / green-space scrapers).
-- **`scrapers/rent.js`** — outputs **`rent.geojson`**; IMD 2011 codes mapped / imputed to 2021 LSOAs; borough anchor table inside file.
+- **`scrapers/rent.js`** — outputs **`rent.json`**; modelled from IoD2025 signals + borough anchor table inside file (indicative only).
 
 ---
 
@@ -116,6 +125,6 @@ This file is **safe for a public repo** — no secrets. API keys live only in lo
 
 ## When changing behaviour
 
-- New **choropleth**: add to `CHOROPLETH_LAYERS`, usually `SCORE_AREA_DIMS`, `dataSources.js` `DATA_ROWS`, README **Data sources** + refresh commands, run scraper if new file.
-- New **POI**: `POINT_LAYERS`, often `SCORE_PROX_DIMS`, scraper, README tables.
+- New **choropleth**: scraper ending in `writeAreaLayer` → `/data/<id>.json`; add to `CHOROPLETH_LAYERS` (`file` = the .json), usually `SCORE_AREA_DIMS` + `FILTER_CHOROPLETH_DIMS`, a `DATA_SOURCES` entry in `dataSources.js`, README **Data sources** + refresh commands + the workflow's scraper list, then `npm run manifest`.
+- New **POI**: scraper ending in `writePointLayer` → `/data/<id>.geojson`; `POINT_LAYERS`, often `SCORE_PROX_DIMS`, `DATA_SOURCES`, README tables, workflow list, `npm run manifest`.
 - Keep **hash encode/decode** in mind if adding new global state.

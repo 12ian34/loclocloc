@@ -9,11 +9,12 @@
 import { writeFileSync, readFileSync, existsSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
+import { writeAreaLayer } from "./lib/output.js";
 import { getLSOABoundaries } from "./lib/boundaries.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const OUTPUT_PATH = resolve(__dirname, "../public/data/ptal.geojson");
-const CACHE_PATH = resolve(__dirname, "../public/data/_ptal-lsoa-2023.csv");
+const OUTPUT_PATH = resolve(__dirname, "../public/data/ptal.json");
+const CACHE_PATH = resolve(__dirname, "./.cache/_ptal-lsoa-2023.csv");
 
 const DATA_URL =
   "https://www.arcgis.com/sharing/rest/content/items/3eb38b75667a49df9ef1240e9a197615/data";
@@ -92,7 +93,7 @@ async function main() {
 
   console.log(`Matched ${matched} / ${lsoas.features.length} LSOAs directly`);
 
-  writeFileSync(OUTPUT_PATH, JSON.stringify(lsoas));
+  writeAreaLayer(OUTPUT_PATH, lsoas, { properties: ["value"], source: "TfL LSOA aggregated PTAL stats 2023 — mean access index (mean_AI)", vintage: "TfL 2023 release" });
   console.log(`Saved PTAL choropleth to ${OUTPUT_PATH}`);
 }
 

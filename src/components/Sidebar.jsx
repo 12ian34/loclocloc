@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useId } from "react";
-import { BUILD_DATE, DATA_INTRO, DATA_ROWS } from "../dataSources.js";
+import { BUILD_DATE, DATA_INTRO, LIVE_ROWS, buildDataRows } from "../dataSources.js";
 import { SCORE_AREA_DIMS, SCORE_PROX_DIMS, CHOROPLETH_LAYERS, FILTER_CHOROPLETH_DIMS } from "../config.js";
 
 // #3: keyboard handler for accessible interactive elements
@@ -319,7 +319,9 @@ export function ConfirmModal({ title, children, confirmLabel, cancelLabel, onCon
   );
 }
 
-export function DataAboutModal({ onClose }) {
+export function DataAboutModal({ onClose, manifest }) {
+  const rows = buildDataRows(manifest);
+  const fmtCount = (n) => (n == null ? "" : `${n.toLocaleString()} ${n === 4994 ? "LSOAs" : "features"}`);
   return (
     <div className="modal-root" role="dialog" aria-modal="true" aria-labelledby="data-modal-title">
       <div className="modal-backdrop" onClick={onClose} aria-hidden="true" />
@@ -333,10 +335,22 @@ export function DataAboutModal({ onClose }) {
         <div className="modal-body">
           <p className="modal-intro">{DATA_INTRO}</p>
           <p className="modal-build">
-            <strong>Site build date:</strong> {BUILD_DATE} (from when this version was built; redeploy updates it.)
+            <strong>Site build date:</strong> {BUILD_DATE}
+            {manifest?.generated && <> · <strong>Data manifest:</strong> {manifest.generated}</>}
           </p>
           <ul className="modal-data-list">
-            {DATA_ROWS.map((row) => (
+            {rows.map((row) => (
+              <li key={row.id}>
+                <div className="modal-data-title">{row.title}</div>
+                <div className="modal-data-meta">{row.source}</div>
+                <div className="modal-data-vintage">
+                  {row.generated ? `Generated ${row.generated}` : "Generated: unknown"}
+                  {row.vintage && ` · ${row.vintage}`}
+                  {row.count != null && ` · ${fmtCount(row.count)}`}
+                </div>
+              </li>
+            ))}
+            {LIVE_ROWS.map((row) => (
               <li key={row.id}>
                 <div className="modal-data-title">{row.title}</div>
                 <div className="modal-data-meta">{row.source}</div>

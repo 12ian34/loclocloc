@@ -18,6 +18,7 @@ import {
 import { interpolateColor, computeScale, buildPercentileLookups, computePostcodeScores } from "./utils/geo.js";
 import { encodeAppState, decodeAppState } from "./utils/url.js";
 import { computeTransitIsochrones } from "./utils/tfl.js";
+import { loadBoundaries, loadPointLayer, loadAreaTable, loadManifest, mergeAreaLayer } from "./utils/data.js";
 import { PointMarkers, ZoomLabels, FlyTo, WalkingRings, TransitIsochrones, ChoroplethLayer, MapSizeInvalidator } from "./components/MapLayers.jsx";
 import {
   PostcodeSearch,
@@ -52,6 +53,11 @@ function App() {
   const [activeChoropleth, setActiveChoropleth] = useState(initialState.choropleth);
   const [layerData, setLayerData] = useState({});
   const [choroplethData, setChoroplethData] = useState({});
+  const [boundaries, setBoundaries] = useState(null);
+  const [manifest, setManifest] = useState(null);
+  // POI files are fetched on demand (first toggle, or first pin for scoring); this tracks in-flight ids.
+  const [poiLoading, setPoiLoading] = useState(() => new Set());
+  const poiRequestedRef = useRef(new Set());
   const [flyTarget, setFlyTarget] = useState(null);
   const [pinnedPostcodes, setPinnedPostcodes] = useState([]);
   const [choroplethOpacity, setChoroplethOpacity] = useState(initialState.opacity);
@@ -66,7 +72,7 @@ function App() {
   const [blockingModal, setBlockingModal] = useState(null);
   const [transitData, setTransitData] = useState({});
   const transitDataRef = useRef(transitData);
-  transitDataRef.current = transitData;
+  useEffect(() => { transitDataRef.current = transitData; }, [transitData]);
   const [showTransit, setShowTransit] = useState(initialState.showTransit);
   // #6: restore disabled dims from URL
   const [disabledScoreDims, setDisabledScoreDims] = useState(
@@ -116,46 +122,65 @@ function App() {
 
   const initialPostcodesRef = useRef(initialState.postcodes);
 
-  // #4: Load point layers with loading tracking
+  // Startup payload: manifest (counts + freshness), boundary polygons, and the small per-layer value
+  // tables. Geometry is fetched once and joined client-side; POI files are deferred (see ensurePointLayers).
   useEffect(() => {
-    let pointDone = false;
-    let choroDone = false;
+    let cancelled = false;
+    loadManifest().then((m) => { if (!cancelled && m) setManifest(m); });
 
-    const checkDone = () => {
-      if (pointDone && choroDone) setDataLoading(false);
-    };
-
-    // Load point layers
-    const pointPromises = POINT_LAYERS.map(async (layer) => {
-      try {
-        const res = await fetch(layer.file);
-        if (!res.ok) return;
-        const geojson = await res.json();
-        setLayerData((prev) => ({ ...prev, [layer.id]: geojson }));
-      } catch { /* skip */ }
-    });
-    Promise.all(pointPromises).then(() => { pointDone = true; checkDone(); });
-
-    // Load choropleth layers (deduplicated)
     const fileToLayers = {};
     for (const layer of CHOROPLETH_LAYERS) {
-      if (!fileToLayers[layer.file]) fileToLayers[layer.file] = [];
-      fileToLayers[layer.file].push(layer.id);
+      (fileToLayers[layer.file] ??= []).push(layer.id);
     }
-    const choroPromises = Object.entries(fileToLayers).map(async ([file, layerIds]) => {
+    (async () => {
       try {
-        const res = await fetch(file);
-        if (!res.ok) return;
-        const geojson = await res.json();
-        setChoroplethData((prev) => {
-          const next = { ...prev };
-          for (const id of layerIds) next[id] = geojson;
-          return next;
-        });
-      } catch { /* skip */ }
-    });
-    Promise.all(choroPromises).then(() => { choroDone = true; checkDone(); });
+        const [bounds, tables] = await Promise.all([
+          loadBoundaries(),
+          Promise.all(Object.keys(fileToLayers).map((file) => loadAreaTable(file).then((t) => [file, t]).catch(() => [file, null]))),
+        ]);
+        if (cancelled) return;
+        setBoundaries(bounds);
+        const next = {};
+        for (const [file, table] of tables) {
+          if (!table) continue;
+          const merged = mergeAreaLayer(bounds, table);
+          for (const id of fileToLayers[file]) next[id] = merged;
+        }
+        setChoroplethData(next);
+      } catch (err) {
+        console.error("Failed to load area data", err);
+      } finally {
+        if (!cancelled) setDataLoading(false);
+      }
+    })();
+    return () => { cancelled = true; };
   }, []);
+
+  const ensurePointLayers = useCallback((ids) => {
+    const wanted = ids.filter((id) => !poiRequestedRef.current.has(id));
+    if (!wanted.length) return;
+    for (const id of wanted) poiRequestedRef.current.add(id);
+    setPoiLoading((prev) => new Set([...prev, ...wanted]));
+    for (const id of wanted) {
+      const layer = POINT_LAYERS.find((l) => l.id === id);
+      if (!layer) continue;
+      loadPointLayer(layer.file)
+        .then((geojson) => setLayerData((prev) => ({ ...prev, [id]: geojson })))
+        .catch(() => poiRequestedRef.current.delete(id))
+        .finally(() => setPoiLoading((prev) => { const next = new Set(prev); next.delete(id); return next; }));
+    }
+  }, []);
+
+  // Layers restored from the URL hash need their files immediately.
+  useEffect(() => {
+    if (activeLayers.size) ensurePointLayers([...activeLayers]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Proximity scores need every POI layer, so the first pin pulls them all in.
+  useEffect(() => {
+    if (pinnedPostcodes.length) ensurePointLayers(POINT_LAYERS.map((l) => l.id));
+  }, [pinnedPostcodes.length, ensurePointLayers]);
 
   // Resolve postcodes from URL on mount
   useEffect(() => {
@@ -209,6 +234,7 @@ function App() {
         setBlockingModal({ type: "heavy-poi", layerId: id });
         return prev;
       }
+      ensurePointLayers([id]);
       next.add(id);
       return next;
     });
@@ -222,7 +248,14 @@ function App() {
     setActiveChoropleth((prev) => (prev === id ? null : id));
   };
 
-  const featureCount = (id) => layerData[id]?.features.length || 0;
+  // Manifest entries are keyed by data-file id (e.g. "tube-rail"), which can differ from the layer id ("tube").
+  const featureCount = (id) => {
+    const loaded = layerData[id]?.features.length;
+    if (loaded != null) return loaded;
+    const layer = POINT_LAYERS.find((l) => l.id === id);
+    const fileId = layer?.file.replace(/^\/data\//, "").replace(/\.geojson$/, "");
+    return manifest?.layers?.[fileId]?.count ?? 0;
+  };
 
   const handlePostcodeResult = (result) => {
     if (!pinnedPostcodes.some((p) => p.postcode === result.postcode)) {
@@ -300,6 +333,7 @@ function App() {
     if (blockingModal?.type !== "heavy-poi") return;
     const layerId = blockingModal.layerId;
     setBlockingModal(null);
+    ensurePointLayers([layerId]);
     setActiveLayers((prev) => new Set(prev).add(layerId));
   };
 
@@ -317,11 +351,11 @@ function App() {
     const result = {};
     for (const p of pinnedPostcodes) {
       result[p.postcode] = computePostcodeScores(
-        p.lat, p.lng, choroplethData, layerData, percentileLookups, disabledScoreDims
+        p.lat, p.lng, choroplethData, layerData, percentileLookups, disabledScoreDims, boundaries
       );
     }
     return result;
-  }, [pinnedPostcodes, choroplethData, layerData, percentileLookups, disabledScoreDims]);
+  }, [pinnedPostcodes, choroplethData, layerData, percentileLookups, disabledScoreDims, boundaries]);
 
   const choroplethMeta = useMemo(() => {
     if (!activeChoropleth || !choroplethData[activeChoropleth]) return null;
@@ -330,18 +364,13 @@ function App() {
     return { ...scale, layer };
   }, [activeChoropleth, choroplethData]);
 
-  // #1: Build code->feature lookup maps for filter dimensions (O(n) instead of O(n^2))
+  // Filter dimensions look values up by LSOA code (byCode is built once per layer in mergeAreaLayer).
   const filterCodeMaps = useMemo(() => {
     if (!Object.keys(filters).length) return null;
     const maps = {};
     for (const dimId of Object.keys(filters)) {
       const data = choroplethData[dimId];
-      if (!data) continue;
-      const m = new Map();
-      for (const f of data.features) {
-        m.set(f.properties.code, f);
-      }
-      maps[dimId] = m;
+      if (data?.byCode) maps[dimId] = data.byCode;
     }
     return maps;
   }, [filters, choroplethData]);
@@ -350,10 +379,9 @@ function App() {
   const filterPassSet = useMemo(() => {
     if (!Object.keys(filters).length || !filterCodeMaps) return null;
     const pass = new Set();
-    const refData = choroplethData["imd"] || choroplethData["crime-current"];
-    if (!refData) return null;
+    if (!boundaries) return null;
 
-    for (const f of refData.features) {
+    for (const f of boundaries.features) {
       let passes = true;
       for (const [dimId, threshold] of Object.entries(filters)) {
         const layer = CHOROPLETH_LAYERS.find((l) => l.id === dimId);
@@ -361,9 +389,9 @@ function App() {
         if (!layer || !fd) continue;
         const codeMap = filterCodeMaps[dimId];
         if (!codeMap) { passes = false; break; }
-        const match = codeMap.get(f.properties.code);
-        if (!match) { passes = false; break; }
-        const val = match.properties[layer.property];
+        const props = codeMap.get(f.properties.code);
+        if (!props) { passes = false; break; }
+        const val = props[layer.property];
         if (val == null) { passes = false; break; }
         if (fd.mode === "min") {
           if (val < threshold) { passes = false; break; }
@@ -374,7 +402,7 @@ function App() {
       if (passes) pass.add(f.properties.code);
     }
     return pass;
-  }, [filters, choroplethData, filterCodeMaps]);
+  }, [filters, boundaries, filterCodeMaps]);
 
   // #2: choropleth style — called imperatively, no longer forces remount on opacity
   const choroplethStyle = useCallback(
@@ -411,9 +439,9 @@ function App() {
 
   // #2: use ref for opacity in mouseout so events stay fresh without remount
   const opacityRef = useRef(choroplethOpacity);
-  opacityRef.current = choroplethOpacity;
+  useEffect(() => { opacityRef.current = choroplethOpacity; }, [choroplethOpacity]);
   const filterPassSetRef = useRef(filterPassSet);
-  filterPassSetRef.current = filterPassSet;
+  useEffect(() => { filterPassSetRef.current = filterPassSet; }, [filterPassSet]);
 
   const onEachChoroplethFeature = useCallback((feature, leafletLayer) => {
     const props = feature.properties;
@@ -440,8 +468,8 @@ function App() {
 
   const filterOverlayData = useMemo(() => {
     if (!filterPassSet || activeChoropleth) return null;
-    return choroplethData["imd"] || choroplethData["crime-current"] || null;
-  }, [filterPassSet, activeChoropleth, choroplethData]);
+    return boundaries;
+  }, [filterPassSet, activeChoropleth, boundaries]);
 
   const filterMatchCount = filterPassSet ? filterPassSet.size : null;
 
@@ -480,6 +508,11 @@ function App() {
         {/* #4: loading indicator */}
         {dataLoading && (
           <div className="loading-banner">Loading map data...</div>
+        )}
+        {!dataLoading && poiLoading.size > 0 && (
+          <div className="loading-banner">
+            Loading {[...poiLoading].map((id) => POINT_LAYERS.find((l) => l.id === id)?.name ?? id).join(", ")}...
+          </div>
         )}
 
         {pinnedPostcodes.length > 0 && (
@@ -735,7 +768,7 @@ function App() {
 
       </div>
 
-      {showDataModal && <DataAboutModal onClose={() => setShowDataModal(false)} />}
+      {showDataModal && <DataAboutModal onClose={() => setShowDataModal(false)} manifest={manifest} />}
 
       {blockingModal?.type === "transit" && (
         <ConfirmModal

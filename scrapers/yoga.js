@@ -6,9 +6,9 @@
  * Outputs GeoJSON to public/data/yoga.geojson
  */
 
-import { writeFileSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
+import { writePointLayer } from "./lib/output.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUTPUT_PATH = resolve(__dirname, "../public/data/yoga.geojson");
@@ -94,7 +94,7 @@ async function main() {
 
   const geojson = { type: "FeatureCollection", features };
 
-  writeFileSync(OUTPUT_PATH, JSON.stringify(geojson, null, 2));
+  writePointLayer(OUTPUT_PATH, geojson.features, { source: "OpenStreetMap via Overpass API", vintage: "OSM snapshot at generation date" });
   console.log(`\nSaved ${features.length} yoga studios to ${OUTPUT_PATH}`);
 }
 

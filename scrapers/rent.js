@@ -2,9 +2,11 @@
 
 /**
  * Housing affordability at LSOA level for London.
- * Uses the English Indices of Deprivation 2019 — "Barriers to Housing and Services" sub-domain
- * and "Income Deprivation" domain scores, which give real LSOA-level variation.
+ * Uses the English Indices of Deprivation 2025 (IoD2025, on 2021 LSOA boundaries) —
+ * "Income Deprivation" domain and "Barriers to Housing and Services" domain scores,
+ * which give real LSOA-level variation.
  * Then calibrates against known borough median rents to produce estimated monthly rents.
+ * Modelled figures — not official rents or listings.
  */
 
 import * as fs from "fs";
@@ -13,13 +15,17 @@ import { fileURLToPath } from "url";
 import XLSX from "xlsx";
 
 XLSX.set_fs(fs);
-import { getLSOABoundaries, featureCentroid, distFromCenter } from "./lib/boundaries.js";
+import { getLSOABoundaries } from "./lib/boundaries.js";
+import { writeAreaLayer } from "./lib/output.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const OUTPUT_PATH = resolve(__dirname, "../public/data/rent.geojson");
-const IMD_CACHE = resolve(__dirname, "../public/data/_imd_scores.xlsx");
+const OUTPUT_PATH = resolve(__dirname, "../public/data/rent.json");
+const IMD_CACHE = resolve(__dirname, "./.cache/_iod2025_scores.xlsx");
 
-const IMD_URL = "https://assets.publishing.service.gov.uk/media/5d8b3b51ed915d036a455aa6/File_5_-_IoD2019_Scores.xlsx";
+const IMD_URL =
+  "https://assets.publishing.service.gov.uk/media/691ded34513046b952c500bd/File_5_IoD2025_Scores_for_the_Indices_of_Deprivation.xlsx";
+const SHEET_NAME = "IoD2025 Scores";
+const CODE_COLUMN = "LSOA code (2021)";
 
 // Known borough median 1-bed rents (£/month, 2024)
 const BOROUGH_RENT = {
@@ -47,33 +53,36 @@ function matchBoroughRent(name) {
 }
 
 async function main() {
-  console.log("Building rent choropleth with real IMD data...\n");
+  console.log("Building rent choropleth with real IoD2025 data...\n");
 
-  // Download IMD scores
+  // Download IoD2025 scores (shared cache with scrapers/imd.js)
   if (!fs.existsSync(IMD_CACHE)) {
-    console.log("Downloading IMD 2019 scores...");
+    console.log("Downloading IoD2025 scores (File 5)...");
+    fs.mkdirSync(dirname(IMD_CACHE), { recursive: true });
     const res = await fetch(IMD_URL);
+    if (!res.ok) throw new Error(`IoD2025 download returned HTTP ${res.status}`);
     const buf = Buffer.from(await res.arrayBuffer());
     fs.writeFileSync(IMD_CACHE, buf);
-    console.log("Cached IMD data");
+    console.log("Cached IoD2025 data");
   } else {
-    console.log("Using cached IMD data");
+    console.log("Using cached IoD2025 data");
   }
 
   // Parse the Excel file
   const wb = XLSX.readFile(IMD_CACHE);
-  const sheet = wb.Sheets["IoD2019 Scores"];
+  const sheet = wb.Sheets[SHEET_NAME];
+  if (!sheet) throw new Error(`Sheet "${SHEET_NAME}" not found — sheets: ${wb.SheetNames.join(", ")}`);
   const rows = XLSX.utils.sheet_to_json(sheet);
 
-  // Build a map of LSOA code -> IMD data
+  // Build a map of 2021 LSOA code -> IoD2025 data
   // The columns we want:
-  // - "LSOA code (2011)" -> lsoa code
+  // - "LSOA code (2021)" -> lsoa code
   // - "Income Score (rate)" -> income deprivation rate
   // - "Barriers to Housing and Services Score" -> housing barriers
   // - "Living Environment Score" -> living environment quality
   const imdData = new Map();
   for (const row of rows) {
-    const code = row["LSOA code (2011)"];
+    const code = row[CODE_COLUMN];
     if (!code) continue;
     imdData.set(code, {
       income: row["Income Score (rate)"] || 0,
@@ -82,42 +91,30 @@ async function main() {
       imdScore: row["Index of Multiple Deprivation (IMD) Score"] || 0,
     });
   }
-  console.log(`Parsed IMD data for ${imdData.size} LSOAs`);
+  console.log(`Parsed IoD2025 data for ${imdData.size} LSOAs`);
 
-  // We need a 2021 LSOA -> 2011 LSOA mapping since IMD uses 2011 codes
-  // Our boundaries use 2021 codes. Many are the same, but some changed.
-  // For those that don't match, we'll use centroid-based nearest neighbor.
-
+  // IoD2025 is published on 2021 LSOA boundaries, the same as ours, so codes match directly.
   const lsoas = await getLSOABoundaries();
 
-  // Collect all IMD income scores to compute percentile-based rent mapping
-  const allIncomeScores = [...imdData.values()].map((d) => d.income).sort((a, b) => a - b);
-  const allBarrierScores = [...imdData.values()].map((d) => d.barriers).sort((a, b) => a - b);
-
-  // For each LSOA, try direct code match, then nearby match
-  const centroidsForUnmatched = [];
+  const unmatched = [];
   let matched = 0;
 
   for (const f of lsoas.features) {
-    const code = f.properties.code;
-    const imd = imdData.get(code);
+    const imd = imdData.get(f.properties.code);
     if (imd) {
       f.properties._imd = imd;
       matched++;
     } else {
-      centroidsForUnmatched.push(f);
+      unmatched.push(f);
     }
   }
 
   console.log(`Direct code match: ${matched} / ${lsoas.features.length}`);
 
-  // For unmatched 2021 LSOAs, find nearest 2011 LSOA by centroid
-  if (centroidsForUnmatched.length > 0) {
-    // Build centroid index for 2011 LSOAs from IMD data
-    // We don't have 2011 boundaries, so just use borough average
-    for (const f of centroidsForUnmatched) {
+  // Safety net: any LSOA missing from the spreadsheet takes its borough average
+  if (unmatched.length > 0) {
+    for (const f of unmatched) {
       const borough = f.properties.borough;
-      // Find average IMD scores from matched LSOAs in same borough
       const boroughLSOAs = lsoas.features.filter(
         (g) => g.properties.borough === borough && g.properties._imd
       );
@@ -129,9 +126,10 @@ async function main() {
         f.properties._imd = { income: 0.15, barriers: 0, living: 0 };
       }
     }
+    console.log(`Borough-averaged: ${unmatched.length}`);
   }
 
-  // Now compute rent estimates using IMD + borough baseline
+  // Now compute rent estimates using IoD2025 + borough baseline
   // Lower income deprivation + higher barriers to housing = higher rent area
   for (const f of lsoas.features) {
     const imd = f.properties._imd;
@@ -140,7 +138,8 @@ async function main() {
     // Income deprivation rate: 0-0.6 (higher = more deprived = generally lower rent)
     // Barriers score: higher = harder to access housing = more expensive areas
     // We invert income (low deprivation = affluent = high rent)
-    const affluenceFactor = 1 - (imd.income / 0.5); // normalize: 0=very deprived, 2=very affluent
+    // IoD2025 income rates run up to ~1.0 in a handful of LSOAs; clamp so the affluence term stays in [-0, 1].
+    const affluenceFactor = 1 - (Math.min(imd.income, 0.5) / 0.5); // normalize: 0=very deprived, 2=very affluent
     const barriersFactor = imd.barriers / 30; // normalize rough range
 
     // Blend: affluence drives rent up, barriers indicate housing pressure
@@ -150,12 +149,18 @@ async function main() {
 
     f.properties.value = rent;
     f.properties.metric = "est. rent £/month";
-    f.properties.label = `${f.properties.name}: ~£${rent}/mo`;
     delete f.properties._imd;
   }
 
-  fs.writeFileSync(OUTPUT_PATH, JSON.stringify(lsoas));
-  console.log(`\nSaved rent choropleth (${lsoas.features.length} LSOAs) to ${OUTPUT_PATH}`);
+  writeAreaLayer(OUTPUT_PATH, lsoas, {
+    properties: ["value"],
+    source: "Modelled in scrapers/rent.js from IoD2025 income / housing-barriers scores (MHCLG, Oct 2025) + hand-tuned borough anchor rents — indicative £/month, not official rents",
+    vintage: "IoD2025 (MHCLG, Oct 2025) + 2024 borough anchors",
+  });
+  console.log(`\nSaved rent area layer (${lsoas.features.length} LSOAs) to ${OUTPUT_PATH}`);
 }
 
-main().catch(console.error);
+main().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});

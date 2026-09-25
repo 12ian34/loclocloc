@@ -12,14 +12,14 @@
  * For a more accurate approach, use OS Open Greenspace with Turf.js intersection.
  */
 
-import { writeFileSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
+import { writeAreaLayer } from "./lib/output.js";
 import { getLSOABoundaries, featureCentroid } from "./lib/boundaries.js";
 import { overpassQuery } from "./lib/overpass.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const OUTPUT_PATH = resolve(__dirname, "../public/data/green-space.geojson");
+const OUTPUT_PATH = resolve(__dirname, "../public/data/green-space.json");
 /** 8 tiles — omit landuse=grass (too dense for Overpass in London) */
 const BBOX_SHARDS = [
   [51.35, -0.42, 51.5, -0.2525],
@@ -96,13 +96,11 @@ async function main() {
 
   for (const f of lsoas.features) {
     const c = featureCentroid(f);
-    let count = 0;
     let weightedSum = 0;
 
     for (const gp of greenPoints) {
       const d = haversine(c.lat, c.lng, gp.lat, gp.lng);
       if (d <= RADIUS) {
-        count++;
         weightedSum += (RADIUS - d) / RADIUS;
       }
     }
@@ -126,7 +124,7 @@ async function main() {
     delete f.properties._rawScore;
   }
 
-  writeFileSync(OUTPUT_PATH, JSON.stringify(lsoas));
+  writeAreaLayer(OUTPUT_PATH, lsoas, { properties: ["value"], source: "OpenStreetMap parks, gardens and greenspace via Overpass; proximity-weighted count per LSOA centroid, percentile scored", vintage: "OSM snapshot at generation date" });
   console.log(`Saved green space choropleth to ${OUTPUT_PATH}`);
 }
 

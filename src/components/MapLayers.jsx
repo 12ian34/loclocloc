@@ -20,6 +20,30 @@ function emojiSize(zoom) {
   return 26;
 }
 
+/** Layer-specific popup line (schools: phase + Ofsted; supermarkets: brand; dentists: NHS). */
+function PoiExtra({ p }) {
+  if (p.phase) {
+    return (
+      <>
+        <br />
+        {p.phase}
+        {p.sector === "independent" ? " · independent" : ""}
+        {p.ofsted && (
+          <>
+            {" · Ofsted: "}
+            {p.ofstedUrl ? <a href={p.ofstedUrl} target="_blank" rel="noreferrer"><strong>{p.ofsted}</strong></a> : <strong>{p.ofsted}</strong>}
+            {p.ofstedDate && ` (${String(p.ofstedDate).slice(0, 4)})`}
+          </>
+        )}
+        {p.ofstedDetail && <><br /><span className="poi-popup-muted">{p.ofstedDetail}</span></>}
+      </>
+    );
+  }
+  if (p.brand && p.brand !== p.name) return <><br />{p.brand}</>;
+  if (p.nhs === true) return <><br />NHS patients accepted (per OSM tag)</>;
+  return null;
+}
+
 export function PointMarkers({ layers, activeLayers, layerData }) {
   const map = useMap();
   const [zoom, setZoom] = useState(map.getZoom());
@@ -59,6 +83,7 @@ export function PointMarkers({ layers, activeLayers, layerData }) {
             <strong>{feature.properties.name}</strong>
             {feature.properties.address && <><br />{feature.properties.address}</>}
             {feature.properties.postcode && <><br />{feature.properties.postcode}</>}
+            <PoiExtra p={feature.properties} />
           </Popup>
         </Marker>
       ))
