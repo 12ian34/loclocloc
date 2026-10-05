@@ -67,7 +67,7 @@ Every scraper ends by calling `writeAreaLayer` or `writePointLayer` from `scrape
 
 ### Automatic monthly refresh
 
-`.github/workflows/refresh-data.yml` reruns the scrapers on the first Monday of each month (or on demand from the Actions tab) and opens a pull request on the `data/monthly-refresh` branch with whatever changed. Overpass-heavy scrapers are allowed to fail individually so one flaky mirror does not block the rest. Review the manifest diff, check a preview deploy, merge.
+`.github/workflows/refresh-data.yml` reruns the scrapers on the 1st of each month (or on demand from the Actions tab) and opens a pull request on the `data/monthly-refresh` branch with whatever changed. Overpass-heavy scrapers are allowed to fail individually so one flaky mirror does not block the rest. Review the manifest diff, check a preview deploy, merge.
 
 ### Clearing caches (optional)
 

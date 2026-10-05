@@ -8,10 +8,10 @@
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
 import { writePointLayer } from "./lib/output.js";
+import { overpassQuery } from "./lib/overpass.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUTPUT_PATH = resolve(__dirname, "../public/data/gyms.geojson");
-const OVERPASS_URL = "https://overpass.kumi.systems/api/interpreter";
 const LONDON_BBOX = "51.35,-0.42,51.65,0.25";
 
 const QUERY = `
@@ -23,18 +23,7 @@ out;
 async function main() {
   console.log("Scraping gyms in London...\n");
 
-  const res = await fetch(OVERPASS_URL, {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: `data=${encodeURIComponent(QUERY)}`,
-  });
-
-  if (!res.ok) {
-    console.error(`Overpass API returned HTTP ${res.status}`);
-    process.exit(1);
-  }
-
-  const data = await res.json();
+  const data = await overpassQuery(QUERY);
   console.log(`Overpass returned ${data.elements.length} elements`);
 
   const seen = new Set();

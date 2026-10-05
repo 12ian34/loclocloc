@@ -53,7 +53,14 @@ async function fetchOACSV() {
 
   if (!existsSync(ZIP_PATH)) {
     console.log("Downloading Ofcom fixed broadband coverage zip (~35 MB)...");
-    const res = await fetch(ZIP_URL, { headers: { "User-Agent": "Mozilla/5.0" } });
+    const res = await fetch(ZIP_URL, {
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36",
+        Accept: "application/zip,application/octet-stream;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-GB,en;q=0.9",
+      },
+    });
     if (!res.ok) throw new Error(`Ofcom zip returned HTTP ${res.status}`);
     writeFileSync(ZIP_PATH, Buffer.from(await res.arrayBuffer()));
     console.log("Cached zip");
