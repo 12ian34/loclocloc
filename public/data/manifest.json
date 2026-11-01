@@ -1,9 +1,9 @@
 {
-  "generated": "2026-10-05",
+  "generated": "2026-11-01",
   "layers": {
     "air-quality": {
       "id": "air-quality",
-      "generated": "2026-10-05",
+      "generated": "2026-11-01",
       "count": 4994,
       "properties": [
         "value"
@@ -15,8 +15,8 @@
     },
     "betting": {
       "id": "betting",
-      "generated": "2026-10-05",
-      "count": 937,
+      "generated": "2026-11-01",
+      "count": 936,
       "source": "OpenStreetMap via Overpass API",
       "vintage": "OSM snapshot at generation date",
       "kind": "points",
@@ -24,8 +24,8 @@
     },
     "bike-parking": {
       "id": "bike-parking",
-      "generated": "2026-10-05",
-      "count": 26341,
+      "generated": "2026-11-01",
+      "count": 26350,
       "source": "OpenStreetMap via Overpass API",
       "vintage": "OSM snapshot at generation date",
       "kind": "points",
@@ -47,7 +47,7 @@
     },
     "cinemas": {
       "id": "cinemas",
-      "generated": "2026-10-05",
+      "generated": "2026-11-01",
       "count": 87,
       "source": "OpenStreetMap via Overpass API",
       "vintage": "OSM snapshot at generation date",
@@ -56,8 +56,8 @@
     },
     "coffee": {
       "id": "coffee",
-      "generated": "2026-10-05",
-      "count": 810,
+      "generated": "2026-11-01",
+      "count": 783,
       "source": "OpenStreetMap via Overpass API",
       "vintage": "OSM snapshot at generation date",
       "kind": "points",
@@ -65,8 +65,8 @@
     },
     "coworking": {
       "id": "coworking",
-      "generated": "2026-10-05",
-      "count": 101,
+      "generated": "2026-11-01",
+      "count": 104,
       "source": "OpenStreetMap via Overpass API",
       "vintage": "OSM snapshot at generation date",
       "kind": "points",
@@ -74,7 +74,7 @@
     },
     "crime": {
       "id": "crime",
-      "generated": "2026-10-05",
+      "generated": "2026-11-01",
       "count": 4994,
       "properties": [
         "value"
@@ -86,8 +86,8 @@
     },
     "dentists": {
       "id": "dentists",
-      "generated": "2026-10-05",
-      "count": 1341,
+      "generated": "2026-11-01",
+      "count": 1352,
       "source": "OpenStreetMap via Overpass API",
       "vintage": "OSM snapshot at generation date",
       "kind": "points",
@@ -107,8 +107,8 @@
     },
     "gp-surgeries": {
       "id": "gp-surgeries",
-      "generated": "2026-10-05",
-      "count": 527,
+      "generated": "2026-11-01",
+      "count": 528,
       "source": "OpenStreetMap via Overpass API",
       "vintage": "OSM snapshot at generation date",
       "kind": "points",
@@ -116,7 +116,7 @@
     },
     "green-space": {
       "id": "green-space",
-      "generated": "2026-10-05",
+      "generated": "2026-11-01",
       "count": 4994,
       "properties": [
         "value"
@@ -128,8 +128,8 @@
     },
     "gyms": {
       "id": "gyms",
-      "generated": "2026-10-05",
-      "count": 680,
+      "generated": "2026-11-01",
+      "count": 737,
       "source": "OpenStreetMap via Overpass API",
       "vintage": "OSM snapshot at generation date",
       "kind": "points",
@@ -137,7 +137,7 @@
     },
     "house-prices": {
       "id": "house-prices",
-      "generated": "2026-10-05",
+      "generated": "2026-11-01",
       "count": 4994,
       "properties": [
         "value"
@@ -149,7 +149,7 @@
     },
     "imd": {
       "id": "imd",
-      "generated": "2026-10-05",
+      "generated": "2026-11-01",
       "count": 4994,
       "properties": [
         "imd",
@@ -170,8 +170,8 @@
     },
     "libraries": {
       "id": "libraries",
-      "generated": "2026-04-06",
-      "count": 185,
+      "generated": "2026-11-01",
+      "count": 189,
       "source": "OpenStreetMap via Overpass API",
       "vintage": "OSM snapshot at generation date",
       "kind": "points",
@@ -181,13 +181,13 @@
       "id": "lsoa-boundaries",
       "kind": "boundaries",
       "count": 4994,
-      "generated": "2026-10-05",
+      "generated": "2026-11-01",
       "vintage": "ONS LSOA December 2021 (BSC generalised)",
       "file": "/data/lsoa-boundaries.geojson"
     },
     "noise": {
       "id": "noise",
-      "generated": "2026-10-05",
+      "generated": "2026-11-01",
       "count": 4994,
       "properties": [
         "value"
@@ -199,8 +199,8 @@
     },
     "parks": {
       "id": "parks",
-      "generated": "2026-10-05",
-      "count": 3026,
+      "generated": "2026-11-01",
+      "count": 3024,
       "source": "OpenStreetMap via Overpass API",
       "vintage": "OSM snapshot at generation date",
       "kind": "points",
@@ -208,7 +208,7 @@
     },
     "population-density": {
       "id": "population-density",
-      "generated": "2026-10-05",
+      "generated": "2026-11-01",
       "count": 4994,
       "properties": [
         "value"
@@ -220,7 +220,7 @@
     },
     "ptal": {
       "id": "ptal",
-      "generated": "2026-10-05",
+      "generated": "2026-11-01",
       "count": 4994,
       "properties": [
         "value"
@@ -232,8 +232,8 @@
     },
     "pubs": {
       "id": "pubs",
-      "generated": "2026-10-05",
-      "count": 1245,
+      "generated": "2026-11-01",
+      "count": 1257,
       "source": "OpenStreetMap via Overpass API",
       "vintage": "OSM snapshot at generation date",
       "kind": "points",
@@ -241,7 +241,7 @@
     },
     "rent": {
       "id": "rent",
-      "generated": "2026-10-05",
+      "generated": "2026-11-01",
       "count": 4994,
       "properties": [
         "value"
@@ -262,18 +262,18 @@
     },
     "schools": {
       "id": "schools",
-      "generated": "2026-10-05",
-      "count": 2786,
+      "generated": "2026-11-01",
+      "count": 2784,
       "source": "DfE Get Information about Schools (GIAS); Ofsted management information (state-funded schools)",
-      "vintage": "2026-10-05",
-      "ofstedVintage": "2026-08-31",
+      "vintage": "2026-11-01",
+      "ofstedVintage": "2026-09-30",
       "kind": "points",
       "file": "/data/schools.geojson"
     },
     "supermarkets": {
       "id": "supermarkets",
-      "generated": "2026-10-05",
-      "count": 1407,
+      "generated": "2026-11-01",
+      "count": 1414,
       "source": "OpenStreetMap via Overpass API",
       "vintage": "OSM snapshot at generation date",
       "kind": "points",
@@ -281,7 +281,7 @@
     },
     "tube-rail": {
       "id": "tube-rail",
-      "generated": "2026-10-05",
+      "generated": "2026-11-01",
       "count": 715,
       "source": "OpenStreetMap via Overpass API",
       "vintage": "OSM snapshot at generation date",
@@ -290,8 +290,8 @@
     },
     "waitrose": {
       "id": "waitrose",
-      "generated": "2026-10-05",
-      "count": 125,
+      "generated": "2026-11-01",
+      "count": 127,
       "source": "OpenStreetMap via Overpass API",
       "vintage": "OSM snapshot at generation date",
       "kind": "points",
@@ -299,8 +299,8 @@
     },
     "yoga": {
       "id": "yoga",
-      "generated": "2026-10-05",
-      "count": 133,
+      "generated": "2026-11-01",
+      "count": 160,
       "source": "OpenStreetMap via Overpass API",
       "vintage": "OSM snapshot at generation date",
       "kind": "points",
